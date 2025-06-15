@@ -3,38 +3,46 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.navbar {
-    background-color: #222;
-    padding: 1em 0;
+.nav {
+    overflow: hidden;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1111;
 }
 
-.nav-list {
-    list-style-type: none;
+.navul ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
 }
 
-.nav-list li {
-    margin: 0 20px;
+.nav li a {
+    color: aliceblue;
+    padding: 24px 12px;
+    display: block;
 }
 
-.nav-list a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
+.nav .nav1:hover {
+    color: aliceblue;
+    background-color: rgb(185, 25, 25);
 }
 
-.nav-list a:hover {
-    color: #ffcc00;
+.titlenav {
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
-.section {
-    height: 100vh;
-    padding: 50px;
-    font-size: 24px;
-    background-color: #f0f0f0;
-    border-bottom: 1px solid #ccc;
+.titlenav a {
+    color: #fcf8f8;
+    font-size: 22px;
 }
