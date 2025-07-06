@@ -1,102 +1,93 @@
 body {
-    margin: 0px;
-    font-family: 'segoe ui';
-    background-color: #333
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #333;
 }
 
 .nav {
-    height: 50px;
-    width: 100%;
-    background-color: #4d4d4d;
     position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #4d4d4d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
 }
 
-.nav>.nav-header {
-    display: inline;
-}
-
-.nav>.nav-header>.nav-title {
-    display: inline-block;
+.nav-header .nav-title {
     font-size: 22px;
     color: #ffffff69;
-    padding: 10px 10px 10px 10px;
 }
 
-.nav>.nav-btn {
-    display: none;
+.nav-links {
+    display: flex;
+    gap: 10px;
 }
 
-.nav>.nav-links {
-    display: inline;
-    float: right;
-    font-size: 18px;
-}
-
-.nav>.nav-links>a {
-    display: inline-block;
-    padding: 13px 10px 13px 10px;
-    text-decoration: none;
+.nav-links a {
+    padding: 13px 10px;
     color: #efefef;
+    text-decoration: none;
+    transition: background 0.3s;
 }
 
-.nav>.nav-links>a:hover {
+.nav-links a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.nav>#nav-check {
+#nav-check {
     display: none;
 }
 
-@media (max-width:600px) {
-    .nav>.nav-btn {
-        display: inline-block;
-        position: absolute;
-        right: 0px;
-        top: 0px;
+/* Hamburger Button - Hidden by default */
+.nav-btn {
+    display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .nav {
+        flex-wrap: wrap;
+        height: auto;
     }
 
-    .nav>.nav-btn>label {
-        display: inline-block;
+    .nav-btn {
+        display: block;
+    }
+
+    .nav-btn label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 50px;
         height: 50px;
+        cursor: pointer;
         padding: 13px;
     }
 
-    .nav>.nav-btn>label:hover,
-    .nav #nav-check:checked~.nav-btn>label {
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    .nav>.nav-btn>label>span {
-        display: block;
+    .nav-btn label span {
+        height: 2px;
+        background: #eee;
+        margin: 5px 0;
         width: 25px;
-        height: 10px;
-        border-top: 2px solid #eee;
     }
 
-    .nav>.nav-links {
-        position: absolute;
-        display: block;
+    .nav-links {
         width: 100%;
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
         background-color: #333;
-        height: 0px;
-        transition: all 0.3s ease-in;
-        overflow-y: hidden;
-        top: 50px;
-        left: 0px;
+        transition: max-height 0.3s ease-in-out;
     }
 
-    .nav>.nav-links>a {
-        display: block;
+    .nav-links a {
         width: 100%;
+        display: block;
     }
 
-    .nav>#nav-check:not(:checked)~.nav-links {
-        height: 0px;
-    }
-
-    .nav>#nav-check:checked~.nav-links {
-        height: calc(100vh - 50px);
-        overflow-y: auto;
+    #nav-check:checked~.nav-links {
+        max-height: 500px;
     }
 }
