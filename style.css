@@ -1,9 +1,11 @@
+/* Base Styles */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: #ffffff;
 }
 
+/* Navigation */
 .nav {
     position: relative;
     width: 100%;
@@ -40,9 +42,103 @@ body {
     display: none;
 }
 
-/* Hamburger Button - Hidden by default */
 .nav-btn {
     display: none;
+}
+
+/* Booking Form Container */
+.booking-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Booking Form */
+.booking-form {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking-form input,
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+    outline: 2px solid #666;
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.booking-form button:hover {
+    background-color: #d62828;
+}
+
+/* Tour Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background-color: #1c1c1c;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    font-size: 0.95rem;
+    color: #f0f0f0;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #222;
+}
+
+tr:hover {
+    background-color: #2a2a2a;
 }
 
 /* Mobile Styles */
@@ -90,66 +186,4 @@ body {
     #nav-check:checked~.nav-links {
         max-height: 500px;
     }
-
-    .booking-form-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 40px 20px;
-    }
-
-    .booking-form {
-        background-color: #222;
-        padding: 30px;
-        border-radius: 10px;
-        width: 100%;
-        max-width: 400px;
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
-    }
-
-    .booking-form h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        font-weight: 700;
-    }
-
-    .booking-form label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
-
-    .booking-form input,
-    .booking-form textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: none;
-        border-radius: 5px;
-        background-color: #333;
-        color: #fff;
-    }
-
-    .booking-form input:focus,
-    .booking-form textarea:focus {
-        outline: 2px solid #666;
-    }
-
-    .booking-form button {
-        width: 100%;
-        padding: 12px;
-        background-color: #e63946;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-    }
-
-    .booking-form button:hover {
-        background-color: #d62828;
-    }
-
-
 }
