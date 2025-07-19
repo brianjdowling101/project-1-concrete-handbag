@@ -187,6 +187,47 @@ tr:hover {
     color: #ccc;
 }
 
+/* Footer (Always Visible) */
+.site-footer {
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+}
+
+.social-links img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.85;
+}
+
+.social-links img:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
 /* Mobile Styles */
 @media (max-width: 600px) {
     .nav {
