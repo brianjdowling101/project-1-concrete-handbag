@@ -100,23 +100,26 @@
 
 
     </div>
-    <p><strong></strong>If you enjoy the music on Sidewalk Etiquette, check out the MP3 of the song “Dead Thing” below.
-      It’s also available for purchase on the Apple Store.</strong>
+    <p><strong></strong>If you enjoy the music on Sidewalk Etiquette, check out the MP3 sample of the song “Dead Thing”
+      below.
+      The full track is also available for purchase on the Apple Store.</strong>
     </p>
-    <!-- Hidden audio player -->
     <audio id="audioPlayer" src="mp3/_That_s a Dead Thing_ _ Concrete Hand Ba.mp3"></audio>
 
-    <!-- Play button -->
-    <button onclick="document.getElementById('audioPlayer').play();">
-      ▶️ Play 'Dead Thing' MP3
-    </button>
+    <button onclick="document.getElementById('audioPlayer').play();">▶️ Play</button>
+    <button onclick="document.getElementById('audioPlayer').pause();">⏸️ Pause</button>
+    <button onclick="rewindAudio()">⏪ Rewind 5s</button>
 
-    <!-- Purchase button -->
     <a href="https://music.apple.com/your-song-link" target="_blank" rel="noopener noreferrer">
-      <button>
-        Buy on Apple Store
-      </button>
+      <button>Buy on Apple Store</button>
     </a>
+
+    <script>
+      function rewindAudio() {
+        const audio = document.getElementById('audioPlayer');
+        audio.currentTime = Math.max(0, audio.currentTime - 5);
+      }
+    </script>
   </div>
 
   <h1>Tour Dates: Concrete Handbag “Heavy Luggage” Tour 2025</h1>
