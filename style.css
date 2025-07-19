@@ -1,110 +1,9 @@
-/* ======== Base Styles ======== */
-
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: #222;
     color: #f0f0f0;
-    padding-top: 50px;
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* ======== Navbar ======== */
-
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: #c9c3c3;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    color: #333;
-    height: 50px;
-}
-
-.nav-header .nav-title {
-    font-size: 22px;
-    color: #ffffff69;
-}
-
-.nav-links {
-    display: flex;
-    gap: 10px;
-}
-
-.nav-links a {
-    padding: 13px 10px;
-    color: #efefef;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-.nav-links a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-#nav-check {
-    display: none;
-}
-
-.nav-btn {
-    display: none;
-}
-
-@media (max-width: 600px) {
-    .nav {
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    .nav-btn {
-        display: block;
-    }
-
-    .nav-btn label {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        padding: 13px;
-    }
-
-    .nav-btn label span {
-        height: 2px;
-        background: #eee;
-        margin: 5px 0;
-        width: 25px;
-    }
-
-    .nav-links {
-        width: 100%;
-        flex-direction: column;
-        overflow: hidden;
-        max-height: 0;
-        background-color: #333;
-        transition: max-height 0.3s ease-in-out;
-    }
-
-    .nav-links a {
-        width: 100%;
-        display: block;
-    }
-
-    #nav-check:checked~.nav-links {
-        max-height: 500px;
-    }
-}
-
-/* ======== Sections ======== */
 
 .home-banner,
 .content,
@@ -161,6 +60,18 @@ html {
     background-color: #d62828;
 }
 
+.nav {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #c9c3c3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: #333;
+}
+
 .content {
     max-width: 800px;
     margin: 0 auto;
@@ -182,8 +93,6 @@ h2 {
     margin-bottom: 2rem;
     text-align: center;
 }
-
-/* ======== Video ======== */
 
 .video-container {
     width: 100%;
@@ -209,30 +118,56 @@ video {
     background-color: #000;
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    margin: 8px 10px 8px 0;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 6px;
+.controls {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.controls button {
+    background-color: #333;
+    color: #eee;
+    border: 1px solid #555;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
+.controls button:hover {
+    background-color: #555;
 }
 
-a button {
-    display: inline-block;
+.nav-header .nav-title {
+    font-size: 22px;
+    color: #ffffff69;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    padding: 13px 10px;
+    color: #efefef;
     text-decoration: none;
+    transition: background 0.3s;
 }
 
+.nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
 
-/* ======== Booking Form ======== */
+#nav-check {
+    display: none;
+}
+
+.nav-btn {
+    display: none;
+}
 
 .booking-form-container {
     display: flex;
@@ -295,8 +230,6 @@ a button {
     background-color: #d62828;
 }
 
-/* ======== Table ======== */
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -328,8 +261,6 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #2a2a2a;
 }
-
-/* ======== Band Members ======== */
 
 .band-members {
     text-align: center;
@@ -373,8 +304,6 @@ tr:hover {
     color: #ccc;
 }
 
-/* ======== Footer ======== */
-
 .site-footer {
     padding: 30px 20px;
     text-align: center;
@@ -413,4 +342,50 @@ tr:hover {
 .social-links img:hover {
     transform: scale(1.15);
     opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .nav {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+
+    .nav-btn label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        padding: 13px;
+    }
+
+    .nav-btn label span {
+        height: 2px;
+        background: #eee;
+        margin: 5px 0;
+        width: 25px;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        background-color: #333;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .nav-links a {
+        width: 100%;
+        display: block;
+    }
+
+    #nav-check:checked~.nav-links {
+        max-height: 500px;
+    }
 }
