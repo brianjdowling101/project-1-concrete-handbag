@@ -1,11 +1,19 @@
-/* Base Styles */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #ffffff;
+    background-color: #222;
+    color: #f0f0f0;
 }
 
-/* Home Banner */
+.home-banner,
+.content,
+.band-members,
+.booking-form-container,
+.site-footer {
+    background-color: #222;
+    padding: 40px 20px;
+}
+
 .home-banner {
     background: url('images/banner.jpg') center center / cover no-repeat;
     height: 70vh;
@@ -27,12 +35,14 @@ body {
 .banner-content h1 {
     font-size: 3em;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .banner-content p {
     font-size: 1.2em;
     margin-bottom: 20px;
     color: #ddd;
+    text-align: center;
 }
 
 .banner-button {
@@ -50,7 +60,6 @@ body {
     background-color: #d62828;
 }
 
-/* Navigation */
 .nav {
     position: relative;
     width: 100%;
@@ -60,6 +69,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
+    color: #333;
 }
 
 .content {
@@ -67,23 +77,26 @@ body {
     margin: 0 auto;
 }
 
-h1 {
+h1,
+h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid #444;
     padding-bottom: 0.5rem;
+    text-align: center;
+    color: #f0f0f0;
 }
 
 .bio {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 2rem;
+    text-align: center;
 }
-
 
 .video-container {
     width: 100%;
-    max-width: 720px;
+    max-width: 320px;
     background-color: #222;
     display: flex;
     flex-direction: column;
@@ -93,10 +106,12 @@ h1 {
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     padding: 1rem;
+    margin: 0 auto;
 }
 
 video {
     width: 100%;
+    max-width: 320px;
     height: auto;
     display: block;
     border-radius: 12px;
@@ -154,15 +169,12 @@ video {
     display: none;
 }
 
-/* Booking Form Container */
 .booking-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
 }
 
-/* Booking Form */
 .booking-form {
     background-color: #222;
     padding: 30px;
@@ -176,12 +188,14 @@ video {
     text-align: center;
     margin-bottom: 20px;
     font-weight: 700;
+    color: #f0f0f0;
 }
 
 .booking-form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #f0f0f0;
 }
 
 .booking-form input,
@@ -216,7 +230,6 @@ video {
     background-color: #d62828;
 }
 
-/* Tour Tables */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -249,11 +262,7 @@ tr:hover {
     background-color: #2a2a2a;
 }
 
-/* Band Members Section */
 .band-members {
-    padding: 40px 20px;
-    background-color: #111;
-    color: #f0f0f0;
     text-align: center;
 }
 
@@ -295,14 +304,13 @@ tr:hover {
     color: #ccc;
 }
 
-/* Footer (Always Visible) */
 .site-footer {
-    background-color: #1c1c1c;
-    color: #f0f0f0;
     padding: 30px 20px;
     text-align: center;
     margin-top: 60px;
     border-top: 1px solid #333;
+    background-color: #222;
+    color: #f0f0f0;
 }
 
 .footer-content {
@@ -336,7 +344,6 @@ tr:hover {
     opacity: 1;
 }
 
-/* Mobile Styles */
 @media (max-width: 600px) {
     .nav {
         flex-wrap: wrap;
