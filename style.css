@@ -213,7 +213,7 @@ button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 12px 24px;
+    padding: 12px 20px;
     margin: 8px 10px 8px 0;
     font-size: 16px;
     font-weight: 600;
@@ -230,6 +230,7 @@ a button {
     display: inline-block;
     text-decoration: none;
 }
+
 
 /* ======== Booking Form ======== */
 
