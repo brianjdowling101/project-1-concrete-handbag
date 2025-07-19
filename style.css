@@ -141,6 +141,52 @@ tr:hover {
     background-color: #2a2a2a;
 }
 
+/* Band Members Section */
+.band-members {
+    padding: 40px 20px;
+    background-color: #111;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.band-members h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.member-card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.member-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.member-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.member-card p {
+    font-size: 0.95em;
+    color: #ccc;
+}
+
 /* Mobile Styles */
 @media (max-width: 600px) {
     .nav {
