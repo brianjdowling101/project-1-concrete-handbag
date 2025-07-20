@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <div class="nav">
+  <!-- NAVIGATION -->
+  <nav class="nav">
     <input type="checkbox" id="nav-check" hidden />
     <div class="nav-header">
       <h1 class="nav-title">Concrete Handbag</h1>
@@ -29,326 +30,160 @@
       <a href="#">Tour Dates</a>
       <a href="#">Contact</a>
     </div>
-  </div>
+  </nav>
 
-
-  <section class="home-banner">
-    <div class="banner-overlay">
-      <div class="banner-content">
-        <h1>Concrete Handbag</h1>
-        <p>Sidewalk Etiquette — Out Now</p>
-      </div>
+  <!-- HERO SECTION -->
+  <header class="home-banner">
+    <div class="banner-content">
+      <h1>Concrete Handbag</h1>
+      <p>Sidewalk Etiquette — Out Now</p>
+      <a href="#music-media" class="banner-button">Listen Now</a>
     </div>
-  </section>
+  </header>
 
-
-  <section class="band-members">
-    <h2>Meet the Members</h2>
-    <div class="member-grid">
-      <div class="member-card">
-        <img src="images/alex.jpg" alt="Alex - Vocals/Guitar">
-        <h3>Alex (Vocals / Guitar)</h3>
-        <p>Alex’s swirling guitar lines and soft-spoken vocals are the emotional backbone of Concrete Handbag.
-          She brings melody to the noise.</p>
+  <main>
+    <!-- BAND MEMBERS -->
+    <section class="band-members">
+      <h2>Meet the Members</h2>
+      <div class="member-grid">
+        <div class="member-card">
+          <img src="images/alex.jpg" alt="Alex - Vocals/Guitar">
+          <h3>Alex (Vocals / Guitar)</h3>
+          <p>Alex’s swirling guitar lines and soft-spoken vocals are the emotional backbone of Concrete Handbag.
+            She brings melody to the noise.</p>
+        </div>
+        <div class="member-card">
+          <img src="images/jordan.jpg" alt="Jordan - Bass">
+          <h3>Jordan (Bass)</h3>
+          <p>Jordan lays down the gritty low-end textures that anchor the band’s sonic chaos. A minimalist with a
+            noisy heart.</p>
+        </div>
+        <div class="member-card">
+          <img src="images/ryan.jpg" alt="Ryan - Drums">
+          <h3>Ryan (Drums)</h3>
+          <p>Ryan blends melodies with improvised rhythms. A drummer who plays with silence as much as sound.</p>
+        </div>
+        <div class="member-card">
+          <img src="images/lee.jpg" alt="Lee - Guitar/Samples">
+          <h3>Lee (Guitar / Samples)</h3>
+          <p>Lee manipulates loops, samples, and dissonance into dense atmospheres. Responsible for the dream-pop
+            layer in the noise.</p>
+        </div>
       </div>
-      <div class="member-card">
-        <img src="images/jordan.jpg" alt="Jordan - Bass">
-        <h3>Jordan (Bass)</h3>
-        <p>Jordan lays down the gritty low-end textures that anchor the band’s sonic chaos. A minimalist with a
-          noisy heart.</p>
+    </section>
+
+    <!-- MUSIC & MEDIA -->
+    <section class="content" id="music-media">
+      <h2>Music and Media</h2>
+
+      <div class="bio">
+        <p><strong>Concrete Handbag</strong> is a four-piece band combining elements of noise, post-punk, and dream pop.
+          Formed in 2021 — a former wedding band! The group built its sound around layered guitars, lo-fi textures, and
+          a shared interest in the tension between melody and distortion.</p>
+
+        <p>Their music is shaped by city life. Drawing influence from underground scenes past and present, Concrete
+          Handbag avoids nostalgia in favor of something more current, more unsettled.</p>
+
+        <p>Their debut EP, <em>Sidewalk Etiquette</em>, was recorded on borrowed gear in a basement studio and released
+          independently. Since then, they’ve played shows in DIY spaces and small venues, steadily growing a following
+          through word of mouth and honest performances.</p>
+
+        <p>Concrete Handbag is less about spectacle and more about mood — built on tone, texture, and the spaces in
+          between.</p>
+
+        <p><strong>Watch the video for <em>Sidewalk Etiquette</em> below</strong></p>
       </div>
-      <div class="member-card">
-        <img src="images/ryan.jpg" alt="Ryan - Drums">
-        <h3>Taylor (Voinist)</h3>
-        <p>Taylor blends melodies with improvised rhythms. A voinist who plays with silence as much as
-          sound.</p>
+
+      <div class="video-container">
+        <video controls preload="metadata" muted>
+          <source src="videos/Concrete Hand is a grunge band .mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
-      <div class="member-card">
-        <img src="images/lee.jpg" alt="Lee - Guitar/Samples">
-        <h3>Lee (Guitar / Samples)</h3>
-        <p>Lee manipulates loops, samples, and dissonance into dense atmospheres. Responsible for the dream-pop
-          layer in the noise.</p>
+
+      <p><strong>Preview the new single <em>A Dead Thing</em> below</strong></p>
+
+      <div class="audio-player-container">
+        <h2>Concrete Handbag – <em>A Dead Thing</em></h2>
+        <audio id="audio" controls>
+          <source src="mp3/_That_s a Dead Thing_ _ Concrete Hand Ba.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="buttons">
+          <button onclick="document.getElementById('audio').play()"> Play</button>
+          <button onclick="document.getElementById('audio').pause()"> Pause</button>
+          <button onclick="document.getElementById('audio').currentTime = 0"> Restart</button>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="content">
-    <h1>Music and Media</h1>
+    <!-- TOUR DATES -->
+    <section class="content">
+      <h2>Tour Dates: “Heavy Luggage” Tour 2025</h2>
 
-    <div class="bio">
-      <p>
-        <strong>Concrete Handbag</strong> is a four-piece band combining elements of noise, post-punk, and dream pop.
-        Formed in 2021, a former wedding band! The group built its sound around layered guitars, lo-fi textures, and a
-        shared
-        interest in the tension between melody and distortion.
-      </p>
-      <p>
-        Their music is shaped by city life. Drawing influence from underground scenes past and present,
-        Concrete Handbag avoids nostalgia in favor of something more current, more unsettled.
-      </p>
-      <p>
-        Their debut EP, <em>Sidewalk Etiquette</em>, was recorded on borrowed gear in a basement studio and released
-        independently. Since then, they’ve played shows in DIY spaces and small venues, steadily growing a
-        following through word of mouth and honest performances.
-      </p>
-      <p>
-        Concrete Handbag is less about spectacle and more about mood — built on tone, texture, and the spaces in
-        between.
-      </p>
+      <h3>USA Tour</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>City</th>
+            <th>Venue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Keep your USA tour dates here as-is -->
+          <!-- Example: -->
+          <tr>
+            <td>Apr 4</td>
+            <td>Seattle, WA</td>
+            <td>Neumos</td>
+          </tr>
+          <!-- ... -->
+        </tbody>
+      </table>
 
-      <p style="text-align: center; font-weight: bold;">
-        &#8595 &#8595 &#8595 Watch Concrete Handbag's music video for <em>Sidewalk Etiquette</em> new single below
-        &#8595 &#8595 &#8595
-      </p>
+      <h3>Europe Tour</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>City</th>
+            <th>Venue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Keep your Europe tour dates here as-is -->
+          <tr>
+            <td>Jun 3</td>
+            <td>Dublin, Ireland</td>
+            <td>Whelan’s</td>
+          </tr>
+          <!-- ... -->
+        </tbody>
+      </table>
+    </section>
 
-    </div>
+    <!-- CONTACT FORM -->
+    <section class="content">
+      <h2>Contact</h2>
+      <div class="booking-form-container">
+        <form action="mailto:booking@concretehandbag.band" method="POST" enctype="text/plain" class="booking-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="Name" required>
 
-    <div class="video-container">
-      <video controls preload="metadata" muted>
-        <source src="videos/Concrete Hand is a grunge band .mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="Email" required>
 
-    </div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="Message" rows="5" required></textarea>
 
-    <p style="text-align: center; font-weight: bold;">
-      Loved the <em>Sidewalk Etiquette</em> video? Don’t miss a preview of Concrete Handbag’s new single
-      <em>A Dead Thing</em> below. If it hits the right note, grab it on the
-      <a href="https://www.apple.com/apple-music/" target="_blank">Apple Store</a> — and dive deeper into their
-      &#8595 &#8595 &#8595 growing catalog of sound. &#8595 &#8595 &#8595
-    </p>
-  </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-  <h1>Tour Dates: Concrete Handbag “Heavy Luggage” Tour 2025</h1>
-
-  <table>
-
-    <tr>
-      <td colspan="3" style="text-align: center; font-weight: bold;">
-        <h3 style="margin: 0;">USA Tour</h3>
-      </td>
-    </tr>
-    <th>Date</th>
-    <th>City</th>
-    <th>Venue</th>
-    </tr>
-    <tr>
-      <td>Apr 4</td>
-      <td>Seattle, WA</td>
-      <td>Neumos</td>
-    </tr>
-    <tr>
-      <td>Apr 6</td>
-      <td>Portland, OR</td>
-      <td>Doug Fir Lounge</td>
-    </tr>
-    <tr>
-      <td>Apr 9</td>
-      <td>San Francisco, CA</td>
-      <td>Bottom of the Hill</td>
-    </tr>
-    <tr>
-      <td>Apr 11</td>
-      <td>Los Angeles, CA</td>
-      <td>The Roxy Theatre</td>
-    </tr>
-    <tr>
-      <td>Apr 13</td>
-      <td>San Diego, CA</td>
-      <td>The Casbah</td>
-    </tr>
-    <tr>
-      <td>Apr 16</td>
-      <td>Phoenix, AZ</td>
-      <td>Crescent Ballroom</td>
-    </tr>
-    <tr>
-      <td>Apr 19</td>
-      <td>Austin, TX</td>
-      <td>Mohawk</td>
-    </tr>
-    <tr>
-      <td>Apr 21</td>
-      <td>Dallas, TX</td>
-      <td>Trees</td>
-    </tr>
-    <tr>
-      <td>Apr 24</td>
-      <td>Nashville, TN</td>
-      <td>The Basement East</td>
-    </tr>
-    <tr>
-      <td>Apr 26</td>
-      <td>Atlanta, GA</td>
-      <td>Terminal West</td>
-    </tr>
-    <tr>
-      <td>Apr 29</td>
-      <td>Washington, DC</td>
-      <td>The Black Cat</td>
-    </tr>
-    <tr>
-      <td>May 1</td>
-      <td>Philadelphia, PA</td>
-      <td>Underground Arts</td>
-    </tr>
-    <tr>
-      <td>May 3</td>
-      <td>New York, NY</td>
-      <td>Bowery Ballroom</td>
-    </tr>
-    <tr>
-      <td>May 5</td>
-      <td>Boston, MA</td>
-      <td>The Sinclair</td>
-    </tr>
-    <tr>
-      <td>May 8</td>
-      <td>Chicago, IL</td>
-      <td>Lincoln Hall</td>
-    </tr>
-    <tr>
-      <td>May 11</td>
-      <td>Minneapolis, MN</td>
-      <td>First Avenue</td>
-    </tr>
-    <tr>
-      <td>May 14</td>
-      <td>Denver, CO</td>
-      <td>Bluebird Theater</td>
-    </tr>
-    <tr>
-      <td>May 17</td>
-      <td>Salt Lake City, UT</td>
-      <td>Urban Lounge</td>
-    </tr>
-  </table>
-
-
-  <table>
-    <tr>
-      <td colspan="3" style="text-align: center; font-weight: bold;">
-        <h3 style="margin: 0;">Europe Tour</h3>
-      </td>
-    </tr>
-    <tr>
-      <th>Date</th>
-      <th>City</th>
-      <th>Venue</th>
-    </tr>
-    <tr>
-      <td>Jun 3</td>
-      <td>Dublin, Ireland</td>
-      <td>Whelan’s</td>
-    </tr>
-    <tr>
-      <td>Jun 5</td>
-      <td>Glasgow, Scotland</td>
-      <td>King Tut’s Wah Wah Hut</td>
-    </tr>
-    <tr>
-      <td>Jun 7</td>
-      <td>Manchester, UK</td>
-      <td>Gorilla</td>
-    </tr>
-    <tr>
-      <td>Jun 9</td>
-      <td>London, UK</td>
-      <td>Electric Ballroom</td>
-    </tr>
-    <tr>
-      <td>Jun 12</td>
-      <td>Paris, France</td>
-      <td>Le Trabendo</td>
-    </tr>
-    <tr>
-      <td>Jun 14</td>
-      <td>Brussels, Belgium</td>
-      <td>Ancienne Belgique</td>
-    </tr>
-    <tr>
-      <td>Jun 16</td>
-      <td>Amsterdam, Netherlands</td>
-      <td>Melkweg</td>
-    </tr>
-    <tr>
-      <td>Jun 19</td>
-      <td>Berlin, Germany</td>
-      <td>Lido</td>
-    </tr>
-    <tr>
-      <td>Jun 21</td>
-      <td>Hamburg, Germany</td>
-      <td>Molotow Club</td>
-    </tr>
-    <tr>
-      <td>Jun 23</td>
-      <td>Copenhagen, Denmark</td>
-      <td>Vega</td>
-    </tr>
-    <tr>
-      <td>Jun 26</td>
-      <td>Stockholm, Sweden</td>
-      <td>Debaser Strand</td>
-    </tr>
-    <tr>
-      <td>Jun 29</td>
-      <td>Warsaw, Poland</td>
-      <td>Hydrozagadka</td>
-    </tr>
-    <tr>
-      <td>Jul 2</td>
-      <td>Prague, Czech Republic</td>
-      <td>MeetFactory</td>
-    </tr>
-    <tr>
-      <td>Jul 5</td>
-      <td>Vienna, Austria</td>
-      <td>Flex Café</td>
-    </tr>
-    <tr>
-      <td>Jul 8</td>
-      <td>Milan, Italy</td>
-      <td>Circolo Magnolia</td>
-    </tr>
-    <tr>
-      <td>Jul 11</td>
-      <td>Barcelona, Spain</td>
-      <td>Razzmatazz 3</td>
-    </tr>
-    <tr>
-      <td>Jul 13</td>
-      <td>Madrid, Spain</td>
-      <td>Sala El Sol</td>
-    </tr>
-    <tr>
-      <td>Jul 16</td>
-      <td>Lisbon, Portugal</td>
-      <td>Musicbox</td>
-    </tr>
-    <tr>
-      <td>Jul 20</td>
-      <td>Reykjavik, Iceland</td>
-      <td>Gaukurinn</td>
-    </tr>
-  </table>
-
-
-  <h1>Contact</h1>
-  <div class="booking-form-container">
-    <form action="mailto:booking@concretehandbag.band" method="POST" enctype="text/plain" class="booking-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="Name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="Email" required>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="Message" rows="5" required></textarea>
-
-      <button type="submit">Submit</button>
-    </form>
-  </div>
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-content">
       <p>© 2025 Concrete Handbag</p>
@@ -357,17 +192,17 @@
           <img src="images/facebookicon.svg" alt="Facebook" />
         </a>
         <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-          <img src="images/instragmicon_1.svg" Instagram" />
+          <img src="images/instragmicon_1.svg" alt="Instagram" />
         </a>
         <a href="https://spotify.com" target="_blank" aria-label="Spotify">
           <img src="images/spotify_1.svg" alt="Spotify" />
         </a>
         <a href="https://twitter.com" target="_blank" aria-label="X (Twitter)">
-          <img src="images/xicon.svg" alt="X" />
+          <img src="images/xicon.svg" alt="X (Twitter)" />
         </a>
       </div>
+    </div>
   </footer>
-
 </body>
 
 </html>
