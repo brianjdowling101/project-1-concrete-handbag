@@ -32,7 +32,8 @@ h2 {
 
 .nav-header .nav-title {
     font-size: 22px;
-    color: #ffffff69;
+    color: rgba(255, 255, 255, 0.41);
+    /* clearer rgba instead of hex with alpha */
 }
 
 .nav-links {
@@ -73,7 +74,8 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 40px 20px;
     border-radius: 10px;
-    text-align: center;
+    max-width: 600px;
+    margin: 0 1rem;
 }
 
 .banner-content h1 {
@@ -176,6 +178,7 @@ video {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 320px;
+    margin: 0 auto 2rem auto;
 }
 
 .audio-player-container h2 {
@@ -245,6 +248,7 @@ button:hover {
     text-align: center;
     margin-bottom: 20px;
     font-weight: 700;
+    color: #f0f0f0;
 }
 
 .booking-form label {
@@ -269,6 +273,7 @@ button:hover {
     outline: 2px solid #666;
 }
 
+/* Submit button style matches banner */
 .booking-form button {
     width: 100%;
     padding: 12px;
@@ -392,49 +397,104 @@ tr:hover {
     opacity: 1;
 }
 
-/* ======= RESPONSIVE NAV ======= */
-@media (max-width: 600px) {
-    .nav {
-        flex-wrap: wrap;
-        height: auto;
-    }
+/* ======= MERCH SECTION ======= */
+.merch-section {
+    max-width: 700px;
+    margin: 2rem auto;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-    .nav-btn {
-        display: block;
-    }
+/* ======= VERTICAL SLIDING NAVBAR ======= */
 
-    .nav-btn label {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        padding: 13px;
-    }
+/* Hide the checkbox */
+#nav-toggle {
+    display: none;
+}
 
-    .nav-btn label span {
-        height: 2px;
-        background: #eee;
-        margin: 5px 0;
-        width: 25px;
-    }
+/* Hamburger button */
+.nav-btn {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #e63946;
+    width: 40px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 1001;
+    border-radius: 5px;
+}
 
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-        overflow: hidden;
-        max-height: 0;
-        background-color: #333;
-        transition: max-height 0.3s ease-in-out;
-    }
+/* Hamburger bars */
+.nav-btn span,
+.nav-btn span::before,
+.nav-btn span::after {
+    display: block;
+    background: white;
+    height: 4px;
+    width: 25px;
+    border-radius: 2px;
+    position: absolute;
+    transition: all 0.3s ease;
+}
 
-    .nav-links a {
-        display: block;
-        width: 100%;
-    }
+.nav-btn span {
+    top: 50%;
+    margin-top: -2px;
+    position: relative;
+}
 
-    #nav-check:checked~.nav-links {
-        max-height: 500px;
-    }
+.nav-btn span::before {
+    content: '';
+    top: -10px;
+    position: absolute;
+    left: 0;
+}
+
+.nav-btn span::after {
+    content: '';
+    top: 10px;
+    position: absolute;
+    left: 0;
+}
+
+/* Navigation panel */
+.nav-menu {
+    position: fixed;
+    top: -100vh;
+    /* hidden above the screen */
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: #efefef;
+    text-align: center;
+    transition: top 0.4s ease;
+    z-index: 1000;
+    padding-top: 60px;
+    /* space for button */
+}
+
+/* Show menu when checkbox checked */
+#nav-toggle:checked~.nav-menu {
+    top: 0;
+}
+
+/* Nav links vertical */
+.nav-menu a {
+    display: block;
+    padding: 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #efefef;
+    border-bottom: 1px solid #555;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }

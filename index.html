@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Concrete Handbag</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
@@ -24,17 +29,17 @@
       </label>
     </div>
     <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Meet The Band</a>
-      <a href="#">Music & Media</a>
-      <a href="#">Tour Dates</a>
-      <a href="#">Merch & Support</a>
-      <a href="#">Contact</a>
+      <a href="#home-banner">Home</a>
+      <a href="#band-members">Meet The Band</a>
+      <a href="#music-media">Music & Media</a>
+      <a href="#tour-dates">Tour Dates</a>
+      <a href="#merch-support">Merch & Support</a>
+      <a href="#contact">Contact</a>
     </div>
   </nav>
 
   <!-- HERO SECTION -->
-  <header class="home-banner">
+  <header class="home-banner" id="home-banner">
     <div class="banner-content">
       <h1>Concrete Handbag</h1>
       <p>New Music Video</p>
@@ -45,31 +50,31 @@
 
   <main>
     <!-- BAND MEMBERS -->
-    <section class="band-members">
+    <section class="band-members" id="band-members">
       <h2>Meet the Members</h2>
       <div class="member-grid">
         <div class="member-card">
-          <img src="images/alex.jpg" alt="Alex - Vocals/Guitar">
+          <img src="images/alex.jpg" alt="Alex - Vocals/Guitar" />
           <h3>Alex (Vocals / Guitar)</h3>
           <p>Alex’s swirling guitar lines and soft-spoken vocals are the emotional backbone of Concrete Handbag.
             She brings melody to the noise.</p>
         </div>
         <div class="member-card">
-          <img src="images/jordan.jpg" alt="Jordan - Bass">
+          <img src="images/jordan.jpg" alt="Jordan - Bass" />
           <h3>Jordan (Bass)</h3>
-          <p>Jordan lays down the gritty low-end textures that anchor the band’s sonic chaos. A minimalist with a
-            noisy heart.</p>
+          <p>Jordan lays down the gritty low-end textures that anchor the band’s sonic chaos. A minimalist with a noisy
+            heart.</p>
         </div>
         <div class="member-card">
-          <img src="images/ryan.jpg" alt="Ryan - Drums">
-          <h3>Ryan (Drums)</h3>
-          <p>Ryan blends melodies with improvised rhythms. A drummer who plays with silence as much as sound.</p>
+          <img src="images/ryan.jpg" alt="Taylor - Vionist" />
+          <h3>Taylor (Voinist)</h3>
+          <p>Ryan blends melodies with improvised rhythms. A vionist who plays with silence as much as sound.</p>
         </div>
         <div class="member-card">
-          <img src="images/lee.jpg" alt="Lee - Guitar/Samples">
+          <img src="images/lee.jpg" alt="Lee - Guitar/Samples" />
           <h3>Lee (Guitar / Samples)</h3>
-          <p>Lee manipulates loops, samples, and dissonance into dense atmospheres. Responsible for the dream-pop
-            layer in the noise.</p>
+          <p>Lee manipulates loops, samples, and dissonance into dense atmospheres. Responsible for the dream-pop layer
+            in the noise.</p>
         </div>
       </div>
     </section>
@@ -80,37 +85,25 @@
 
       <div class="bio">
         <section style="max-width: 700px; margin: 0 auto; font-family: sans-serif; line-height: 1.6;">
-
-          <p>
-            <strong>Concrete Handbag</strong> is a four-piece band blending noise, post-punk, and dream pop.
-            Originally formed in 2021 as a former wedding band. They built their sound around layered guitars, lo-fi
-            textures,
-            and a shared fascination with the tension between melody and distortion.
-          </p>
-          <p>
-            Influenced by city life and underground scenes past and present. The band avoids nostalgia,
-            aiming instead for a sound that feels raw, current, and deliberately unsettled.
-          </p>
-          <p>
-            Their debut EP, <em>Sidewalk Etiquette</em>, was recorded using borrowed gear in a basement studio and
-            released independently.
-            Since then, they’ve performed in DIY spaces and small venues, steadily growing a following through
-            word-of-mouth and emotionally honest shows.
-          </p>
-          <p style="margin-top: 1.5em;">
-            🎧 Listen to <strong>Sidewalk Etiquette</strong> now on
-            <a href="https://music.apple.com/" target="_blank" style="color: #0070c9; text-decoration: none;">Apple
-              Music</a>.
-          </p>
+          <p><strong>Concrete Handbag</strong> is a four-piece band blending noise, post-punk, and dream pop. Originally
+            formed in 2021 as a former wedding band. They built their sound around layered guitars, lo-fi textures, and
+            a shared fascination with the tension between melody and distortion.</p>
+          <p>Influenced by city life and underground scenes past and present. The band avoids nostalgia, aiming instead
+            for a sound that feels raw, current, and deliberately unsettled.</p>
+          <p>Their debut EP, <em>Sidewalk Etiquette</em>, was recorded using borrowed gear in a basement studio and
+            released independently. Since then, they’ve performed in DIY spaces and small venues, steadily growing a
+            following through word-of-mouth and emotionally honest shows.</p>
+          <p style="margin-top: 1.5em;">🎧 Listen to <strong>Sidewalk Etiquette</strong> now on <a
+              href="https://music.apple.com/" target="_blank" style="color: #0070c9; text-decoration: none;">Apple
+              Music</a>.</p>
         </section>
-
 
         <p><strong>Watch the video for <em>Sidewalk Etiquette</em> below</strong></p>
       </div>
 
       <div class="video-container">
         <video controls preload="metadata" muted>
-          <source src="videos/Concrete Hand is a grunge band .mp4" type="video/mp4">
+          <source src="videos/Concrete Hand is a grunge band .mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -120,14 +113,14 @@
       <div class="audio-player-container">
         <h2>Concrete Handbag – <em>A Dead Thing</em></h2>
         <audio id="audio" controls>
-          <source src="mp3/_That_s a Dead Thing_ _ Concrete Hand Ba.mp3" type="audio/mpeg">
+          <source src="mp3/_That_s a Dead Thing_ _ Concrete Hand Ba.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
       </div>
     </section>
-    <section>
-      <h1>Tour Dates 2025: Heavy Luggage!!!</h1>
 
+    <section id="tour-dates">
+      <h1>Tour Dates 2025: Heavy Luggage!!!</h1>
 
       <table>
         <thead>
@@ -348,51 +341,46 @@
       </table>
     </section>
 
-    <section style="max-width: 700px; margin: 2em auto; font-family: sans-serif; line-height: 1.6; text-align: center;">
-
-
+    <section id="merch-support"
+      style="max-width: 700px; margin: 2em auto; font-family: sans-serif; line-height: 1.6; text-align: center;">
       <h2>Merch & Support</h2>
 
       <img src="images/band-jam-singer-center.jpg" alt="Concrete Handbag Merch"
         style="max-width: 100%; height: auto; margin-bottom: 1.5em; border-radius: 8px;" />
 
       <p>
-        Want to rep Concrete Handbag? You can grab official band merch — including shirts, pins, tapes, and more —
-        over on our <a href="https://www.etsy.com" target="_blank" style="color: #0070c9; text-decoration: none;">Etsy
+        Want to rep Concrete Handbag? You can grab official band merch — including shirts, pins, tapes, and more — over
+        on our <a href="https://www.etsy.com" target="_blank" style="color: #0070c9; text-decoration: none;">Etsy
           shop</a>.
       </p>
 
       <p>
         If you’d like to support us more directly and get access to exclusive content, demos, behind-the-scenes updates,
-        and more,
-        consider signing up for our <a href="https://www.patreon.com" target="_blank"
+        and more, consider signing up for our <a href="https://www.patreon.com" target="_blank"
           style="color: #e85a3c; text-decoration: none;">Patreon</a>.
       </p>
 
       <p>
         10% of all merch and Patreon proceeds go directly to <a href="https://www.focusireland.ie/" target="_blank"
-          style="color: #009639; text-decoration: none;">Focus Ireland</a>,
-        helping to combat homelessness and housing insecurity.
+          style="color: #009639; text-decoration: none;">Focus Ireland</a>, helping to combat homelessness and housing
+        insecurity.
       </p>
     </section>
 
-
-
     <!-- CONTACT FORM -->
-    <section class="content">
+    <section class="content" id="contact">
       <h2>Contact</h2>
       <p>
-        <strong>Have a question or want to book us for an event?</strong>
-        Reach out about weddings, festivals, corporate events, or merchandise orders!
-        Just drop us a message below! &#8595 &#8595 &#8595
+        <strong>Have a question or want to book us for an event?</strong> Reach out about weddings, festivals, corporate
+        events, or merchandise orders! Just drop us a message below! &#8595;&#8595;&#8595;
       </p>
       <div class="booking-form-container">
         <form action="mailto:booking@concretehandbag.band" method="POST" enctype="text/plain" class="booking-form">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="Name" required>
+          <input type="text" id="name" name="Name" required />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="Email" required>
+          <input type="email" id="email" name="Email" required />
 
           <label for="message">Message:</label>
           <textarea id="message" name="Message" rows="5" required></textarea>
@@ -417,11 +405,11 @@
         <a href="https://instagram.com" target="_blank" aria-label="Instagram">
           <img src="images/instragmicon_1.svg" alt="Instagram" />
         </a>
-        <a href="https://spotify.com" target="_blank" aria-label="Spotify">
+        <a href="https://twitter.co" target="_blank" aria-label="Spotify">
           <img src="images/spotify_1.svg" alt="Spotify" />
         </a>
-        <a href="https://twitter.com" target="_blank" aria-label="X (Twitter)">
-          <img src="images/xicon.svg" alt="X (Twitter)" />
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <img src="images/xicon.svg" alt="Twitter" />
         </a>
       </div>
     </div>
