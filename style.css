@@ -25,7 +25,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 01px;
+    padding: 0 05px;
     color: #333;
     position: fixed;
     z-index: 10;
