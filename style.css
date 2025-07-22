@@ -35,7 +35,16 @@ h2 {
 .nav-title {
     margin-left: 20px;
     text-decoration: none;
-    /* moves it 20px to the right */
+    border-bottom: none;
+    /* removes bottom border if any */
+    box-shadow: none;
+    /* removes any shadow */
+    text-decoration: none;
+    /* removes underline if it's a link */
+    margin-bottom: 0;
+    /* removes bottom margin to reduce space */
+    padding-bottom: 0;
+
 }
 
 .nav-header .nav-title {
