@@ -78,7 +78,7 @@ h2 {
 /* ======= BANNER ======= */
 .home-banner {
     background: url('images/banner.jpg') center center / cover no-repeat;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
