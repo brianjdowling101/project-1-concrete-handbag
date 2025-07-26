@@ -419,7 +419,47 @@ tr:hover {
 
 /* ======= MERCH SECTION ======= */
 .merch-section {
-    max-width: 700px;
+    max-width: 500px;
     margin: 2rem auto;
     font-family: 'Segoe UI', sans-serif;
+
+}
+
+.merch-support-section {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 700px;
+    text-align: center;
+    line-height: 1.6
+}
+
+.anchor-offset {
+    position: relative;
+    top: -100px;
+    height: 0;
+    visibility: hidden;
+}
+
+.merch-image {
+    display: block;
+    margin: 0 auto 1em;
+    max-width: 40%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Link colors */
+.link-etsy {
+    color: #0070c9;
+    text-decoration: none;
+}
+
+.link-patreon {
+    color: #e85a3c;
+    text-decoration: none;
+}
+
+.link-focus {
+    color: #009639;
+    text-decoration: none;
 }
