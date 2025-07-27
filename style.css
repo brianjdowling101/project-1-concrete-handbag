@@ -505,3 +505,38 @@ tr:hover {
     color: #009639;
     text-decoration: none;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive layout example */
+header,
+main,
+footer {
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+
+    /* Styles for small screens */
+    header,
+    main,
+    footer {
+        padding: 10px;
+    }
+}
