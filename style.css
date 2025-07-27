@@ -532,7 +532,7 @@ footer {
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     .navbar ul {
         flex-direction: row;
         /* horizontal for bigger screens */
