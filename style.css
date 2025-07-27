@@ -534,7 +534,7 @@ footer {
 
 
 @media (min-width: 600px) {
-    .nav nav-header nav-title ul {
+    .nav .nav-header .nav-title ul {
         flex-direction: row;
         /* horizontal for bigger screens */
         width: auto;
