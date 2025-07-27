@@ -534,7 +534,7 @@ footer {
 
 
 @media (min-width: 600px) {
-    .navbar ul {
+    .nav ul {
         flex-direction: row;
         /* horizontal for bigger screens */
         width: auto;
@@ -542,16 +542,16 @@ footer {
         background-color: transparent;
     }
 
-    .navbar ul li {
+    .nav ul li {
         border: none;
     }
 
-    .navbar ul li a {
+    .nav ul li a {
         color: black;
         padding: 10px 15px;
     }
 
-    .navbar ul li a:hover {
+    .nav ul li a:hover {
         background-color: transparent;
         color: blue;
     }
