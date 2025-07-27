@@ -1,4 +1,3 @@
-/* Basic page styles */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -6,8 +5,7 @@ body {
     color: #f0f0f0;
 }
 
-/*  HEADINGS  */
-/* Style for h1 and h2 headings */
+/* HEADINGS */
 h1,
 h2 {
     font-size: 2rem;
@@ -18,7 +16,7 @@ h2 {
     color: #f0f0f0;
 }
 
-/* NAVIGATION */
+/*  NAVIGATION */
 /* Navigation bar container */
 .nav {
     width: 100%;
@@ -31,6 +29,7 @@ h2 {
     color: #333;
     position: fixed;
     z-index: 10;
+
 }
 
 /* Site title/link in nav */
@@ -38,24 +37,30 @@ h2 {
     margin-left: 20px;
     text-decoration: none;
     border-bottom: none;
+    /* removes bottom border if any */
     box-shadow: none;
+    /* removes any shadow */
+    text-decoration: none;
+    /* removes underline if it's a link */
     margin-bottom: 0;
+    /* removes bottom margin to reduce space */
     padding-bottom: 0;
+
 }
 
-/* Header style for nav title */
 .nav-header .nav-title {
     font-size: 22px;
     color: rgba(255, 255, 255, 0.41);
+    /* clearer rgba instead of hex with alpha */
 }
 
 /* Nav links container */
+
 .nav-links {
     display: flex;
     gap: 10px;
 }
 
-/* Individual nav links */
 .nav-links a {
     padding: 13px 10px;
     color: #efefef;
@@ -63,19 +68,17 @@ h2 {
     transition: background 0.3s;
 }
 
-/* Hover effect for nav links */
 .nav-links a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Hide mobile nav toggle by default */
 #nav-check,
 .nav-btn {
     display: none;
 }
 
+
 /*  BANNER  */
-/* Hero/banner section */
 .home-banner {
     background: url('images/banner.jpg') center center / cover no-repeat;
     height: 80vh;
@@ -86,6 +89,7 @@ h2 {
     position: relative;
     color: #fff;
     box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+    position: relative;
     z-index: 1;
 }
 
@@ -98,13 +102,11 @@ h2 {
     margin: 0 1rem;
 }
 
-/* Banner heading */
 .banner-content h1 {
     font-size: 3em;
     margin-bottom: 10px;
 }
 
-/* Banner subtext */
 .banner-content p {
     font-size: 1.2em;
     margin-bottom: 20px;
@@ -128,8 +130,7 @@ h2 {
     background-color: #d62828;
 }
 
-/* SECTIONS SHARED  */
-/* Shared layout for main sections */
+/* ======= SECTIONS SHARED ======= */
 .home-banner,
 .content,
 .band-members,
@@ -139,15 +140,13 @@ h2 {
     padding: 40px 20px;
 }
 
-/*  CONTENT  */
-/* Wrapper for content area */
+/*  CONTENT */
 .content {
     max-width: 800px;
     margin: 0 auto;
 }
 
 /* BIO  */
-/* Band bio section */
 .bio {
     font-size: 1rem;
     line-height: 1.6;
@@ -155,7 +154,7 @@ h2 {
     text-align: center;
 }
 
-/* VIDEO PLAYER  */
+/*  VIDEO PLAYER  */
 /* Container for video player */
 .video-container {
     max-width: 320px;
@@ -203,7 +202,6 @@ video {
 }
 
 /*  AUDIO PLAYER  */
-/* Audio player wrapper */
 .audio-player-container {
     background-color: #fff;
     padding: 30px;
@@ -214,33 +212,28 @@ video {
     margin: 0 auto 2rem auto;
 }
 
-/* Title above audio player */
 .audio-player-container h2 {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: #333;
 }
 
-/* Style for audio element */
 audio {
     width: 100%;
     margin-bottom: 15px;
 }
 
-/* Buttons container */
 .buttons {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
 }
 
-/* Note below audio */
 .note {
     font-size: 0.85rem;
     color: #666;
 }
 
-/* Links inside note */
 .note a {
     color: #0070f3;
     text-decoration: none;
@@ -250,8 +243,7 @@ audio {
     text-decoration: underline;
 }
 
-/* BUTTONS SHARED */
-/* General button style */
+/*  BUTTONS SHARED  */
 button {
     background-color: #000;
     color: #fff;
@@ -267,15 +259,13 @@ button:hover {
     background-color: #444;
 }
 
-/* BOOKING FORM  */
-/* Form section container */
+/*  BOOKING FORM  */
 .booking-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Style for the form */
 .booking-form {
     background-color: #222;
     padding: 30px;
@@ -285,7 +275,6 @@ button:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
 }
 
-/* Form heading */
 .booking-form h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -293,14 +282,12 @@ button:hover {
     color: #f0f0f0;
 }
 
-/* Label style */
 .booking-form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-/* Input and textarea fields */
 .booking-form input,
 .booking-form textarea {
     width: 100%;
@@ -312,13 +299,12 @@ button:hover {
     color: #fff;
 }
 
-/* Focus effect */
 .booking-form input:focus,
 .booking-form textarea:focus {
     outline: 2px solid #666;
 }
 
-/* Submit button */
+/* Submit button style matches banner */
 .booking-form button {
     width: 100%;
     padding: 12px;
@@ -331,7 +317,6 @@ button:hover {
 }
 
 /*  TABLE  */
-/* General table styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -341,7 +326,6 @@ table {
     font-size: 0.95rem;
 }
 
-/* Table cells */
 th,
 td {
     padding: 12px 15px;
@@ -349,36 +333,30 @@ td {
     text-align: left;
 }
 
-/* Header row */
 th {
     background-color: #333;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
-/* Even rows */
 tr:nth-child(even) {
     background-color: #222;
 }
 
-/* Hover effect */
 tr:hover {
     background-color: #2a2a2a;
 }
 
-/*  BAND MEMBERS */
-/* Section wrapper */
+/*  BAND MEMBERS  */
 .band-members {
     text-align: center;
 }
 
-/* Heading */
 .band-members h2 {
     font-size: 2em;
     margin-bottom: 30px;
 }
 
-/* Grid layout */
 .member-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -415,8 +393,7 @@ tr:hover {
     color: #ccc;
 }
 
-/* FOOTER */
-/* Footer section */
+/*  FOOTER  */
 .site-footer {
     padding: 30px 20px;
     margin-top: 60px;
@@ -424,7 +401,8 @@ tr:hover {
     text-align: center;
 }
 
-/* Footer content layout */
+/* Copyright */
+
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -432,7 +410,6 @@ tr:hover {
     gap: 15px;
 }
 
-/* Copyright */
 .footer-content p {
     font-size: 0.9rem;
     margin: 0;
@@ -440,6 +417,7 @@ tr:hover {
 }
 
 /* Social media icons */
+
 .social-links {
     display: flex;
     gap: 25px;
@@ -458,15 +436,16 @@ tr:hover {
     opacity: 1;
 }
 
-/* MERCH SECTION */
-/* Merch container */
+/*  MERCH SECTION */
 .merch-section {
     max-width: 500px;
     margin: 2rem auto;
     font-family: 'Segoe UI', sans-serif;
+
 }
 
 /* Support info section */
+
 .merch-support-section {
     margin: 0 auto;
     padding: 0;
@@ -476,6 +455,7 @@ tr:hover {
 }
 
 /* Offset for anchor links */
+
 .anchor-offset {
     position: relative;
     top: -100px;
@@ -491,6 +471,7 @@ tr:hover {
     height: auto;
     border-radius: 4px;
 }
+
 
 /* Link colors for different platforms */
 .link-etsy {
