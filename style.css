@@ -5,7 +5,7 @@ body {
     color: #f0f0f0;
 }
 
-/* HEADINGS */
+/* Headings */
 h1,
 h2 {
     font-size: 2rem;
@@ -29,38 +29,31 @@ h2 {
     color: #333;
     position: fixed;
     z-index: 10;
-
 }
 
-/* Site title/link in nav */
+/* Site title or logo inside nav */
 .nav-title {
     margin-left: 20px;
     text-decoration: none;
     border-bottom: none;
-    /* removes bottom border if any */
     box-shadow: none;
-    /* removes any shadow */
-    text-decoration: none;
-    /* removes underline if it's a link */
     margin-bottom: 0;
-    /* removes bottom margin to reduce space */
     padding-bottom: 0;
-
 }
 
+/* Style for nav title inside header */
 .nav-header .nav-title {
     font-size: 22px;
     color: rgba(255, 255, 255, 0.41);
-    /* clearer rgba instead of hex with alpha */
 }
 
-/* Nav links container */
-
+/* Container for navigation links */
 .nav-links {
     display: flex;
     gap: 10px;
 }
 
+/* Navigation link styling */
 .nav-links a {
     padding: 13px 10px;
     color: #efefef;
@@ -68,17 +61,19 @@ h2 {
     transition: background 0.3s;
 }
 
+/* Hover effect for nav links */
 .nav-links a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* Hide nav checkbox and button (used for responsive menus) */
 #nav-check,
 .nav-btn {
     display: none;
 }
 
-
-/*  BANNER  */
+/*Banner secton */
+/* Main banner container */
 .home-banner {
     background: url('images/banner.jpg') center center / cover no-repeat;
     height: 80vh;
@@ -89,11 +84,10 @@ h2 {
     position: relative;
     color: #fff;
     box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
-    position: relative;
     z-index: 1;
 }
 
-/* Container for banner text */
+/* Inner content of the banner */
 .banner-content {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 40px 20px;
@@ -102,18 +96,20 @@ h2 {
     margin: 0 1rem;
 }
 
+/* Banner heading style */
 .banner-content h1 {
     font-size: 3em;
     margin-bottom: 10px;
 }
 
+/* Banner paragraph style */
 .banner-content p {
     font-size: 1.2em;
     margin-bottom: 20px;
     color: #ddd;
 }
 
-/* Banner button */
+/* Call-to-action button in banner */
 .banner-button {
     display: inline-block;
     padding: 12px 25px;
@@ -125,12 +121,12 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect for banner button */
+/* Hover state for banner button */
 .banner-button:hover {
     background-color: #d62828;
 }
 
-/* ======= SECTIONS SHARED ======= */
+/* Banner */
 .home-banner,
 .content,
 .band-members,
@@ -140,13 +136,14 @@ h2 {
     padding: 40px 20px;
 }
 
-/*  CONTENT */
+/* CONTENT AREA*/
+/* Main content container */
 .content {
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* BIO  */
+/* Biography section */
 .bio {
     font-size: 1rem;
     line-height: 1.6;
@@ -154,8 +151,7 @@ h2 {
     text-align: center;
 }
 
-/*  VIDEO PLAYER  */
-/* Container for video player */
+/* Container for custom video player */
 .video-container {
     max-width: 320px;
     margin: 0 auto;
@@ -169,14 +165,14 @@ h2 {
     align-items: center;
 }
 
-/* Video element style */
+/* Style for video element */
 video {
     width: 100%;
     border-radius: 12px;
     background-color: #000;
 }
 
-/* Container for video controls */
+/* Controls wrapper */
 .controls {
     margin-top: 1rem;
     display: flex;
@@ -184,7 +180,7 @@ video {
     justify-content: center;
 }
 
-/* Video control buttons */
+/* Control buttons */
 .controls button {
     background-color: #333;
     color: #eee;
@@ -196,12 +192,12 @@ video {
     transition: background-color 0.2s ease;
 }
 
-/* Hover effect for video controls */
+/* Hover state for control buttons */
 .controls button:hover {
     background-color: #555;
 }
 
-/*  AUDIO PLAYER  */
+/* Audio player main container */
 .audio-player-container {
     background-color: #fff;
     padding: 30px;
@@ -212,28 +208,33 @@ video {
     margin: 0 auto 2rem auto;
 }
 
+/* Audio player heading */
 .audio-player-container h2 {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: #333;
 }
 
-audio {
+/* Audio element styling */
+.audio {
     width: 100%;
     margin-bottom: 15px;
 }
 
+/* Container for audio buttons */
 .buttons {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
 }
 
+/* Note or extra text in audio section */
 .note {
     font-size: 0.85rem;
     color: #666;
 }
 
+/* Links inside the note */
 .note a {
     color: #0070f3;
     text-decoration: none;
@@ -243,7 +244,7 @@ audio {
     text-decoration: underline;
 }
 
-/*  BUTTONS SHARED  */
+/* Button styles */
 button {
     background-color: #000;
     color: #fff;
@@ -259,13 +260,15 @@ button:hover {
     background-color: #444;
 }
 
-/*  BOOKING FORM  */
+/* Contact form section*/
+/* Booking form container */
 .booking-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Booking form box */
 .booking-form {
     background-color: #222;
     padding: 30px;
@@ -275,6 +278,7 @@ button:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
 }
 
+/* Form heading */
 .booking-form h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -282,12 +286,14 @@ button:hover {
     color: #f0f0f0;
 }
 
+/* Form labels */
 .booking-form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
+/* Input and textarea fields */
 .booking-form input,
 .booking-form textarea {
     width: 100%;
@@ -299,12 +305,13 @@ button:hover {
     color: #fff;
 }
 
+/* Focus effect for form fields */
 .booking-form input:focus,
 .booking-form textarea:focus {
     outline: 2px solid #666;
 }
 
-/* Submit button style matches banner */
+/* Submit button styled like banner button. */
 .booking-form button {
     width: 100%;
     padding: 12px;
@@ -316,7 +323,8 @@ button:hover {
     background-color: #d62828;
 }
 
-/*  TABLE  */
+/* Table for Tour dates */
+/* Main table style */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -326,6 +334,7 @@ table {
     font-size: 0.95rem;
 }
 
+/* Table cell spacing */
 th,
 td {
     padding: 12px 15px;
@@ -333,30 +342,36 @@ td {
     text-align: left;
 }
 
+/* Header cell styling */
 th {
     background-color: #333;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
+/* Zebra stripe effect */
 tr:nth-child(even) {
     background-color: #222;
 }
 
+/* Hover effect for table rows */
 tr:hover {
     background-color: #2a2a2a;
 }
 
-/*  BAND MEMBERS  */
+/* Band Members */
+/* Band members section */
 .band-members {
     text-align: center;
 }
 
+/* Band section heading */
 .band-members h2 {
     font-size: 2em;
     margin-bottom: 30px;
 }
 
+/* Responsive grid for members */
 .member-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -364,7 +379,7 @@ tr:hover {
     justify-items: center;
 }
 
-/* Individual member card */
+/* Card for each member */
 .member-card {
     background-color: #1c1c1c;
     border-radius: 10px;
@@ -387,13 +402,14 @@ tr:hover {
     font-size: 1.2em;
 }
 
-/* Member role/description */
+/* Member role or description */
 .member-card p {
     font-size: 0.95em;
     color: #ccc;
 }
 
-/*  FOOTER  */
+/* Footer */
+/* Main footer container */
 .site-footer {
     padding: 30px 20px;
     margin-top: 60px;
@@ -401,8 +417,7 @@ tr:hover {
     text-align: center;
 }
 
-/* Copyright */
-
+/* Footer inner content */
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -410,19 +425,20 @@ tr:hover {
     gap: 15px;
 }
 
+/* Footer text */
 .footer-content p {
     font-size: 0.9rem;
     margin: 0;
     color: #ccc;
 }
 
-/* Social media icons */
-
+/* Social icon list */
 .social-links {
     display: flex;
     gap: 25px;
 }
 
+/* Social icon style */
 .social-links img {
     width: 28px;
     height: 28px;
@@ -431,39 +447,38 @@ tr:hover {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
+/* Hover effect for icons */
 .social-links img:hover {
     transform: scale(1.15);
     opacity: 1;
 }
 
-/*  MERCH SECTION */
+/* Merch & support section */
+/* Main merch section container */
 .merch-section {
-    max-width: 500px;
+    max-width: 250x;
     margin: 2rem auto;
     font-family: 'Segoe UI', sans-serif;
-
 }
 
-/* Support info section */
-
+/* Support message area */
 .merch-support-section {
-    margin: 0 auto;
-    padding: 0;
+    margin: 10 auto;
+    padding: 10;
     max-width: 700px;
     text-align: center;
     line-height: 1.6
 }
 
-/* Offset for anchor links */
-
+/* Anchor offset for jump links */
 .anchor-offset {
     position: relative;
     top: -100px;
-    height: 0;
+    height: 50;
     visibility: hidden;
 }
 
-/* Image inside merch section */
+/* Merch image style */
 .merch-image {
     display: block;
     margin: 0 auto 1em;
@@ -472,18 +487,20 @@ tr:hover {
     border-radius: 4px;
 }
 
-
-/* Link colors for different platforms */
+/* Link colours */
+/* Etsy link style */
 .link-etsy {
     color: #0070c9;
     text-decoration: none;
 }
 
+/* Patreon link style */
 .link-patreon {
     color: #e85a3c;
     text-decoration: none;
 }
 
+/* Focus link style */
 .link-focus {
     color: #009639;
     text-decoration: none;
