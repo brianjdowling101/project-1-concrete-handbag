@@ -33,7 +33,7 @@ h2 {
 
 /* Site title or logo inside nav */
 .nav-title {
-    margin-left: 20px;
+    margin-left: 50px;
     text-decoration: none;
     border-bottom: none;
     box-shadow: none;
@@ -51,6 +51,7 @@ h2 {
 .nav-links {
     display: flex;
     gap: 10px;
+    margin-right: 80px;
 }
 
 /* Navigation link styling */
