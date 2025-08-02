@@ -423,8 +423,7 @@
           Just drop us a message below! &#8595;
         </p>
         <div class="booking-form-container" style="text-align: left;">
-          <form action="mailto:booking@concretehandbag.band" method="POST" enctype="text/plain" class="booking-form"
-            style="max-width: 600px; margin: 0 auto;">
+          <form id="booking-form" class="booking-form" style="max-width: 600px; margin: 0 auto;">
             <label for="name">Name:</label>
             <input type="text" id="name" name="Name" required
               style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;" />
@@ -444,30 +443,43 @@
         <div style="text-align: center; font-size: 2rem; margin-top: 1em;">
           🤘
         </div>
-      </section>
+
+        <script>
+          const form = document.getElementById('booking-form');
+          const container = form.parentElement; // .booking-form-container
+
+          form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent page reload
+
+            // Replace form with success message
+            container.innerHTML = '<p style="font-size:1.2rem; padding:1em; text-align:center;">Thanks! We’ll get back to you soon!</p>';
+          });
+        </script>
 
 
 
-      <!-- Footer section with social media links -->
-      <footer class="site-footer">
-        <div class="footer-content">
-          <p>© 2025 Concrete Handbag</p>
-          <div class="social-links">
-            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-              <img src="assets/images/facebookicon.svg" alt="Facebook" />
-            </a>
-            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-              <img src="assets/images/instragmicon_1.svg" alt="Instagram" />
-            </a>
-            <a href="https://open.spotify.com/" target="_blank" aria-label="Spotify">
-              <img src="assets/images/spotify_1.svg" alt="Spotify" />
-            </a>
-            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-              <img src="assets/images/xicon.svg" alt="Twitter" />
-            </a>
+
+
+        <!-- Footer section with social media links -->
+        <footer class="site-footer">
+          <div class="footer-content">
+            <p>© 2025 Concrete Handbag</p>
+            <div class="social-links">
+              <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <img src="assets/images/facebookicon.svg" alt="Facebook" />
+              </a>
+              <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <img src="assets/images/instragmicon_1.svg" alt="Instagram" />
+              </a>
+              <a href="https://open.spotify.com/" target="_blank" aria-label="Spotify">
+                <img src="assets/images/spotify_1.svg" alt="Spotify" />
+              </a>
+              <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <img src="assets/images/xicon.svg" alt="Twitter" />
+              </a>
+            </div>
           </div>
-        </div>
-      </footer>
+        </footer>
 </body>
 
 </html>
