@@ -89,7 +89,7 @@ h2 {
 /* ======= BANNER ======= */
 /*  BANNER  */
 .home-banner {
-    background: url('../asset/banner.jpg') center center / cover no-repeat;
+    background: url('asset/images/banner.jpg') center center / cover no-repeat;
     height: 70vh;
     display: flex;
     align-items: center;
@@ -108,16 +108,7 @@ h2 {
     margin: 0 1rem;
 }
 
-.banner-content h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
 
-.banner-content p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    color: #ddd;
-}
 
 .banner-button {
     display: inline-block;
