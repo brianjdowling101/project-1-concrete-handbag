@@ -32,6 +32,21 @@
     </ul>
   </nav>
 
+  <script>
+    // Get references
+    const checkbox = document.getElementById('menu-checkbox');
+    const menuToggle = document.querySelector('.menu-toggle');
+
+    // Listen for all clicks on the document
+    document.addEventListener('click', (event) => {
+      // If checkbox is checked and the click target is NOT inside menuToggle
+      if (checkbox.checked && !menuToggle.contains(event.target)) {
+        checkbox.checked = false; // Close menu
+      }
+    });
+  </script>
+
+
 
 
 
