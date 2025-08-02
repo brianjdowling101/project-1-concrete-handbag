@@ -1,3 +1,4 @@
+/* ======= BA/* ======= BASE ======= */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -5,7 +6,7 @@ body {
     color: #f0f0f0;
 }
 
-/* Headings */
+/* ======= HEADINGS ======= */
 h1,
 h2 {
     font-size: 2rem;
@@ -16,45 +17,27 @@ h2 {
     color: #f0f0f0;
 }
 
-/*  NAVIGATION */
-/* Navigation bar container */
 .nav {
+    position: relative;
     width: 100%;
     height: 50px;
     background-color: #c9c3c3;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 00px;
-    color: #333;
-    position: fixed;
-    z-index: 10;
+    padding: 0 10px;
 }
 
-/* Site title or logo inside nav */
-.nav-title {
-    margin-left: 50px;
-    text-decoration: none;
-    border-bottom: none;
-    box-shadow: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-/* Style for nav title inside header */
 .nav-header .nav-title {
     font-size: 22px;
-    color: rgba(255, 255, 255, 0.41);
+    color: #ffffff69;
 }
 
-/* Container for navigation links */
 .nav-links {
     display: flex;
     gap: 10px;
-    margin-right: 80px;
 }
 
-/* Navigation link styling */
 .nav-links a {
     padding: 13px 10px;
     color: #efefef;
@@ -62,19 +45,25 @@ h2 {
     transition: background 0.3s;
 }
 
-/* Hover effect for nav links */
 .nav-links a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Hide nav checkbox and button (used for responsive menus) */
-#nav-check,
+#nav-check {
+    display: none;
+}
+
+/* Hamburger Button - Hidden by default */
 .nav-btn {
     display: none;
 }
 
-/*Banner secton */
-/* Main banner container */
+
+
+
+
+
+/* ======= BANNER ======= */
 .home-banner {
     background: url('images/banner.jpg') center center / cover no-repeat;
     height: 80vh;
@@ -85,10 +74,10 @@ h2 {
     position: relative;
     color: #fff;
     box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+    position: relative;
     z-index: 1;
 }
 
-/* Inner content of the banner */
 .banner-content {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 40px 20px;
@@ -97,20 +86,17 @@ h2 {
     margin: 0 1rem;
 }
 
-/* Banner heading style */
 .banner-content h1 {
     font-size: 3em;
     margin-bottom: 10px;
 }
 
-/* Banner paragraph style */
 .banner-content p {
     font-size: 1.2em;
     margin-bottom: 20px;
     color: #ddd;
 }
 
-/* Call-to-action button in banner */
 .banner-button {
     display: inline-block;
     padding: 12px 25px;
@@ -122,12 +108,11 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-/* Hover state for banner button */
 .banner-button:hover {
     background-color: #d62828;
 }
 
-/* Banner */
+/* ======= SECTIONS SHARED ======= */
 .home-banner,
 .content,
 .band-members,
@@ -137,14 +122,13 @@ h2 {
     padding: 40px 20px;
 }
 
-/* CONTENT AREA*/
-/* Main content container */
+/* ======= CONTENT ======= */
 .content {
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Biography section */
+/* ======= BIO ======= */
 .bio {
     font-size: 1rem;
     line-height: 1.6;
@@ -152,7 +136,7 @@ h2 {
     text-align: center;
 }
 
-/* Container for custom video player */
+/* ======= VIDEO PLAYER ======= */
 .video-container {
     max-width: 320px;
     margin: 0 auto;
@@ -166,14 +150,12 @@ h2 {
     align-items: center;
 }
 
-/* Style for video element */
 video {
     width: 100%;
     border-radius: 12px;
     background-color: #000;
 }
 
-/* Controls wrapper */
 .controls {
     margin-top: 1rem;
     display: flex;
@@ -181,7 +163,6 @@ video {
     justify-content: center;
 }
 
-/* Control buttons */
 .controls button {
     background-color: #333;
     color: #eee;
@@ -193,12 +174,11 @@ video {
     transition: background-color 0.2s ease;
 }
 
-/* Hover state for control buttons */
 .controls button:hover {
     background-color: #555;
 }
 
-/* Audio player main container */
+/* ======= AUDIO PLAYER ======= */
 .audio-player-container {
     background-color: #fff;
     padding: 30px;
@@ -209,33 +189,28 @@ video {
     margin: 0 auto 2rem auto;
 }
 
-/* Audio player heading */
 .audio-player-container h2 {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: #333;
 }
 
-/* Audio element styling */
-.audio {
+audio {
     width: 100%;
     margin-bottom: 15px;
 }
 
-/* Container for audio buttons */
 .buttons {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
 }
 
-/* Note or extra text in audio section */
 .note {
     font-size: 0.85rem;
     color: #666;
 }
 
-/* Links inside the note */
 .note a {
     color: #0070f3;
     text-decoration: none;
@@ -245,7 +220,7 @@ video {
     text-decoration: underline;
 }
 
-/* Button styles */
+/* ======= BUTTONS SHARED ======= */
 button {
     background-color: #000;
     color: #fff;
@@ -261,15 +236,13 @@ button:hover {
     background-color: #444;
 }
 
-/* Contact form section*/
-/* Booking form container */
+/* ======= BOOKING FORM ======= */
 .booking-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Booking form box */
 .booking-form {
     background-color: #222;
     padding: 30px;
@@ -279,7 +252,6 @@ button:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
 }
 
-/* Form heading */
 .booking-form h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -287,14 +259,12 @@ button:hover {
     color: #f0f0f0;
 }
 
-/* Form labels */
 .booking-form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-/* Input and textarea fields */
 .booking-form input,
 .booking-form textarea {
     width: 100%;
@@ -306,13 +276,12 @@ button:hover {
     color: #fff;
 }
 
-/* Focus effect for form fields */
 .booking-form input:focus,
 .booking-form textarea:focus {
     outline: 2px solid #666;
 }
 
-/* Submit button styled like banner button. */
+/* Submit button style matches banner */
 .booking-form button {
     width: 100%;
     padding: 12px;
@@ -324,8 +293,7 @@ button:hover {
     background-color: #d62828;
 }
 
-/* Table for Tour dates */
-/* Main table style */
+/* ======= TABLE ======= */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -335,7 +303,6 @@ table {
     font-size: 0.95rem;
 }
 
-/* Table cell spacing */
 th,
 td {
     padding: 12px 15px;
@@ -343,36 +310,30 @@ td {
     text-align: left;
 }
 
-/* Header cell styling */
 th {
     background-color: #333;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
-/* Zebra stripe effect */
 tr:nth-child(even) {
     background-color: #222;
 }
 
-/* Hover effect for table rows */
 tr:hover {
     background-color: #2a2a2a;
 }
 
-/* Band Members */
-/* Band members section */
+/* ======= BAND MEMBERS ======= */
 .band-members {
     text-align: center;
 }
 
-/* Band section heading */
 .band-members h2 {
     font-size: 2em;
     margin-bottom: 30px;
 }
 
-/* Responsive grid for members */
 .member-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -380,7 +341,6 @@ tr:hover {
     justify-items: center;
 }
 
-/* Card for each member */
 .member-card {
     background-color: #1c1c1c;
     border-radius: 10px;
@@ -390,27 +350,23 @@ tr:hover {
     text-align: center;
 }
 
-/* Member image */
 .member-card img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 15px;
 }
 
-/* Member name */
 .member-card h3 {
     margin: 10px 0 5px;
     font-size: 1.2em;
 }
 
-/* Member role or description */
 .member-card p {
     font-size: 0.95em;
     color: #ccc;
 }
 
-/* Footer */
-/* Main footer container */
+/* ======= FOOTER ======= */
 .site-footer {
     padding: 30px 20px;
     margin-top: 60px;
@@ -418,7 +374,6 @@ tr:hover {
     text-align: center;
 }
 
-/* Footer inner content */
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -426,20 +381,17 @@ tr:hover {
     gap: 15px;
 }
 
-/* Footer text */
 .footer-content p {
     font-size: 0.9rem;
     margin: 0;
     color: #ccc;
 }
 
-/* Social icon list */
 .social-links {
     display: flex;
     gap: 25px;
 }
 
-/* Social icon style */
 .social-links img {
     width: 28px;
     height: 28px;
@@ -448,142 +400,439 @@ tr:hover {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Hover effect for icons */
 .social-links img:hover {
     transform: scale(1.15);
     opacity: 1;
 }
 
-/* Merch & support section */
-/* Main merch section container */
+/* ======= MERCH SECTION ======= */
 .merch-section {
-    max-width: 250x;
+    max-width: 700px;
     margin: 2rem auto;
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Support message area */
-.merch-support-section {
-    margin: 10 auto;
-    padding: 10;
-    max-width: 700px;
-    text-align: center;
-    line-height: 1.6
-}
-
-/* Anchor offset for jump links */
-.anchor-offset {
-    position: relative;
-    top: -100px;
-    height: 50;
-    visibility: hidden;
-}
-
-/* Merch image style */
-.merch-image {
-    display: block;
-    margin: 0 auto 1em;
-    max-width: 40%;
-    height: auto;
-    border-radius: 4px;
-}
-
-/* Link colours */
-/* Etsy link style */
-.link-etsy {
-    color: #0070c9;
-    text-decoration: none;
-}
-
-/* Patreon link style */
-.link-patreon {
-    color: #e85a3c;
-    text-decoration: none;
-}
-
-/* Focus link style */
-.link-focus {
-    color: #009639;
-    text-decoration: none;
-}
-
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #222;
+    color: #f0f0f0;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
+/* ======= HEADINGS ======= */
+h1,
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+/* ======= NAVIGATION ======= */
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: #c9c3c3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 00px;
+    color: #333;
+    position: fixed;
+    z-index: 10;
+
+}
+
+.nav-title {
+    margin-left: 20px;
+    text-decoration: none;
+    border-bottom: none;
+    /* removes bottom border if any */
+    box-shadow: none;
+    /* removes any shadow */
+    text-decoration: none;
+    /* removes underline if it's a link */
+    margin-bottom: 0;
+    /* removes bottom margin to reduce space */
+    padding-bottom: 0;
+
+}
+
+.nav-header .nav-title {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.41);
+    /* clearer rgba instead of hex with alpha */
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    padding: 13px 10px;
+    color: #efefef;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#nav-check,
+.nav-btn {
+    display: none;
+}
+
+
+/* ======= BANNER ======= */
+.home-banner {
+    background: url('images/banner.jpg') center center / cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 1rem;
+}
+
+.banner-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.banner-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #e63946;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.banner-button:hover {
+    background-color: #d62828;
+}
+
+/* ======= SECTIONS SHARED ======= */
+.home-banner,
+.content,
+.band-members,
+.booking-form-container,
+.site-footer {
+    background-color: #222;
+    padding: 40px 20px;
+}
+
+/* ======= CONTENT ======= */
+.content {
+    max-width: 800px;
     margin: 0 auto;
 }
 
-/* Make images responsive */
-img {
-    max-width: 100%;
-    height: auto;
+/* ======= BIO ======= */
+.bio {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-/* Responsive layout example */
-header,
-main,
-footer {
-    padding: 20px;
-}
-
-
-/* Default styles: apply to smaller screens (less than 600px) */
-.nav ul {
+/* ======= VIDEO PLAYER ======= */
+.video-container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #222;
+    border: 2px solid #444;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    /* Stack menu items vertically */
+    align-items: center;
+}
+
+video {
     width: 100%;
-    height: auto;
+    border-radius: 12px;
+    background-color: #000;
+}
+
+.controls {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.controls button {
     background-color: #333;
-    /* Background for mobile nav */
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    color: #eee;
+    border: 1px solid #555;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-.nav ul li {
-    border-bottom: 1px solid #444;
+.controls button:hover {
+    background-color: #555;
 }
 
-.nav ul li a {
-    display: block;
-    color: white;
-    padding: 15px;
+/* ======= AUDIO PLAYER ======= */
+.audio-player-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    margin: 0 auto 2rem auto;
+}
+
+.audio-player-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.note {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.note a {
+    color: #0070f3;
     text-decoration: none;
 }
 
-.nav ul li a:hover {
-    background-color: #555;
+.note a:hover {
+    text-decoration: underline;
+}
+
+/* ======= BUTTONS SHARED ======= */
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* ======= BOOKING FORM ======= */
+.booking-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #f0f0f0;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking-form input,
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
     color: #fff;
 }
 
-/* Larger screens: apply this when viewport is at least 600px */
-@media (min-width: 600px) {
-    .nav ul {
-        flex-direction: row;
-        /* Horizontal layout */
-        width: auto;
-        height: auto;
-        background-color: transparent;
-    }
+.booking-form input:focus,
+.booking-form textarea:focus {
+    outline: 2px solid #666;
+}
 
-    .nav ul li {
-        border: none;
-    }
+/* Submit button style matches banner */
+.booking-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e63946;
+    font-weight: bold;
+}
 
-    .nav ul li a {
-        color: black;
-        padding: 10px 15px;
-    }
+.booking-form button:hover {
+    background-color: #d62828;
+}
 
-    .nav ul li a:hover {
-        background-color: transparent;
-        color: blue;
-    }
+/* ======= TABLE ======= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background-color: #1c1c1c;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    font-size: 0.95rem;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #222;
+}
+
+tr:hover {
+    background-color: #2a2a2a;
+}
+
+/* ======= BAND MEMBERS ======= */
+.band-members {
+    text-align: center;
+}
+
+.band-members h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.member-card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.member-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.member-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.member-card p {
+    font-size: 0.95em;
+    color: #ccc;
+}
+
+/* ======= FOOTER ======= */
+.site-footer {
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #ccc;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+}
+
+.social-links img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+/* ======= MERCH SECTION ======= */
+.merch-section {
+    max-width: 700px;
+    margin: 2rem auto;
+    font-family: 'Segoe UI', sans-serif;
 }
