@@ -31,34 +31,28 @@
       </li>
     </ul>
 
-  </nav>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const checkbox = document.getElementById('menu-checkbox');
-      const menuToggle = document.querySelector('.menu-toggle');
-      if (!checkbox || !menuToggle) return; // safety
 
-      // Close when clicking/tapping outside (works on mobile via pointerdown)
-      document.addEventListener('pointerdown', (event) => {
-        if (checkbox.checked && !menuToggle.contains(event.target)) {
-          checkbox.checked = false;
-        }
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const checkbox = document.getElementById('menu-checkbox');
+        const menuToggle = document.querySelector('.menu-toggle');
+        if (!checkbox || !menuToggle) return; // safety
+
+        // Close when clicking/tapping outside (works on mobile via pointerdown)
+        document.addEventListener('pointerdown', (event) => {
+          if (checkbox.checked && !menuToggle.contains(event.target)) {
+            checkbox.checked = false;
+          }
+        });
+
+        // Close with Escape key (accessibility)
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && checkbox.checked) {
+            checkbox.checked = false;
+          }
+        });
       });
-
-      // Close with Escape key (accessibility)
-      document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && checkbox.checked) {
-          checkbox.checked = false;
-        }
-      });
-    });
-  </script>
-
-
-
-
-
-
+    </script>
 
   </nav>
 
