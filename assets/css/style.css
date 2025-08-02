@@ -86,22 +86,22 @@ h2 {
 
 
 
-/* ======= BANNER ======= */
-
+/*Banner secton */
+/* Main banner container */
 .home-banner {
-    background: url("../images/banner.jpg") center center / cover no-repeat;
-    background-size: cover;
-    height: 70vh;
-
+    background: url('images/banner.jpg') center center / cover no-repeat;
+    height: 80vh;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: fixed;
+    position: relative;
     color: #fff;
-    box-shadow: inset 0 0 100px rgba(90, 36, 36, 0.5);
-
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
+/* Inner content of the banner */
 .banner-content {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 40px 20px;
@@ -110,8 +110,20 @@ h2 {
     margin: 0 1rem;
 }
 
+/* Banner heading style */
+.banner-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
 
+/* Banner paragraph style */
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #ddd;
+}
 
+/* Call-to-action button in banner */
 .banner-button {
     display: inline-block;
     padding: 12px 25px;
@@ -123,8 +135,26 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
+/* Hover state for banner button */
 .banner-button:hover {
     background-color: #d62828;
+}
+
+/* Banner */
+.home-banner,
+.content,
+.band-members,
+.booking-form-container,
+.site-footer {
+    background-color: #222;
+    padding: 40px 20px;
+}
+
+/* CONTENT AREA*/
+/* Main content container */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* ======= SECTIONS SHARED ======= */
