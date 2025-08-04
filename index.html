@@ -58,21 +58,22 @@
 
 
 <script>
+  // Wait for page to load
   document.addEventListener('DOMContentLoaded', () => {
+    // Get checkbox and menu wrapper
     const checkbox = document.getElementById('menu-checkbox');
     const menuToggle = document.querySelector('.menu-toggle');
-    if (!checkbox || !menuToggle) return; // safety
+    if (!checkbox || !menuToggle) return; // if missing, stop
 
-    // Close when clicking/tapping outside (works on mobile via pointerdown)
+    // If click is outside menu while it's open, close it
     document.addEventListener('pointerdown', (event) => {
       if (checkbox.checked && !menuToggle.contains(event.target)) {
-        checkbox.checked = false;
+        checkbox.checked = false; // close menu
       }
     });
-
-
   });
 </script>
+
 
 </nav>
 
