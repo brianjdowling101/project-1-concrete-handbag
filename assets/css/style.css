@@ -883,26 +883,39 @@ tr:hover {
     font-family: 'Segoe UI', sans-serif;
 }
 
+/* Apply styles when screen width is 600px or more */
 @media (min-width: 600px) {
+
+    /* Make nav menu horizontal */
     .nav ul {
         flex-direction: row;
         /* Horizontal layout */
         width: auto;
+        /* Fit content width */
         height: auto;
+        /* Fit content height */
         background-color: transparent;
+        /* No background */
     }
 
+    /* Remove borders from menu items */
     .nav ul li {
         border: none;
     }
 
+    /* Style menu links */
     .nav ul li a {
         color: black;
+        /* Text color */
         padding: 10px 15px;
+        /* Space around text */
     }
 
+    /* Change color on hover */
     .nav ul li a:hover {
         background-color: transparent;
+        /* No background */
         color: blue;
+        /* Hover text color */
     }
 }
