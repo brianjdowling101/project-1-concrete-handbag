@@ -1,5 +1,4 @@
-/* ======= BASE STYLES ======= */
-/* Basic body styles */
+/* ======= BA/* ======= BASE ======= */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -8,7 +7,6 @@ body {
 }
 
 /* ======= HEADINGS ======= */
-/* Styles for h1 and h2 headings */
 h1,
 h2 {
     font-size: 2rem;
@@ -19,23 +17,17 @@ h2 {
     color: #f0f0f0;
 }
 
-/* ======= NAVIGATION ======= */
-/* Navigation container styles */
 .nav {
     background-color: #333;
     padding: 50;
-    /* (Note: unit missing, should be like 50px) */
     margin: 50;
-    /* (Note: unit missing) */
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     user-select: none;
-    /* Prevent text selection */
 }
 
-/* Navigation list styles */
 .nav-list {
     list-style: none;
     padding: 0;
@@ -43,14 +35,12 @@ h2 {
     width: 200px;
 }
 
-/* Dropdown menu toggle container */
 .menu-toggle {
     position: relative;
     background-color: #444;
     border-radius: 5px;
 }
 
-/* Menu label styles */
 .menu-label {
     display: block;
     color: white;
@@ -61,12 +51,10 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect on menu label */
 .menu-label:hover {
     background-color: #555;
 }
 
-/* Submenu styles - initially hidden */
 .submenu {
     list-style: none;
     padding: 0;
@@ -77,7 +65,6 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Submenu links styles */
 .submenu li a {
     display: block;
     color: white;
@@ -86,18 +73,21 @@ h2 {
     border-top: 1px solid #555;
 }
 
-/* Hover effect on submenu links */
 .submenu li a:hover {
     background-color: #555;
 }
 
-/* Show submenu when checkbox is checked */
 #menu-checkbox:checked+.menu-label+.submenu {
     display: block;
 }
 
-/* ======= BANNER SECTION ======= */
-/* Banner container with background image */
+
+
+
+
+
+/*Banner secton */
+/* Main banner container */
 .home-banner {
     background: url('images/banner.jpg') center center / cover no-repeat;
     height: 80vh;
@@ -111,7 +101,7 @@ h2 {
     z-index: 1;
 }
 
-/* Inner banner content container */
+/* Inner content of the banner */
 .banner-content {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 40px 20px;
@@ -145,13 +135,12 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-/* Button hover state */
+/* Hover state for banner button */
 .banner-button:hover {
     background-color: #d62828;
 }
 
-/* ======= SHARED SECTIONS ======= */
-/* Shared background and padding for major sections */
+/* Banner */
 .home-banner,
 .content,
 .band-members,
@@ -161,15 +150,31 @@ h2 {
     padding: 40px 20px;
 }
 
-/* ======= CONTENT AREA ======= */
+/* CONTENT AREA*/
 /* Main content container */
 .content {
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* ======= BIO SECTION ======= */
-/* Bio text styles */
+/* ======= SECTIONS SHARED ======= */
+.content,
+.band-members,
+.booking-form-container,
+.site-footer {
+    background-color: #fafafa;
+    padding: 40px 20px;
+}
+
+
+
+/* ======= CONTENT ======= */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ======= BIO ======= */
 .bio {
     font-size: 1rem;
     line-height: 1.6;
@@ -178,7 +183,6 @@ h2 {
 }
 
 /* ======= VIDEO PLAYER ======= */
-/* Video container styles */
 .video-container {
     max-width: 320px;
     margin: 0 auto;
@@ -192,14 +196,12 @@ h2 {
     align-items: center;
 }
 
-/* Video element styles */
 video {
     width: 100%;
     border-radius: 12px;
     background-color: #000;
 }
 
-/* Video controls container */
 .controls {
     margin-top: 1rem;
     display: flex;
@@ -207,7 +209,6 @@ video {
     justify-content: center;
 }
 
-/* Video control buttons */
 .controls button {
     background-color: #333;
     color: #eee;
@@ -219,13 +220,11 @@ video {
     transition: background-color 0.2s ease;
 }
 
-/* Hover state for video control buttons */
 .controls button:hover {
     background-color: #555;
 }
 
 /* ======= AUDIO PLAYER ======= */
-/* Audio player container styles */
 .audio-player-container {
     background-color: #fff;
     padding: 30px;
@@ -236,45 +235,38 @@ video {
     margin: 0 auto 2rem auto;
 }
 
-/* Audio player heading */
 .audio-player-container h2 {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: #333;
 }
 
-/* Audio element width */
 audio {
     width: 100%;
     margin-bottom: 15px;
 }
 
-/* Buttons container inside audio player */
 .buttons {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
 }
 
-/* Notes or additional text below audio player */
 .note {
     font-size: 0.85rem;
     color: #666;
 }
 
-/* Links inside notes */
 .note a {
     color: #0070f3;
     text-decoration: none;
 }
 
-/* Hover state for note links */
 .note a:hover {
     text-decoration: underline;
 }
 
-/* ======= BUTTONS SHARED STYLES ======= */
-/* General button styles */
+/* ======= BUTTONS SHARED ======= */
 button {
     background-color: #000;
     color: #fff;
@@ -286,20 +278,17 @@ button {
     transition: background-color 0.3s ease;
 }
 
-/* Button hover effect */
 button:hover {
     background-color: #444;
 }
 
 /* ======= BOOKING FORM ======= */
-/* Booking form container alignment */
 .booking-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Booking form styles */
 .booking-form {
     background-color: #222;
     padding: 30px;
@@ -309,7 +298,6 @@ button:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
 }
 
-/* Booking form title */
 .booking-form h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -317,14 +305,12 @@ button:hover {
     color: #f0f0f0;
 }
 
-/* Labels for form fields */
 .booking-form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-/* Input and textarea styles */
 .booking-form input,
 .booking-form textarea {
     width: 100%;
@@ -336,13 +322,12 @@ button:hover {
     color: #fff;
 }
 
-/* Focus styles for inputs and textarea */
 .booking-form input:focus,
 .booking-form textarea:focus {
     outline: 2px solid #666;
 }
 
-/* Submit button style to match banner */
+/* Submit button style matches banner */
 .booking-form button {
     width: 100%;
     padding: 12px;
@@ -350,13 +335,11 @@ button:hover {
     font-weight: bold;
 }
 
-/* Submit button hover */
 .booking-form button:hover {
     background-color: #d62828;
 }
 
-/* ======= TABLE STYLES ======= */
-/* Table base styles */
+/* ======= TABLE ======= */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -366,7 +349,6 @@ table {
     font-size: 0.95rem;
 }
 
-/* Table headers and cells */
 th,
 td {
     padding: 12px 15px;
@@ -374,36 +356,30 @@ td {
     text-align: left;
 }
 
-/* Table header style */
 th {
     background-color: #333;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
-/* Alternate row colors */
 tr:nth-child(even) {
     background-color: #222;
 }
 
-/* Row hover effect */
 tr:hover {
     background-color: #2a2a2a;
 }
 
-/* ======= BAND MEMBERS SECTION ======= */
-/* Centered text for band members */
+/* ======= BAND MEMBERS ======= */
 .band-members {
     text-align: center;
 }
 
-/* Band members section heading */
 .band-members h2 {
     font-size: 2em;
     margin-bottom: 30px;
 }
 
-/* Grid layout for band member cards */
 .member-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -411,57 +387,38 @@ tr:hover {
     justify-items: center;
 }
 
-/* Individual member card styles */
 .member-card {
     background-color: #1c1c1c;
     border-radius: 10px;
     padding: 20px;
     max-width: 300px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-    color: #eee;
     text-align: center;
 }
 
-/* Member photo styles */
-.member-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+.member-card img {
+    width: 100%;
+    border-radius: 8px;
     margin-bottom: 15px;
 }
 
-/* Member name */
-.member-name {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 5px;
+.member-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
 }
 
-/* Member role/title */
-.member-role {
-    font-size: 1rem;
-    font-style: italic;
-    color: #aaa;
-    margin-bottom: 10px;
-}
-
-/* Member bio text */
-.member-bio {
-    font-size: 0.9rem;
-    line-height: 1.4;
+.member-card p {
+    font-size: 0.95em;
+    color: #ccc;
 }
 
 /* ======= FOOTER ======= */
-/* Footer styles */
 .site-footer {
-    background-color: #111;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #333;
     text-align: center;
-    padding: 20px;
-    color: #666;
-    font-size: 0.85rem;
 }
-
 
 .footer-content {
     display: flex;

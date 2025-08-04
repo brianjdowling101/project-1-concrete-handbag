@@ -5,40 +5,44 @@
   <!-- Set character encoding -->
   <meta charset="UTF-8">
 
-  <!-- Ensure compatibility with IE -->
+  <!-- Make sure site works in Ireland -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Make page responsive on mobile devices -->
+  <!-- Make site look good on mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Page title shown in browser tab -->
+  <!-- Page title -->
   <title>Concrete Handbag</title>
 
-  <!-- Link to external CSS file -->
+  <!-- Link to CSS file -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <style>
-    /* Smooth scrolling effect when clicking anchors */
+    /* Smooth scrolling on page */
     html {
       scroll-behavior: smooth;
     }
   </style>
 </head>
 
+
 <body>
-  <!-- Main navigation bar -->
+  <!-- Navigation bar -->
   <nav class="nav">
-    <!-- Navigation list -->
+    <!-- Main list -->
     <ul class="nav-list">
-      <!-- Menu toggle for small screens -->
+      <!-- Menu toggle item -->
       <li class="menu-toggle">
-        <!-- Hidden checkbox to open/close menu -->
+        <!-- Hidden checkbox to control menu open/close -->
         <input type="checkbox" id="menu-checkbox" hidden />
-        <!-- Label that acts as menu button -->
+        <!-- Label that acts as the visible menu button -->
         <label for="menu-checkbox" class="menu-label">Menu ▼</label>
-        <!-- Dropdown menu with links -->
+        <!-- Dropdown submenu -->
         <ul class="submenu">
-          <!-- Links to page sections -->
+          <!-- Links to sections -->
+          <li><a href="#home-banner">Home</a></li>
+          <li><a href="#home-banner">Home</a></li>
+          <li><a href="#home-banner">Home</a></li>
           <li><a href="#home-banner">Home</a></li>
           <li><a href="#band-members">Meet The Band</a></li>
           <li><a href="#music-media">Music & Media</a></li>
@@ -49,423 +53,498 @@
       </li>
     </ul>
   </nav>
+</body>
 
-  <!-- Hero banner section -->
-  <header class="home-banner" id="home-banner">
-    <div class="banner-content">
-      <h1>Concrete Handbag</h1>
-      <p>New Music Video</p>
-      <p>Sidewalk Etiquette — Out Now</p>
-      <!-- Button linking to music media section -->
-      <a href="#music-media" class="banner-button">Watch Now</a>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const checkbox = document.getElementById('menu-checkbox');
+    const menuToggle = document.querySelector('.menu-toggle');
+    if (!checkbox || !menuToggle) return; // safety
+
+    // Close when clicking/tapping outside (works on mobile via pointerdown)
+    document.addEventListener('pointerdown', (event) => {
+      if (checkbox.checked && !menuToggle.contains(event.target)) {
+        checkbox.checked = false;
+      }
+    });
+
+
+  });
+</script>
+
+</nav>
+
+
+
+<!-- Hero section with image -->
+
+<header class="home-banner" id="home-banner">
+  <div class="banner-content">
+    <h1>Concrete Handbag</h1>
+    <p>New Music Video</p>
+    <p>Sidewalk Etiquette — Out Now</p>
+    <a href="#music-media" class="banner-button">Watch Now</a>
+
+  </div>
+</header>
+
+
+
+
+
+
+<main>
+  <!-- Band member section with images/content info -->
+  <section class="band-members" id="band-members">
+    <h2>Meet the Members</h2>
+    <div class="member-grid">
+      <div class="member-card">
+        <img src="assets/images/alex.jpg" alt="Alex - Vocals/Guitar" />
+        <h3>Alex (Vocals / Guitar)</h3>
+        <p>Alex’s swirling guitar lines and soft-spoken vocals are the emotional backbone of Concrete Handbag.
+          She brings melody to the noise.</p>
+      </div>
+      <div class="member-card">
+        <img src="assets/images/jordan.jpg" alt="Jordan - Bass" />
+        <h3>Jordan (Bass)</h3>
+        <p>Jordan lays down the gritty low-end textures that anchor the band’s sonic chaos. A minimalist with a
+          noisy
+          heart.</p>
+      </div>
+      <div class="member-card">
+        <img src="assets/images/taylor.jpg" alt="Taylor - Violinist" />
+        <h3>Taylor (Voilinist)</h3>
+        <p>Taylor blends melodies with improvised rhythms. A violinist who plays with silence as much as sound.</p>
+      </div>
+      <div class="member-card">
+        <img src="assets/images/lee.jpg" alt="Lee - Guitar/Samples" />
+        <h3>Lee (Guitar / Samples)</h3>
+        <p>Lee manipulates loops, samples, and dissonance into dense atmospheres. Responsible for the dream-pop
+          layer
+          in the noise.</p>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <!-- Band members section -->
-    <section class="band-members" id="band-members">
-      <h2>Meet the Members</h2>
-      <div class="member-grid">
-        <!-- Individual band member card -->
-        <div class="member-card">
-          <img src="assets/images/alex.jpg" alt="Alex - Vocals/Guitar" />
-          <h3>Alex (Vocals / Guitar)</h3>
-          <p>Alex’s guitar and vocals are the emotional core of the band.</p>
-        </div>
-        <div class="member-card">
-          <img src="assets/images/jordan.jpg" alt="Jordan - Bass" />
-          <h3>Jordan (Bass)</h3>
-          <p>Jordan plays the bass, providing the low-end sounds.</p>
-        </div>
-        <div class="member-card">
-          <img src="assets/images/taylor.jpg" alt="Taylor - Violinist" />
-          <h3>Taylor (Violinist)</h3>
-          <p>Taylor plays violin mixing melody and rhythm.</p>
-        </div>
-        <div class="member-card">
-          <img src="assets/images/lee.jpg" alt="Lee - Guitar/Samples" />
-          <h3>Lee (Guitar / Samples)</h3>
-          <p>Lee adds loops and samples to create a dreamy sound.</p>
-        </div>
-      </div>
-    </section>
+  <!-- MUSIC & MEDIA section with video/audio and buttons -->
+  <section class="content" id="music-media">
+    <h2>Music and Media</h2>
 
-    <!-- MUSIC & MEDIA section with video/audio and buttons -->
-    <section class="content" id="music-media">
+    <div class="bio">
+      <section>
+        <p><strong>Concrete Handbag</strong> is a four-piece band blending noise, post-punk, and dream pop.
+          Originally
+          formed in 2021 as a former wedding band. They built their sound around layered guitars, lo-fi textures,
+          and
+          a shared fascination with the tension between melody and distortion.</p>
+        <p>Influenced by city life and underground scenes past and present. The band avoids nostalgia, aiming
+          instead
+          for a sound that feels raw, current, and deliberately unsettled.</p>
+        <p>Their debut EP, <em>Sidewalk Etiquette</em>, was recorded using borrowed gear in a basement studio and
+          released independently. Since then, they’ve performed in DIY spaces and small venues, steadily growing a
+          following through word-of-mouth and emotionally honest shows.</p>
+        <p style="margin-top: 1.5em;">🎧 Listen to <strong>Sidewalk Etiquette</strong> now on <a
+            href="https://music.apple.com/" target="_blank" style="color: #0070c9; text-decoration: none;">Apple
+            Music</a>.</p>
+      </section>
 
-      <!-- Section heading -->
-      <h2>Music and Media</h2>
+      <!-- MUSIC & MEDIA section with video/audio and buttons -->
+      <section class="content" id="music-media">
+        <h2>Music and Media</h2>
 
-      <!-- Band bio text -->
-      <div class="bio">
-        <section>
-          <p><strong>Concrete Handbag</strong> is a four-piece band blending noise, post-punk, and dream pop.
-            Originally formed in 2021 as a former wedding band. They built their sound around layered guitars, lo-fi
-            textures,
-            and a shared fascination with the tension between melody and distortion.</p>
-          <p>Influenced by city life and underground scenes past and present. The band avoids nostalgia, aiming
-            instead for a sound that feels raw, current, and deliberately unsettled.</p>
-          <p>Their debut EP, <em>Sidewalk Etiquette</em>, was recorded using borrowed gear in a basement studio and
-            released independently. Since then, they’ve performed in DIY spaces and small venues, steadily growing a
-            following through word-of-mouth and emotionally honest shows.</p>
-          <p style="margin-top: 1.5em;">🎧 Listen to <strong>Sidewalk Etiquette</strong> now on <a
-              href="https://music.apple.com/" target="_blank" style="color: #0070c9; text-decoration: none;">Apple
-              Music</a>.</p>
+        <div class="bio">
+          <section>
+            <p><strong>Concrete Handbag</strong> is a four-piece band blending noise, post-punk, and dream pop.
+              Originally
+              formed in 2021 as a former wedding band. They built their sound around layered guitars, lo-fi textures,
+              and
+              a shared fascination with the tension between melody and distortion.</p>
+            <p>Influenced by city life and underground scenes past and present. The band avoids nostalgia, aiming
+              instead
+              for a sound that feels raw, current, and deliberately unsettled.</p>
+            <p>Their debut EP, <em>Sidewalk Etiquette</em>, was recorded using borrowed gear in a basement studio and
+              released independently. Since then, they’ve performed in DIY spaces and small venues, steadily growing a
+              following through word-of-mouth and emotionally honest shows.</p>
+            <p style="margin-top: 1.5em;">🎧 Listen to <strong>Sidewalk Etiquette</strong> now on <a
+                href="https://music.apple.com/" target="_blank" style="color: #0070c9; text-decoration: none;">Apple
+                Music</a>.</p>
+          </section>
 
-          <!-- Call to watch the video -->
           <p><strong>Watch the video for <em>Sidewalk Etiquette</em> below &#8595</strong></p>
-      </div>
+        </div>
 
-      <!-- Video player container -->
-      <div class="video-container">
-        <!-- Embedded video with controls -->
-        <video controls preload="metadata" muted>
-          <source src="assets/videos/Concrete Hand is a grunge band .mp4" type="video/mp4" />
-        </video>
-      </div>
+        <div class="video-container">
+          <video controls preload="metadata" muted>
+            <source src="assets/videos/Concrete Hand is a grunge band .mp4" type="video/mp4" />
+          </video>
+        </div>
 
-    </section>
+        <p style="text-align: center;">
+          <strong>Preview the new single <em>A Dead Thing</em> below &#8595;</strong>
+        </p>
 
 
 
-    <section id="tour-dates" style="max-width: 700px; margin: 2em auto; padding: 1.5em; font-family: sans-serif; line-height: 1.6;
+        <div class="audio-player-container">
+
+          <h2>Concrete Handbag – <em>A Dead Thing</em></h2>
+
+
+
+          <audio id="audio" controls>
+            <source src="assets/mp3/_That_s a Dead Thing_ _ Concrete Hand Ba.mp3" type="audio/mpeg" />
+
+          </audio>
+        </div>
+
+        <script>
+          const audio = document.getElementById('player');
+          document.getElementById('play').addEventListener('click', async () => {
+            try {
+              await audio.play();
+              console.log('Playing');
+            } catch (err) {
+              console.warn('Playback failed:', err);
+            }
+          });
+        </script>
+      </section>
+
+
+
+
+
+
+
+      <section id="tour-dates" style="max-width: 700px; margin: 2em auto; padding: 1.5em; font-family: sans-serif; line-height: 1.6;
  text-align: center;">
-      <h2>Tour Dates 2025: Heavy Luggage!!!</h2>
+        <h2>Tour Dates 2025: Heavy Luggage!!!</h2>
 
-
-      <table>
-        <thead>
-          <tr>
-            <td colspan="3" style="text-align: center; font-weight: bold;">
-              <h3 style="margin: 0;">USA Tour</h3>
-            </td>
-          </tr>
-          <tr>
-            <th>Date</th>
-            <th>City</th>
-            <th>Venue</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Apr 4</td>
-            <td>Seattle, WA</td>
-            <td>Neumos</td>
-          </tr>
-          <tr>
-            <td>Apr 6</td>
-            <td>Portland, OR</td>
-            <td>Doug Fir Lounge</td>
-          </tr>
-          <tr>
-            <td>Apr 9</td>
-            <td>San Francisco, CA</td>
-            <td>Bottom of the Hill</td>
-          </tr>
-          <tr>
-            <td>Apr 11</td>
-            <td>Los Angeles, CA</td>
-            <td>The Roxy Theatre</td>
-          </tr>
-          <tr>
-            <td>Apr 13</td>
-            <td>San Diego, CA</td>
-            <td>The Casbah</td>
-          </tr>
-          <tr>
-            <td>Apr 16</td>
-            <td>Phoenix, AZ</td>
-            <td>Crescent Ballroom</td>
-          </tr>
-          <tr>
-            <td>Apr 19</td>
-            <td>Austin, TX</td>
-            <td>Mohawk</td>
-          </tr>
-          <tr>
-            <td>Apr 21</td>
-            <td>Dallas, TX</td>
-            <td>Trees</td>
-          </tr>
-          <tr>
-            <td>Apr 24</td>
-            <td>Nashville, TN</td>
-            <td>The Basement East</td>
-          </tr>
-          <tr>
-            <td>Apr 26</td>
-            <td>Atlanta, GA</td>
-            <td>Terminal West</td>
-          </tr>
-          <tr>
-            <td>Apr 29</td>
-            <td>Washington, DC</td>
-            <td>The Black Cat</td>
-          </tr>
-          <tr>
-            <td>May 1</td>
-            <td>Philadelphia, PA</td>
-            <td>Underground Arts</td>
-          </tr>
-          <tr>
-            <td>May 3</td>
-            <td>New York, NY</td>
-            <td>Bowery Ballroom</td>
-          </tr>
-          <tr>
-            <td>May 5</td>
-            <td>Boston, MA</td>
-            <td>The Sinclair</td>
-          </tr>
-          <tr>
-            <td>May 8</td>
-            <td>Chicago, IL</td>
-            <td>Lincoln Hall</td>
-          </tr>
-          <tr>
-            <td>May 11</td>
-            <td>Minneapolis, MN</td>
-            <td>First Avenue</td>
-          </tr>
-          <tr>
-            <td>May 14</td>
-            <td>Denver, CO</td>
-            <td>Bluebird Theater</td>
-          </tr>
-          <tr>
-            <td>May 17</td>
-            <td>Salt Lake City, UT</td>
-            <td>Urban Lounge</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- Europe Tour Section with table-->
-    <section>
-      <section id=""
-        style="max-width: 700px; margin: 2em auto; padding: 1.5em; font-family: sans-serif; line-height: 1.6; text-align: center;">
 
         <table>
-          <tr>
-            <td colspan="3" style="text-align: center; font-weight: bold;">
-              <h3 style="margin: 0;">Europe Tour</h3>
-            </td>
-          </tr>
-          <tr>
-            <th>Date</th>
-            <th>City</th>
-            <th>Venue</th>
-          </tr>
-          <tr>
-            <td>Jun 3</td>
-            <td>Dublin, Ireland</td>
-            <td>Whelan’s</td>
-          </tr>
-          <tr>
-            <td>Jun 5</td>
-            <td>Glasgow, Scotland</td>
-            <td>King Tut’s Wah Wah Hut</td>
-          </tr>
-          <tr>
-            <td>Jun 7</td>
-            <td>Manchester, UK</td>
-            <td>Gorilla</td>
-          </tr>
-          <tr>
-            <td>Jun 9</td>
-            <td>London, UK</td>
-            <td>Electric Ballroom</td>
-          </tr>
-          <tr>
-            <td>Jun 12</td>
-            <td>Paris, France</td>
-            <td>Le Trabendo</td>
-          </tr>
-          <tr>
-            <td>Jun 14</td>
-            <td>Brussels, Belgium</td>
-            <td>Ancienne Belgique</td>
-          </tr>
-          <tr>
-            <td>Jun 16</td>
-            <td>Amsterdam, Netherlands</td>
-            <td>Melkweg</td>
-          </tr>
-          <tr>
-            <td>Jun 19</td>
-            <td>Berlin, Germany</td>
-            <td>Lido</td>
-          </tr>
-          <tr>
-            <td>Jun 21</td>
-            <td>Hamburg, Germany</td>
-            <td>Molotow Club</td>
-          </tr>
-          <tr>
-            <td>Jun 23</td>
-            <td>Copenhagen, Denmark</td>
-            <td>Vega</td>
-          </tr>
-          <tr>
-            <td>Jun 26</td>
-            <td>Stockholm, Sweden</td>
-            <td>Debaser Strand</td>
-          </tr>
-          <tr>
-            <td>Jun 29</td>
-            <td>Warsaw, Poland</td>
-            <td>Hydrozagadka</td>
-          </tr>
-          <tr>
-            <td>Jul 2</td>
-            <td>Prague, Czech Republic</td>
-            <td>MeetFactory</td>
-          </tr>
-          <tr>
-            <td>Jul 5</td>
-            <td>Vienna, Austria</td>
-            <td>Flex Café</td>
-          </tr>
-          <tr>
-            <td>Jul 8</td>
-            <td>Milan, Italy</td>
-            <td>Circolo Magnolia</td>
-          </tr>
-          <tr>
-            <td>Jul 11</td>
-            <td>Barcelona, Spain</td>
-            <td>Razzmatazz 3</td>
-          </tr>
-          <tr>
-            <td>Jul 13</td>
-            <td>Madrid, Spain</td>
-            <td>Sala El Sol</td>
-          </tr>
-          <tr>
-            <td>Jul 16</td>
-            <td>Lisbon, Portugal</td>
-            <td>Musicbox</td>
-          </tr>
-          <tr>
-            <td>Jul 20</td>
-            <td>Reykjavik, Iceland</td>
-            <td>Gaukurinn</td>
-          </tr>
+          <thead>
+            <tr>
+              <td colspan="3" style="text-align: center; font-weight: bold;">
+                <h3 style="margin: 0;">USA Tour</h3>
+              </td>
+            </tr>
+            <tr>
+              <th>Date</th>
+              <th>City</th>
+              <th>Venue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Apr 4</td>
+              <td>Seattle, WA</td>
+              <td>Neumos</td>
+            </tr>
+            <tr>
+              <td>Apr 6</td>
+              <td>Portland, OR</td>
+              <td>Doug Fir Lounge</td>
+            </tr>
+            <tr>
+              <td>Apr 9</td>
+              <td>San Francisco, CA</td>
+              <td>Bottom of the Hill</td>
+            </tr>
+            <tr>
+              <td>Apr 11</td>
+              <td>Los Angeles, CA</td>
+              <td>The Roxy Theatre</td>
+            </tr>
+            <tr>
+              <td>Apr 13</td>
+              <td>San Diego, CA</td>
+              <td>The Casbah</td>
+            </tr>
+            <tr>
+              <td>Apr 16</td>
+              <td>Phoenix, AZ</td>
+              <td>Crescent Ballroom</td>
+            </tr>
+            <tr>
+              <td>Apr 19</td>
+              <td>Austin, TX</td>
+              <td>Mohawk</td>
+            </tr>
+            <tr>
+              <td>Apr 21</td>
+              <td>Dallas, TX</td>
+              <td>Trees</td>
+            </tr>
+            <tr>
+              <td>Apr 24</td>
+              <td>Nashville, TN</td>
+              <td>The Basement East</td>
+            </tr>
+            <tr>
+              <td>Apr 26</td>
+              <td>Atlanta, GA</td>
+              <td>Terminal West</td>
+            </tr>
+            <tr>
+              <td>Apr 29</td>
+              <td>Washington, DC</td>
+              <td>The Black Cat</td>
+            </tr>
+            <tr>
+              <td>May 1</td>
+              <td>Philadelphia, PA</td>
+              <td>Underground Arts</td>
+            </tr>
+            <tr>
+              <td>May 3</td>
+              <td>New York, NY</td>
+              <td>Bowery Ballroom</td>
+            </tr>
+            <tr>
+              <td>May 5</td>
+              <td>Boston, MA</td>
+              <td>The Sinclair</td>
+            </tr>
+            <tr>
+              <td>May 8</td>
+              <td>Chicago, IL</td>
+              <td>Lincoln Hall</td>
+            </tr>
+            <tr>
+              <td>May 11</td>
+              <td>Minneapolis, MN</td>
+              <td>First Avenue</td>
+            </tr>
+            <tr>
+              <td>May 14</td>
+              <td>Denver, CO</td>
+              <td>Bluebird Theater</td>
+            </tr>
+            <tr>
+              <td>May 17</td>
+              <td>Salt Lake City, UT</td>
+              <td>Urban Lounge</td>
+            </tr>
+          </tbody>
         </table>
       </section>
 
-      <!-- Merch & Support section with web links -->
-      <section style="max-width: 700px; margin: 2em auto; padding: 1em; text-align: center; line-height: 1.6;">
+      <!-- Europe Tour Section with table-->
+      <section>
+        <section id=""
+          style="max-width: 700px; margin: 2em auto; padding: 1.5em; font-family: sans-serif; line-height: 1.6; text-align: center;">
+
+          <table>
+            <tr>
+              <td colspan="3" style="text-align: center; font-weight: bold;">
+                <h3 style="margin: 0;">Europe Tour</h3>
+              </td>
+            </tr>
+            <tr>
+              <th>Date</th>
+              <th>City</th>
+              <th>Venue</th>
+            </tr>
+            <tr>
+              <td>Jun 3</td>
+              <td>Dublin, Ireland</td>
+              <td>Whelan’s</td>
+            </tr>
+            <tr>
+              <td>Jun 5</td>
+              <td>Glasgow, Scotland</td>
+              <td>King Tut’s Wah Wah Hut</td>
+            </tr>
+            <tr>
+              <td>Jun 7</td>
+              <td>Manchester, UK</td>
+              <td>Gorilla</td>
+            </tr>
+            <tr>
+              <td>Jun 9</td>
+              <td>London, UK</td>
+              <td>Electric Ballroom</td>
+            </tr>
+            <tr>
+              <td>Jun 12</td>
+              <td>Paris, France</td>
+              <td>Le Trabendo</td>
+            </tr>
+            <tr>
+              <td>Jun 14</td>
+              <td>Brussels, Belgium</td>
+              <td>Ancienne Belgique</td>
+            </tr>
+            <tr>
+              <td>Jun 16</td>
+              <td>Amsterdam, Netherlands</td>
+              <td>Melkweg</td>
+            </tr>
+            <tr>
+              <td>Jun 19</td>
+              <td>Berlin, Germany</td>
+              <td>Lido</td>
+            </tr>
+            <tr>
+              <td>Jun 21</td>
+              <td>Hamburg, Germany</td>
+              <td>Molotow Club</td>
+            </tr>
+            <tr>
+              <td>Jun 23</td>
+              <td>Copenhagen, Denmark</td>
+              <td>Vega</td>
+            </tr>
+            <tr>
+              <td>Jun 26</td>
+              <td>Stockholm, Sweden</td>
+              <td>Debaser Strand</td>
+            </tr>
+            <tr>
+              <td>Jun 29</td>
+              <td>Warsaw, Poland</td>
+              <td>Hydrozagadka</td>
+            </tr>
+            <tr>
+              <td>Jul 2</td>
+              <td>Prague, Czech Republic</td>
+              <td>MeetFactory</td>
+            </tr>
+            <tr>
+              <td>Jul 5</td>
+              <td>Vienna, Austria</td>
+              <td>Flex Café</td>
+            </tr>
+            <tr>
+              <td>Jul 8</td>
+              <td>Milan, Italy</td>
+              <td>Circolo Magnolia</td>
+            </tr>
+            <tr>
+              <td>Jul 11</td>
+              <td>Barcelona, Spain</td>
+              <td>Razzmatazz 3</td>
+            </tr>
+            <tr>
+              <td>Jul 13</td>
+              <td>Madrid, Spain</td>
+              <td>Sala El Sol</td>
+            </tr>
+            <tr>
+              <td>Jul 16</td>
+              <td>Lisbon, Portugal</td>
+              <td>Musicbox</td>
+            </tr>
+            <tr>
+              <td>Jul 20</td>
+              <td>Reykjavik, Iceland</td>
+              <td>Gaukurinn</td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- Merch & Support section with web links -->
+        <section style="max-width: 700px; margin: 2em auto; padding: 1em; text-align: center; line-height: 1.6;">
 
 
-        <!-- Hidden anchor for offset scroll -->
-        <div id="merch-support" style="position: relative; top: -20px; height: 0; visibility: hidden,"></div>
+          <!-- Hidden anchor for offset scroll -->
+          <div id="merch-support" style="position: relative; top: -20px; height: 0; visibility: hidden,"></div>
 
-        <h2>Merch & Support</h2>
+          <h2>Merch & Support</h2>
 
-        <img src="assets/images/band-jam-volinist-center.jpg" alt="Concrete Handbag Merch"
-          style="max-width: 100%; height: auto; margin-bottom: 1.5em; border-radius: 8px;" />
+          <img src="assets/images/band-jam-volinist-center.jpg" alt="Concrete Handbag Merch"
+            style="max-width: 100%; height: auto; margin-bottom: 1.5em; border-radius: 8px;" />
 
-        <p>
-          Want to rep Concrete Handbag? You can grab official band merch,
-          including shirts, pins, tapes, and more! Head over on our
-          <a href="https://www.etsy.com" target="_blank" rel="noopener noreferrer"
-            style="color: #0070c9; text-decoration: none;">Etsy shop</a>.
-        </p>
+          <p>
+            Want to rep Concrete Handbag? You can grab official band merch,
+            including shirts, pins, tapes, and more! Head over on our
+            <a href="https://www.etsy.com" target="_blank" rel="noopener noreferrer"
+              style="color: #0070c9; text-decoration: none;">Etsy shop</a>.
+          </p>
 
-        <p>
-          Want more exclusive content and behind-the-scenes updates?
-          Join us on <a href="https://www.patreon.com" target="_blank" rel="noopener noreferrer"
-            style="color: #e85a3c; text-decoration: none;">Patreon</a>.
-        </p>
+          <p>
+            Want more exclusive content and behind-the-scenes updates?
+            Join us on <a href="https://www.patreon.com" target="_blank" rel="noopener noreferrer"
+              style="color: #e85a3c; text-decoration: none;">Patreon</a>.
+          </p>
 
-        <p>
-          10% of proceeds go to <a href="https://www.focusireland.ie/" target="_blank" rel="noopener noreferrer"
-            style="color: #009639; text-decoration: none;">Focus Ireland</a>.
-        </p>
-      </section>
+          <p>
+            10% of proceeds go to <a href="https://www.focusireland.ie/" target="_blank" rel="noopener noreferrer"
+              style="color: #009639; text-decoration: none;">Focus Ireland</a>.
+          </p>
+        </section>
 
 
-      <!-- Contact form section with buttons -->
-      <section id="contact"
-        style="max-width: 700px; margin: 2em auto; padding: 1.5em; font-family: sans-serif; line-height: 1.6; text-align: center;">
+        <!-- Contact form section with buttons. -->
+        <section id="contact" style="max-width: 700px; margin: 2em auto; padding: 1.5em; font-family: sans-serif; line-height: 1.6;
+ text-align: center;">
 
-        <!-- Section heading -->
-        <h2>Contact</h2>
+          <h2>Contact</h2>
+          <p style="max-width: 600px; margin: 2em auto; font-size: 1.1rem; line-height: 1.5;">
+            <strong>Have a question or want to book us for an event?</strong><br>
+            Reach out about weddings, festivals, corporate events, or merchandise orders!<br>
+            Just drop us a message below! &#8595;
+          </p>
+          <div class="booking-form-container" style="text-align: left;">
+            <form id="booking-form" class="booking-form" style="max-width: 600px; margin: 0 auto;">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="Name" required
+                style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;" />
 
-        <!-- Introductory text -->
-        <p style="max-width: 600px; margin: 2em auto; font-size: 1.1rem; line-height: 1.5;">
-          <strong>Have a question or want to book us for an event?</strong><br>
-          Reach out about weddings, festivals, corporate events, or merchandise orders!<br>
-          Just drop us a message below! &#8595;
-        </p>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="Email" required
+                style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;" />
 
-        <!-- Form container -->
-        <div class="booking-form-container" style="text-align: left;">
+              <label for="message">Message:</label>
+              <textarea id="message" name="Message" rows="5" required
+                style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;"></textarea>
 
-          <!-- Booking form -->
-          <form id="booking-form" class="booking-form" style="max-width: 600px; margin: 0 auto;">
-
-            <!-- Name input -->
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="Name" required
-              style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;" />
-
-            <!-- Email input -->
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="Email" required
-              style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;" />
-
-            <!-- Message textarea -->
-            <label for="message">Message:</label>
-            <textarea id="message" name="Message" rows="5" required
-              style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;"></textarea>
-
-            <!-- Submit button -->
-            <button type="submit"
-              style="background-color: hsl(0, 100%, 50%); color: white; padding: 0.7em 1.5em; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
-          </form>
-        </div>
-
-        <!-- Emoji decoration below the form -->
-        <div style="text-align: center; font-size: 2rem; margin-top: 1em;">
-          🤘
-        </div>
-
-        <!-- Form submission script -->
-        <script>
-          const form = document.getElementById('booking-form');
-          const container = form.parentElement; // Reference to the form container
-
-          form.addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent page reload on submit
-
-            // Replace form with a thank you message
-            container.innerHTML = '<p style="font-size:1.2rem; padding:1em; text-align:center;">Thanks! We’ll get back to you soon!</p>';
-          });
-        </script>
-
-        <!-- Footer section with social media links -->
-        <footer class="site-footer">
-          <div class="footer-content">
-            <!-- Copyright -->
-            <p>© 2025 Concrete Handbag</p>
-
-            <!-- Social media icons -->
-            <div class="social-links">
-              <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-                <img src="assets/images/facebookicon.svg" alt="Facebook" />
-              </a>
-              <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-                <img src="assets/images/instragmicon_1.svg" alt="Instagram" />
-              </a>
-              <a href="https://open.spotify.com/" target="_blank" aria-label="Spotify">
-                <img src="assets/images/spotify_1.svg" alt="Spotify" />
-              </a>
-              <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-                <img src="assets/images/xicon.svg" alt="Twitter" />
-              </a>
-            </div>
+              <button type="submit"
+                style="background-color: hsl(0, 100%, 50%); color: white; padding: 0.7em 1.5em; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
+            </form>
           </div>
-        </footer>
+          <div style="text-align: center; font-size: 2rem; margin-top: 1em;">
+            🤘
+          </div>
+
+          <script>
+            const form = document.getElementById('booking-form');
+            const container = form.parentElement; // .booking-form-container
+
+            form.addEventListener('submit', function (event) {
+              event.preventDefault(); // Prevent page reload
+
+              // Replace form with success message
+              container.innerHTML = '<p style="font-size:1.2rem; padding:1em; text-align:center;">Thanks! We’ll get back to you soon!</p>';
+            });
+          </script>
+
+
+
+
+
+          <!-- Footer section with social media links -->
+          <footer class="site-footer">
+            <div class="footer-content">
+              <p>© 2025 Concrete Handbag</p>
+              <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                  <img src="assets/images/facebookicon.svg" alt="Facebook" />
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                  <img src="assets/images/instragmicon_1.svg" alt="Instagram" />
+                </a>
+                <a href="https://open.spotify.com/" target="_blank" aria-label="Spotify">
+                  <img src="assets/images/spotify_1.svg" alt="Spotify" />
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                  <img src="assets/images/xicon.svg" alt="Twitter." />
+                </a>
+              </div>
+            </div>
+          </footer>
+          </body>
+
+</html>
