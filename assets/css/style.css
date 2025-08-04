@@ -37,8 +37,7 @@ h2 {
 
 .menu-toggle {
     position: relative;
-    background-color: #444;
-    border-radius: 5px;
+    display: inline-block;
 }
 
 .menu-label {
@@ -48,6 +47,8 @@ h2 {
     cursor: pointer;
     user-select: none;
     font-size: 1.2rem;
+    background: #444;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
@@ -60,9 +61,14 @@ h2 {
     padding: 0;
     margin: 0;
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
     background-color: #333;
     border-radius: 0 0 5px 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 5;
 }
 
 .submenu li a {
@@ -77,8 +83,17 @@ h2 {
     background-color: #555;
 }
 
-#menu-checkbox:checked+.menu-label+.submenu {
+/* open state class */
+.menu-toggle.open .submenu {
     display: block;
+}
+
+.menu-toggle.open .menu-label::after {
+    content: " ▴";
+}
+
+.menu-label::after {
+    content: " ▾";
 }
 
 
