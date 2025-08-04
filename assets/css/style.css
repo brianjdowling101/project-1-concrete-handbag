@@ -328,190 +328,283 @@ video {
 /* ======= AUDIO PLAYER ======= */
 .audio-player-container {
     background-color: #fff;
+    /* White background */
     padding: 30px;
+    /* Inner spacing */
     border-radius: 12px;
+    /* Rounded corners */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
     text-align: center;
+    /* Centered content */
     width: 320px;
+    /* Fixed width */
     margin: 0 auto 2rem auto;
+    /* Center horizontally + bottom spacing */
 }
 
 .audio-player-container h2 {
     font-size: 1.2rem;
+    /* Medium heading */
     margin-bottom: 20px;
+    /* Space below heading */
     color: #333;
+    /* Dark text */
 }
 
 audio {
     width: 100%;
+    /* Full width audio control */
     margin-bottom: 15px;
+    /* Space below audio player */
 }
 
 .buttons {
     display: flex;
+    /* Horizontal layout */
     justify-content: space-between;
+    /* Spread buttons apart */
     margin-bottom: 15px;
+    /* Space below buttons */
 }
 
 .note {
     font-size: 0.85rem;
+    /* Smaller text */
     color: #666;
+    /* Muted color */
 }
 
 .note a {
     color: #0070f3;
+    /* Link color */
     text-decoration: none;
+    /* Remove underline */
 }
 
 .note a:hover {
     text-decoration: underline;
+    /* Underline on hover */
 }
 
 /* ======= BUTTONS SHARED ======= */
 button {
     background-color: #000;
+    /* Black background */
     color: #fff;
+    /* White text */
     border: none;
+    /* Remove border */
     padding: 8px 12px;
+    /* Inner spacing */
     border-radius: 5px;
+    /* Rounded corners */
     font-size: 0.9rem;
+    /* Medium size text */
     cursor: pointer;
+    /* Pointer cursor */
     transition: background-color 0.3s ease;
+    /* Smooth hover effect */
 }
 
 button:hover {
     background-color: #444;
+    /* Dark gray hover */
 }
 
 /* ======= BOOKING FORM ======= */
 .booking-form-container {
     display: flex;
+    /* Flexbox layout */
     justify-content: center;
+    /* Center horizontally */
     align-items: center;
+    /* Center vertically */
 }
 
 .booking-form {
     background-color: #222;
+    /* Dark background */
     padding: 30px;
+    /* Inner spacing */
     border-radius: 10px;
+    /* Rounded corners */
     max-width: 400px;
+    /* Limit width */
     width: 100%;
+    /* Full width within container */
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    /* Subtle glow */
 }
 
 .booking-form h2 {
     text-align: center;
+    /* Centered heading */
     margin-bottom: 20px;
+    /* Space below heading */
     font-weight: 700;
+    /* Bold text */
     color: #f0f0f0;
+    /* Light text */
 }
 
 .booking-form label {
     display: block;
+    /* Each label on its own line */
     margin-bottom: 5px;
+    /* Space below label */
     font-weight: bold;
+    /* Bold labels */
 }
 
 .booking-form input,
 .booking-form textarea {
     width: 100%;
+    /* Full width */
     padding: 10px;
+    /* Inner spacing */
     margin-bottom: 15px;
+    /* Space below field */
     border: none;
+    /* Remove border */
     border-radius: 5px;
+    /* Rounded corners */
     background-color: #333;
+    /* Dark input background */
     color: #fff;
+    /* White text */
 }
 
 .booking-form input:focus,
 .booking-form textarea:focus {
     outline: 2px solid #666;
+    /* Outline on focus */
 }
 
 /* Submit button style matches banner */
 .booking-form button {
     width: 100%;
+    /* Full width button */
     padding: 12px;
+    /* Inner spacing */
     background-color: #e63946;
+    /* Red background */
     font-weight: bold;
+    /* Bold text */
 }
 
 .booking-form button:hover {
     background-color: #d62828;
+    /* Darker red on hover */
 }
 
 /* ======= TABLE ======= */
 table {
     width: 100%;
+    /* Full width table */
     border-collapse: collapse;
+    /* Merge borders */
     margin: 30px 0;
+    /* Vertical spacing */
     background-color: #1c1c1c;
+    /* Dark background */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    /* Subtle shadow */
     font-size: 0.95rem;
+    /* Slightly smaller text */
 }
 
 th,
 td {
     padding: 12px 15px;
+    /* Cell padding */
     border: 1px solid #333;
+    /* Dark borders */
     text-align: left;
+    /* Align text to left */
 }
 
 th {
     background-color: #333;
+    /* Header background */
     text-transform: uppercase;
+    /* Uppercase text */
     letter-spacing: 0.5px;
+    /* Slight letter spacing */
 }
 
 tr:nth-child(even) {
     background-color: #222;
+    /* Alternate row color */
 }
 
 tr:hover {
     background-color: #2a2a2a;
+    /* Row highlight on hover */
 }
 
 /* ======= BAND MEMBERS ======= */
 .band-members {
     text-align: center;
+    /* Center all text */
 }
 
 .band-members h2 {
     font-size: 2em;
+    /* Large heading */
     margin-bottom: 30px;
+    /* Space below heading */
 }
 
 .member-grid {
     display: grid;
+    /* Grid layout */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* Responsive columns */
     gap: 20px;
+    /* Space between cards */
     justify-items: center;
+    /* Center cards in columns */
 }
 
 .member-card {
     background-color: #1c1c1c;
+    /* Dark card background */
     border-radius: 10px;
+    /* Rounded corners */
     padding: 20px;
+    /* Inner spacing */
     max-width: 300px;
+    /* Limit card width */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    /* Subtle glow */
     text-align: center;
+    /* Center content */
 }
 
 .member-card img {
     width: 100%;
+    /* Full width image */
     border-radius: 8px;
+    /* Rounded image corners */
     margin-bottom: 15px;
+    /* Space below image */
 }
 
 .member-card h3 {
     margin: 10px 0 5px;
+    /* Spacing around heading */
     font-size: 1.2em;
+    /* Medium heading */
 }
 
 .member-card p {
     font-size: 0.95em;
+    /* Slightly smaller text */
     color: #ccc;
+    /* Light gray text */
 }
+
 
 /* ======= FOOTER ======= */
 .site-footer {
