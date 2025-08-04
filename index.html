@@ -58,19 +58,29 @@
 
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const checkbox = document.getElementById('menu-checkbox');
-    const menuToggle = document.querySelector('.menu-toggle');
-    if (!checkbox || !menuToggle) return; // safety
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.querySelector(".menu-toggle");
+    const label = toggle.querySelector(".menu-label");
 
-    // Close when clicking/tapping outside (works on mobile via pointerdown)
-    document.addEventListener('pointerdown', (event) => {
-      if (checkbox.checked && !menuToggle.contains(event.target)) {
-        checkbox.checked = false;
+    // Toggle on click
+    label.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggle.classList.toggle("open");
+    });
+
+    // Close if clicking outside
+    document.addEventListener("click", (e) => {
+      if (!toggle.contains(e.target)) {
+        toggle.classList.remove("open");
       }
     });
 
-
+    // Optional: close on Escape
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        toggle.classList.remove("open");
+      }
+    });
   });
 </script>
 
