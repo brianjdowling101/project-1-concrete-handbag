@@ -869,67 +869,7 @@ video {
     /* Hover state */
 }
 
-/* ======= AUDIO PLAYER ======= */
-.audio-player-container {
-    background-color: #fff;
-    /* Light card background */
-    padding: 30px;
-    /* Inner spacing */
-    border-radius: 12px;
-    /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* Soft shadow */
-    text-align: center;
-    /* Center content */
-    width: 320px;
-    /* Fixed width */
-    margin: 0 auto 2rem auto;
-    /* Center and bottom gap */
-}
 
-.audio-player-container h2 {
-    font-size: 1.2rem;
-    /* Heading size */
-    margin-bottom: 20px;
-    /* Space below title */
-    color: #333;
-    /* Dark text */
-}
-
-audio {
-    width: 100%;
-    /* Full width audio element */
-    margin-bottom: 15px;
-    /* Space below */
-}
-
-.buttons {
-    display: flex;
-    /* Horizontal layout */
-    justify-content: space-between;
-    /* Spread buttons */
-    margin-bottom: 15px;
-    /* Space below */
-}
-
-.note {
-    font-size: 0.85rem;
-    /* Smaller note text */
-    color: #666;
-    /* Muted color */
-}
-
-.note a {
-    color: #0070f3;
-    /* Link color */
-    text-decoration: none;
-    /* No underline */
-}
-
-.note a:hover {
-    text-decoration: underline;
-    /* Underline on hover */
-}
 
 /* ======= BUTTONS SHARED ======= */
 button {
