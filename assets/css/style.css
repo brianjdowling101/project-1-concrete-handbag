@@ -898,26 +898,42 @@ tr:hover {
     font-family: 'Segoe UI', sans-serif;
 }
 
+/* Wider screens — switch to horizontal nav */
 @media (min-width: 600px) {
     .nav ul {
         flex-direction: row;
-        /* Horizontal layout */
-        width: auto;
-        height: auto;
+        /* Layout items side-by-side */
         background-color: transparent;
+        /* No background on larger viewports */
+        width: auto;
+        /* Fit content instead of full width */
+        gap: 0;
+        /* Spacing handled per item */
     }
 
     .nav ul li {
         border: none;
+        /* Remove borders for flat look */
+        margin-right: 12px;
+        /* Space between items */
+        border-radius: 4px;
+        /* Slight rounding for hover/bg */
     }
 
     .nav ul li a {
-        color: black;
         padding: 10px 15px;
+        /* Clickable padding */
+        color: black;
+        /* Link text color */
+        background-color: transparent;
+        /* Transparent default background */
     }
 
-    .nav ul li a:hover {
-        background-color: transparent;
+    .nav ul li a:hover,
+    .nav ul li a:focus {
+        background-color: rgba(0, 86, 204, 0.1);
+        /* Subtle highlight on hover/focus */
         color: blue;
+        /* Accent color on interaction */
     }
 }
