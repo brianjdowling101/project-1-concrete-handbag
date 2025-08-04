@@ -454,72 +454,73 @@
 
 
 <!-- Contact form section with buttons. -->
+<section id="contact" style="max-width: 700px; margin: 2em auto; padding: 1.5em; font-family: sans-serif; line-height: 1.6;
+ text-align: center;">
 
+  <h2>Contact</h2>
+  <p style="max-width: 600px; margin: 2em auto; font-size: 1.1rem; line-height: 1.5;">
+    <strong>Have a question or want to book us for an event?</strong><br>
+    Reach out about weddings, festivals, corporate events, or merchandise orders!<br>
+    Just drop us a message below! &#8595;
+  </p>
+  <div class="booking-form-container" style="text-align: left;">
+    <form id="booking-form" class="booking-form" style="max-width: 600px; margin: 0 auto;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="Name" required
+        style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;" />
 
-<h2>Contact</h2>
-<p style="max-width: 600px; margin: 2em auto; font-size: 1.1rem; line-height: 1.5;">
-  <strong>Have a question or want to book us for an event?</strong><br>
-  Reach out about weddings, festivals, corporate events, or merchandise orders!<br>
-  Just drop us a message below! &#8595;
-</p>
-<div class="booking-form-container" style="text-align: left;">
-  <form id="booking-form" class="booking-form" style="max-width: 600px; margin: 0 auto;">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="Name" required
-      style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;" />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="Email" required
+        style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;" />
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="Email" required
-      style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;" />
+      <label for="message">Message:</label>
+      <textarea id="message" name="Message" rows="5" required
+        style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;"></textarea>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="Message" rows="5" required
-      style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;"></textarea>
-
-    <button type="submit"
-      style="background-color: hsl(0, 100%, 50%); color: white; padding: 0.7em 1.5em; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
-  </form>
-</div>
-<div style="text-align: center; font-size: 2rem; margin-top: 1em;">
-  🤘
-</div>
-
-<script>
-  const form = document.getElementById('booking-form');
-  const container = form.parentElement; // .booking-form-container
-
-  form.addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent page reload
-
-    // Replace form with success message
-    container.innerHTML = '<p style="font-size:1.2rem; padding:1em; text-align:center;">Thanks! We’ll get back to you soon!</p>';
-  });
-</script>
-
-
-
-
-
-<!-- Footer section with social media links -->
-<footer class="site-footer">
-  <div class="footer-content">
-    <p>© 2025 Concrete Handbag</p>
-    <div class="social-links">
-      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-        <img src="assets/images/facebookicon.svg" alt="Facebook" />
-      </a>
-      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-        <img src="assets/images/instragmicon_1.svg" alt="Instagram" />
-      </a>
-      <a href="https://open.spotify.com/" target="_blank" aria-label="Spotify">
-        <img src="assets/images/spotify_1.svg" alt="Spotify" />
-      </a>
-      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-        <img src="assets/images/xicon.svg" alt="Twitter." />
-      </a>
-    </div>
+      <button type="submit"
+        style="background-color: hsl(0, 100%, 50%); color: white; padding: 0.7em 1.5em; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
+    </form>
   </div>
-</footer>
+  <div style="text-align: center; font-size: 2rem; margin-top: 1em;">
+    🤘
+  </div>
+
+  <script>
+    const form = document.getElementById('booking-form');
+    const container = form.parentElement; // .booking-form-container
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent page reload
+
+      // Replace form with success message
+      container.innerHTML = '<p style="font-size:1.2rem; padding:1em; text-align:center;">Thanks! We’ll get back to you soon!</p>';
+    });
+  </script>
+
+
+
+
+
+  <!-- Footer section with social media links -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>© 2025 Concrete Handbag</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img src="assets/images/facebookicon.svg" alt="Facebook" />
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="assets/images/instragmicon_1.svg" alt="Instagram" />
+        </a>
+        <a href="https://open.spotify.com/" target="_blank" aria-label="Spotify">
+          <img src="assets/images/spotify_1.svg" alt="Spotify" />
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <img src="assets/images/xicon.svg" alt="Twitter." />
+        </a>
+      </div>
+    </div>
+  </footer>
 
 
 </html>
