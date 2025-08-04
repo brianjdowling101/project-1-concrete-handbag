@@ -882,3 +882,27 @@ tr:hover {
     margin: 2rem auto;
     font-family: 'Segoe UI', sans-serif;
 }
+
+@media (min-width: 600px) {
+    .nav ul {
+        flex-direction: row;
+        /* Horizontal layout */
+        width: auto;
+        height: auto;
+        background-color: transparent;
+    }
+
+    .nav ul li {
+        border: none;
+    }
+
+    .nav ul li a {
+        color: black;
+        padding: 10px 15px;
+    }
+
+    .nav ul li a:hover {
+        background-color: transparent;
+        color: blue;
+    }
+}
