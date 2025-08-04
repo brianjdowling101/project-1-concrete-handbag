@@ -804,270 +804,408 @@ h2 {
 /* ======= VIDEO PLAYER ======= */
 .video-container {
     max-width: 320px;
+    /* Limit width */
     margin: 0 auto;
+    /* Center horizontally */
     padding: 1rem;
+    /* Inner spacing */
     background-color: #222;
+    /* Dark background */
     border: 2px solid #444;
+    /* Border around container */
     border-radius: 12px;
+    /* Rounded corners */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Glow/shadow effect */
     display: flex;
+    /* Use flex layout */
     flex-direction: column;
+    /* Stack vertically */
     align-items: center;
+    /* Center children */
 }
 
 video {
     width: 100%;
+    /* Full width video */
     border-radius: 12px;
+    /* Rounded edges */
     background-color: #000;
+    /* Fallback background */
 }
 
 .controls {
     margin-top: 1rem;
+    /* Space above controls */
     display: flex;
+    /* Horizontal button layout */
     gap: 1rem;
+    /* Space between buttons */
     justify-content: center;
+    /* Center controls */
 }
 
 .controls button {
     background-color: #333;
+    /* Button background */
     color: #eee;
+    /* Button text */
     border: 1px solid #555;
+    /* Subtle border */
     padding: 0.5rem 1rem;
+    /* Button padding */
     border-radius: 5px;
+    /* Rounded corners */
     font-size: 1rem;
+    /* Text size */
     cursor: pointer;
+    /* Pointer cursor */
     transition: background-color 0.2s ease;
+    /* Smooth hover */
 }
 
 .controls button:hover {
     background-color: #555;
+    /* Hover state */
 }
 
 /* ======= AUDIO PLAYER ======= */
 .audio-player-container {
     background-color: #fff;
+    /* Light card background */
     padding: 30px;
+    /* Inner spacing */
     border-radius: 12px;
+    /* Rounded corners */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
     text-align: center;
+    /* Center content */
     width: 320px;
+    /* Fixed width */
     margin: 0 auto 2rem auto;
+    /* Center and bottom gap */
 }
 
 .audio-player-container h2 {
     font-size: 1.2rem;
+    /* Heading size */
     margin-bottom: 20px;
+    /* Space below title */
     color: #333;
+    /* Dark text */
 }
 
 audio {
     width: 100%;
+    /* Full width audio element */
     margin-bottom: 15px;
+    /* Space below */
 }
 
 .buttons {
     display: flex;
+    /* Horizontal layout */
     justify-content: space-between;
+    /* Spread buttons */
     margin-bottom: 15px;
+    /* Space below */
 }
 
 .note {
     font-size: 0.85rem;
+    /* Smaller note text */
     color: #666;
+    /* Muted color */
 }
 
 .note a {
     color: #0070f3;
+    /* Link color */
     text-decoration: none;
+    /* No underline */
 }
 
 .note a:hover {
     text-decoration: underline;
+    /* Underline on hover */
 }
 
 /* ======= BUTTONS SHARED ======= */
 button {
     background-color: #000;
+    /* Default button bg */
     color: #fff;
+    /* Button text */
     border: none;
+    /* No border */
     padding: 8px 12px;
+    /* Spacing */
     border-radius: 5px;
+    /* Rounded corners */
     font-size: 0.9rem;
+    /* Text size */
     cursor: pointer;
+    /* Pointer cursor */
     transition: background-color 0.3s ease;
+    /* Hover transition */
 }
 
 button:hover {
     background-color: #444;
+    /* Hover background */
 }
 
 /* ======= BOOKING FORM ======= */
 .booking-form-container {
     display: flex;
+    /* Use flex to center form */
     justify-content: center;
+    /* Center horizontally */
     align-items: center;
+    /* Center vertically */
 }
 
 .booking-form {
     background-color: #222;
+    /* Dark form background */
     padding: 30px;
+    /* Inner spacing */
     border-radius: 10px;
+    /* Rounded corners */
     max-width: 400px;
+    /* Width cap */
     width: 100%;
+    /* Full available width */
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    /* Subtle glow */
 }
 
 .booking-form h2 {
     text-align: center;
+    /* Center heading */
     margin-bottom: 20px;
+    /* Space below */
     font-weight: 700;
+    /* Bold text */
     color: #f0f0f0;
+    /* Light text */
 }
 
 .booking-form label {
     display: block;
+    /* Stack labels */
     margin-bottom: 5px;
+    /* Space below label */
     font-weight: bold;
+    /* Emphasize */
 }
 
 .booking-form input,
 .booking-form textarea {
     width: 100%;
+    /* Full width fields */
     padding: 10px;
+    /* Inner spacing */
     margin-bottom: 15px;
+    /* Space between fields */
     border: none;
+    /* Remove default border */
     border-radius: 5px;
+    /* Rounded corners */
     background-color: #333;
+    /* Field background */
     color: #fff;
+    /* Field text */
 }
 
 .booking-form input:focus,
 .booking-form textarea:focus {
     outline: 2px solid #666;
+    /* Focus indicator */
 }
 
 /* Submit button style matches banner */
 .booking-form button {
     width: 100%;
+    /* Full width submit */
     padding: 12px;
+    /* Spacing */
     background-color: #e63946;
+    /* Accent color */
     font-weight: bold;
+    /* Bold label */
 }
 
 .booking-form button:hover {
     background-color: #d62828;
+    /* Darker on hover */
 }
 
 /* ======= TABLE ======= */
 table {
     width: 100%;
+    /* Full width table */
     border-collapse: collapse;
+    /* Merge borders */
     margin: 30px 0;
+    /* Vertical spacing */
     background-color: #1c1c1c;
+    /* Dark table bg */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    /* Soft shadow */
     font-size: 0.95rem;
+    /* Slightly smaller text */
 }
 
 th,
 td {
     padding: 12px 15px;
+    /* Cell padding */
     border: 1px solid #333;
+    /* Cell border */
     text-align: left;
+    /* Align text */
 }
 
 th {
     background-color: #333;
+    /* Header bg */
     text-transform: uppercase;
+    /* Uppercase headers */
     letter-spacing: 0.5px;
+    /* Spacing */
 }
 
 tr:nth-child(even) {
     background-color: #222;
+    /* Stripe effect */
 }
 
 tr:hover {
     background-color: #2a2a2a;
+    /* Highlight row */
 }
 
 /* ======= BAND MEMBERS ======= */
 .band-members {
     text-align: center;
+    /* Center content */
 }
 
 .band-members h2 {
     font-size: 2em;
+    /* Section title size */
     margin-bottom: 30px;
+    /* Spacing below title */
 }
 
 .member-grid {
     display: grid;
+    /* Grid layout */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* Responsive columns */
     gap: 20px;
+    /* Gutter space */
     justify-items: center;
+    /* Center each card */
 }
 
 .member-card {
     background-color: #1c1c1c;
+    /* Card background */
     border-radius: 10px;
+    /* Rounded edges */
     padding: 20px;
+    /* Inner spacing */
     max-width: 300px;
+    /* Width limit */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    /* Subtle glow */
     text-align: center;
+    /* Center text */
 }
 
 .member-card img {
     width: 100%;
+    /* Full width image */
     border-radius: 8px;
+    /* Rounded image corners */
     margin-bottom: 15px;
+    /* Space below image */
 }
 
 .member-card h3 {
     margin: 10px 0 5px;
+    /* Spacing around name */
     font-size: 1.2em;
+    /* Name size */
 }
 
 .member-card p {
     font-size: 0.95em;
+    /* Description size */
     color: #ccc;
+    /* Light text */
 }
 
 /* ======= FOOTER ======= */
 .site-footer {
     padding: 30px 20px;
+    /* Footer spacing */
     margin-top: 60px;
+    /* Space above footer */
     border-top: 1px solid #333;
+    /* Top border */
     text-align: center;
+    /* Center content */
 }
 
 .footer-content {
     display: flex;
+    /* Flex layout */
     flex-direction: column;
+    /* Stack items */
     align-items: center;
+    /* Center children */
     gap: 15px;
+    /* Space between elements */
 }
 
 .footer-content p {
     font-size: 0.9rem;
+    /* Footer text size */
     margin: 0;
+    /* Reset default margin */
     color: #ccc;
+    /* Muted text */
 }
 
 .social-links {
     display: flex;
+    /* Horizontal icons */
     gap: 25px;
+    /* Space between icons */
 }
 
 .social-links img {
     width: 28px;
+    /* Icon size */
     height: 28px;
+    /* Icon size */
     filter: brightness(0) invert(1);
+    /* Invert for contrast */
     opacity: 0.85;
+    /* Slightly faded */
     transition: transform 0.2s ease, opacity 0.2s ease;
+    /* Hover transition */
 }
 
 .social-links img:hover {
     transform: scale(1.15);
+    /* Enlarge on hover */
     opacity: 1;
+    /* Full visibility */
 }
 
 /* ======= MERCH SECTION ======= */
