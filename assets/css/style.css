@@ -882,3 +882,58 @@ tr:hover {
     margin: 2rem auto;
     font-family: 'Segoe UI', sans-serif;
 }
+
+@media (min-width: 600px) {
+    .nav-list {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+}
+
+/* Medium desktops: ≥ 900px */
+@media (min-width: 900px) {
+    .cards {
+        gap: 1.5rem;
+    }
+
+    .card {
+        flex: 1 1 calc(33.333% - 1.5rem);
+        max-width: calc(33.333% - 1.5rem);
+    }
+
+    .site-header {
+        padding: 1rem 2rem;
+    }
+
+    .hero {
+        margin: 2rem auto;
+        max-width: 900px;
+    }
+}
+
+/* Large screens: ≥ 1200px */
+@media (min-width: 1200px) {
+    .cards {
+        gap: 2rem;
+    }
+
+    .card {
+        flex: 1 1 calc(25% - 2rem);
+        max-width: calc(25% - 2rem);
+    }
+}
