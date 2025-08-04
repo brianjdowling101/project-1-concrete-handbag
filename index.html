@@ -213,16 +213,22 @@
         </div>
 
         <script>
+          // Get the audio player element
           const audio = document.getElementById('player');
+
+          // Add click event to the play button
           document.getElementById('play').addEventListener('click', async () => {
             try {
+              // Try to start playing the audio
               await audio.play();
               console.log('Playing');
             } catch (err) {
+              // Show a warning if audio can't play
               console.warn('Playback failed:', err);
             }
           });
         </script>
+
       </section>
 
       <section id="tour-dates" style="max-width: 700px; margin: 2em auto; padding: 1.5em; font-family: sans-serif; line-height: 1.6;
