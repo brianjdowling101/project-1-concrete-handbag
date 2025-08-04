@@ -801,6 +801,48 @@ h2 {
     text-align: center;
 }
 
+/* ======= AUDIO PLAYER ======= */
+.audio-player-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    margin: 0 auto 2rem auto;
+}
+
+.audio-player-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.note {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.note a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.note a:hover {
+    text-decoration: underline;
+}
+
 /* ======= VIDEO PLAYER ======= */
 .video-container {
     max-width: 320px;
