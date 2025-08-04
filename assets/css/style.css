@@ -19,8 +19,8 @@ h2 {
 
 .nav {
     background-color: #333;
-    padding: 50px;
-    margin: 50px;
+    padding: 0px;
+    margin: 0px;
     height: 100px;
     display: flex;
     justify-content: center;
