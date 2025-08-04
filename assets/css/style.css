@@ -1,228 +1,329 @@
-/* ======= BA/* ======= BASE ======= */
+/* ======= GLOBAL STYLES ======= */
 body {
     margin: 0;
+    /* Remove default page margin */
     font-family: 'Segoe UI', sans-serif;
+    /* Set base font */
     background-color: #222;
+    /* Dark background */
     color: #f0f0f0;
+    /* Light text for contrast */
 }
 
 /* ======= HEADINGS ======= */
 h1,
 h2 {
     font-size: 2rem;
+    /* Large heading text */
     margin-bottom: 1rem;
+    /* Space below headings */
     border-bottom: 1px solid #444;
+    /* Underline separator */
     padding-bottom: 0.5rem;
+    /* Space between text and border */
     text-align: center;
+    /* Centered headings */
     color: #f0f0f0;
+    /* Ensure heading color matches body text */
 }
 
+/* ======= NAVIGATION ======= */
 .nav {
     background-color: #333;
+    /* Nav bar background */
     padding: 50;
+    /* TODO: missing units (e.g., 50px) */
     margin: 50;
+    /* TODO: missing units (e.g., 50px) */
     height: 100px;
+    /* Fixed height */
     display: flex;
+    /* Use flexbox for alignment */
     justify-content: center;
+    /* Center horizontally */
     align-items: center;
+    /* Center vertically */
     user-select: none;
+    /* Prevent text selection */
 }
 
 .nav-list {
     list-style: none;
+    /* Remove bullets */
     padding: 0;
+    /* Reset padding */
     margin: 0;
+    /* Reset margin */
     width: 200px;
+    /* Fixed width for list */
 }
 
 .menu-toggle {
     position: relative;
+    /* For child positioning */
     background-color: #444;
+    /* Toggle background */
     border-radius: 5px;
+    /* Rounded corners */
 }
 
 .menu-label {
     display: block;
+    /* Make label a block for padding */
     color: white;
+    /* Label text color */
     padding: 12px 15px;
+    /* Inner spacing */
     cursor: pointer;
+    /* Pointer on hover */
     user-select: none;
+    /* Disable selection */
     font-size: 1.2rem;
+    /* Slightly larger text */
     transition: background-color 0.3s ease;
+    /* Smooth hover */
 }
 
 .menu-label:hover {
     background-color: #555;
+    /* Hover background change */
 }
 
 .submenu {
     list-style: none;
+    /* No bullets */
     padding: 0;
+    /* Reset padding */
     margin: 0;
+    /* Reset margin */
     display: none;
+    /* Hidden by default */
     background-color: #333;
+    /* Submenu background */
     border-radius: 0 0 5px 5px;
+    /* Rounded bottom corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow */
 }
 
 .submenu li a {
     display: block;
+    /* Make link fill container */
     color: white;
+    /* Link text color */
     padding: 10px 15px;
+    /* Spacing */
     text-decoration: none;
+    /* Remove underline */
     border-top: 1px solid #555;
+    /* Divider between items */
 }
 
 .submenu li a:hover {
     background-color: #555;
+    /* Hover state */
 }
 
+/* Show submenu when checkbox is checked */
 #menu-checkbox:checked+.menu-label+.submenu {
     display: block;
 }
 
-
-
-
-
-
-/*Banner secton */
-/* Main banner container */
+/* ======= BANNER SECTION ======= */
+/* Banner section container */
 .home-banner {
     background: url('images/banner.jpg') center center / cover no-repeat;
+    /* Background image */
     height: 80vh;
+    /* Tall banner */
     display: flex;
+    /* Flex for centering content */
     align-items: center;
+    /* Vertical center */
     justify-content: center;
+    /* Horizontal center */
     text-align: center;
+    /* Text center */
     position: relative;
+    /* For layering */
     color: #fff;
+    /* Light text */
     box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
     z-index: 1;
+    /* Above background */
 }
 
-/* Inner content of the banner */
+/* Inner banner content box */
 .banner-content {
     background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
     padding: 40px 20px;
+    /* Spacing inside */
     border-radius: 10px;
+    /* Rounded corners */
     max-width: 600px;
+    /* Limit width */
     margin: 0 1rem;
+    /* Horizontal margin for small screens */
 }
 
 /* Banner heading style */
 .banner-content h1 {
     font-size: 3em;
+    /* Large main title */
     margin-bottom: 10px;
+    /* Space below */
 }
 
 /* Banner paragraph style */
 .banner-content p {
     font-size: 1.2em;
+    /* Slightly larger body text */
     margin-bottom: 20px;
+    /* Space before CTA */
     color: #ddd;
+    /* Softer text */
 }
 
-/* Call-to-action button in banner */
+/* Call-to-action button */
 .banner-button {
     display: inline-block;
+    /* Inline-block for padding */
     padding: 12px 25px;
+    /* Button padding */
     background-color: #e63946;
+    /* Primary button color */
     color: #fff;
+    /* Button text */
     text-decoration: none;
+    /* Remove underline */
     border-radius: 5px;
+    /* Rounded corners */
     font-weight: bold;
+    /* Emphasize text */
     transition: background-color 0.3s ease;
+    /* Smooth hover */
 }
 
-/* Hover state for banner button */
+/* Hover for CTA */
 .banner-button:hover {
     background-color: #d62828;
+    /* Darker on hover */
 }
 
-/* Banner */
+/* Shared section backgrounds and padding */
 .home-banner,
 .content,
 .band-members,
 .booking-form-container,
 .site-footer {
     background-color: #222;
+    /* Default dark background for sections */
     padding: 40px 20px;
+    /* Section padding */
 }
 
-/* CONTENT AREA*/
+/* ======= CONTENT AREA ======= */
 /* Main content container */
 .content {
     max-width: 800px;
+    /* Limit width */
     margin: 0 auto;
+    /* Center horizontally */
 }
 
-/* ======= SECTIONS SHARED ======= */
+/* ======= SHARED SECTION OVERRIDE ======= */
 .content,
 .band-members,
 .booking-form-container,
 .site-footer {
     background-color: #fafafa;
+    /* Light background override */
     padding: 40px 20px;
+    /* Consistent padding */
 }
 
-
-
-/* ======= CONTENT ======= */
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* ======= BIO ======= */
+/* ======= BIO SECTION ======= */
 .bio {
     font-size: 1rem;
+    /* Body font size */
     line-height: 1.6;
+    /* Improve readability */
     margin-bottom: 2rem;
+    /* Space below */
     text-align: center;
+    /* Centered bio text */
 }
 
 /* ======= VIDEO PLAYER ======= */
 .video-container {
     max-width: 320px;
+    /* Limit width */
     margin: 0 auto;
+    /* Center container */
     padding: 1rem;
+    /* Inner spacing */
     background-color: #222;
+    /* Dark background */
     border: 2px solid #444;
+    /* Border around player */
     border-radius: 12px;
+    /* Rounded corners */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Glow effect */
     display: flex;
+    /* Flex layout */
     flex-direction: column;
+    /* Stack vertically */
     align-items: center;
+    /* Center children */
 }
 
 video {
     width: 100%;
+    /* Full width video */
     border-radius: 12px;
+    /* Rounded edges */
     background-color: #000;
+    /* Fallback background */
 }
 
 .controls {
     margin-top: 1rem;
+    /* Space above controls */
     display: flex;
+    /* Horizontal layout */
     gap: 1rem;
+    /* Spacing between buttons */
     justify-content: center;
+    /* Center controls */
 }
 
 .controls button {
     background-color: #333;
+    /* Button background */
     color: #eee;
+    /* Button text */
     border: 1px solid #555;
+    /* Border for definition */
     padding: 0.5rem 1rem;
+    /* Button padding */
     border-radius: 5px;
+    /* Rounded corners */
     font-size: 1rem;
+    /* Button text size */
     cursor: pointer;
+    /* Pointer on hover */
     transition: background-color 0.2s ease;
+    /* Smooth hover */
 }
 
 .controls button:hover {
     background-color: #555;
+    /* Hover effect */
 }
+
 
 /* ======= AUDIO PLAYER ======= */
 .audio-player-container {
