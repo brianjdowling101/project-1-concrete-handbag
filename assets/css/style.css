@@ -104,7 +104,7 @@ h2 {
 /*Banner secton */
 /* Main banner container */
 .home-banner {
-    background: url('images/banner.jpg') center center / cover no-repeat;
+    background: url('../images/banner.jpg') center center / cover no-repeat;
     height: 80vh;
     display: flex;
     align-items: center;
