@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #222;
+    background-color: #6E6E6E;
     color: #2b2929;
 }
 
@@ -95,10 +95,6 @@ h2 {
 .menu-label::after {
     content: " ▾";
 }
-
-
-
-
 
 
 /*Banner secton */
@@ -433,6 +429,7 @@ tr:hover {
 
 /* ======= FOOTER ======= */
 .site-footer {
+    background-color: #333;
     padding: 30px 20px;
     margin-top: 60px;
     border-top: 1px solid #333;
