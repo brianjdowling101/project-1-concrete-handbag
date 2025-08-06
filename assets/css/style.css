@@ -19,190 +19,358 @@ h2 {
     color: #f0f0f0;
 }
 
-/* Navigation */
+/* ======= Navigation Bar ======= */
+
+/* Main navigation container */
 .nav {
     background-color: #333;
+    /* Dark background */
     padding: 0px;
+    /* No padding */
     margin: 0px;
+    /* No margin */
     height: 100px;
+    /* Fixed height */
     display: flex;
+    /* Flexbox layout */
     justify-content: center;
+    /* Center horizontally */
     align-items: center;
+    /* Center vertically */
     user-select: none;
+    /* Disable text selection */
     position: fixed;
+    /* Fixed position on screen */
     top: 0;
+    /* Stick to top */
     width: 100%;
+    /* Full width */
     transition: top 0.3s ease;
+    /* Smooth transition for hiding/showing nav */
     z-index: 10;
-    /* so it stays on top */
+    /* Stay above other content */
 }
 
-
-
+/* Navigation list container */
 .nav-list {
     list-style: none;
+    /* Remove bullet points */
     padding: 0;
+    /* Remove default padding */
     margin: 0;
+    /* Remove default margin */
     width: 200px;
+    /* Fixed width */
 }
 
+/* Container for menu toggle (dropdown) */
 .menu-toggle {
     position: relative;
+    /* Position relative for submenu absolute positioning */
     display: inline-block;
+    /* Inline block for layout */
 }
 
-/* Menu label */
+/* Label/button for menu toggle */
 .menu-label {
     background: #444;
+    /* Medium dark background */
     color: #f0f0f0;
-    /* lighter text */
+    /* Light text color */
     padding: 12px 15px;
+    /* Padding inside button */
     cursor: pointer;
+    /* Pointer cursor on hover */
     border-radius: 5px;
+    /* Rounded corners */
     transition: background-color 0.3s ease;
+    /* Smooth background color change */
 }
 
+/* Hover effect on menu label */
 .menu-label:hover {
     background-color: #555;
+    /* Slightly lighter background on hover */
 }
 
+/* Submenu list styling */
 .submenu {
     list-style: none;
+    /* Remove bullets */
     padding: 0;
+    /* Remove padding */
     margin: 0;
+    /* Remove margin */
     display: none;
+    /* Hidden by default */
     position: absolute;
+    /* Absolute positioning relative to menu-toggle */
     top: 100%;
+    /* Position directly below parent */
     left: 0;
+    /* Align left edges */
     min-width: 180px;
+    /* Minimum width */
     background-color: #333;
+    /* Dark background */
     border-radius: 0 0 5px 5px;
+    /* Rounded bottom corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    /* Drop shadow for depth */
     z-index: 5;
+    /* Layer above other content but below nav */
 }
 
+/* Submenu links styling */
 .submenu li a {
     display: block;
+    /* Block level links */
     color: white;
+    /* White text */
     padding: 10px 15px;
+    /* Padding inside links */
     text-decoration: none;
+    /* Remove underline */
     border-top: 1px solid #555;
+    /* Top border to separate items */
 }
 
+/* Hover effect on submenu links */
 .submenu li a:hover {
     background-color: #555;
+    /* Highlight background on hover */
 }
 
-/* open state class */
+/* When menu-toggle has 'open' class, show submenu */
 .menu-toggle.open .submenu {
     display: block;
+    /* Show submenu */
 }
 
+/* Change arrow icon when menu is open */
 .menu-toggle.open .menu-label::after {
     content: " ▴";
+    /* Up arrow */
 }
 
+/* Default arrow icon on menu label */
 .menu-label::after {
     content: " ▾";
+    /* Down arrow */
 }
 
-/*Banner secton */
-/* Main banner container */
+
+/* ======= Banner Section ======= */
+
+/* Main banner container with background image and styling */
 .home-banner {
     background: url('../images/banner.jpg') center center / cover no-repeat;
+    /* Background image centered and covers area */
     height: 80vh;
+    /* Height set to 80% of viewport height */
     display: flex;
+    /* Flexbox layout */
     align-items: center;
+    /* Vertically center content */
     justify-content: center;
+    /* Horizontally center content */
     text-align: center;
+    /* Center text inside */
     position: relative;
+    /* For stacking context */
     color: #000000;
-    ;
+    /* Text color black */
     box-shadow: inset 0 0 100px rgb(0, 0, 0.5);
+    /* Dark inset shadow overlay */
     z-index: 1;
+    /* Layer order */
 }
 
-/* Inner content of the banner */
+/* Inner content box inside banner */
 .banner-content {
     background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
     padding: 40px 20px;
+    /* Padding inside content */
     border-radius: 10px;
+    /* Rounded corners */
     max-width: 600px;
+    /* Maximum width */
     margin: 0 1rem;
+    /* Horizontal margin */
 }
 
 /* Banner heading style */
 .banner-content h1 {
     font-size: 3em;
+    /* Large heading */
     margin-bottom: 10px;
+    /* Space below heading */
 }
 
 /* Banner paragraph style */
 .banner-content p {
     font-size: 1.2em;
+    /* Slightly larger paragraph text */
     margin-bottom: 20px;
+    /* Space below paragraph */
     color: #ddd;
+    /* Light gray text */
 }
 
-/* Call-to-action button in banner */
+/* Call-to-action button inside banner */
 .banner-button {
     display: inline-block;
+    /* Inline block for proper sizing */
     padding: 12px 25px;
+    /* Padding around text */
     background-color: #e63946;
+    /* Bright red background */
     color: #ffffff;
+    /* White text */
     text-decoration: none;
+    /* Remove underline */
     border-radius: 5px;
+    /* Rounded corners */
     font-weight: bold;
+    /* Bold text */
     transition: background-color 0.3s ease;
+    /* Smooth color transition */
 }
 
-/* Hover state for banner button */
+/* Hover effect for banner button */
 .banner-button:hover {
     background-color: #d62828;
+    /* Darker red on hover */
 }
 
-/* Banner */
+/* ======= Background colors and padding for sections ======= */
+
+/* Shared background and padding for main page sections */
 .home-banner,
 .content,
 .band-members,
 .booking-form-container,
 .site-footer {
     background-color: #222;
+    /* Very dark background */
     padding: 40px 20px;
+    /* Padding inside sections */
 }
 
-
-
-
-/* Content */
+/* Shared background, padding, and text color for content-related sections */
 .content,
 .band-members,
 .music-media,
 .merch-support,
 .booking-form-container {
     background-color: #333333;
+    /* Dark gray background */
     /* Dark but not black, softer on eyes */
     padding: 40px 20px;
+    /* Padding inside sections */
     color: #ddd;
+    /* Light gray text */
 }
 
+/* ======= Content Container ======= */
 
-
-
-
-/* ======= CONTENT ======= */
+/* Main content wrapper */
 .content {
     max-width: 800px;
+    /* Limit content width */
     margin: 0 auto;
+    /* Center horizontally */
 }
 
-/* ======= BIO ======= */
+/* ======= Bio Section ======= */
+
+/* Band or artist bio text styling */
 .bio {
     font-size: 1rem;
+    /* Regular font size */
     line-height: 1.6;
+    /* Line spacing for readability */
     margin-bottom: 2rem;
+    /* Bottom margin */
     text-align: center;
+    /* Centered text */
 }
+
+/* ======= Video Player Section ======= */
+
+/* Container for video player */
+.video-container {
+    max-width: 320px;
+    /* Limit width */
+    margin: 0 auto;
+    /* Center horizontally */
+    padding: 1rem;
+    /* Inner padding */
+    background-color: #222;
+    /* Dark background */
+    border: 2px solid #444;
+    /* Border around container */
+    border-radius: 12px;
+    /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow */
+    display: flex;
+    /* Flex layout */
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center children horizontally */
+}
+
+/* Video element styling */
+video {
+    width: 100%;
+    /* Full container width */
+    border-radius: 12px;
+    /* Rounded corners */
+    background-color: #000;
+    /* Black background */
+}
+
+/* Controls container below video */
+.controls {
+    margin-top: 1rem;
+    /* Space above controls */
+    display: flex;
+    /* Flex layout */
+    gap: 1rem;
+    /* Space between buttons */
+    justify-content: center;
+    /* Center controls */
+}
+
+/* Style for control buttons */
+.controls button {
+    background-color: #333;
+    /* Dark button background */
+    color: #eee;
+    /* Light text color */
+    border: 1px solid #555;
+    /* Border around buttons */
+    padding: 0.5rem 1rem;
+    /* Padding inside buttons */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 1rem;
+    /* Button font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.2s ease;
+    /* Smooth background transition */
+}
+
+/* Hover effect for control buttons */
+.controls button:hover {
+    background-color: #555;
+    /* Slightly lighter background on hover */
+}
+
 
 /* ======= VIDEO PLAYER ======= */
 .video-container {
