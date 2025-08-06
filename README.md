@@ -6,7 +6,7 @@ Its purpose is to showcase the band's identity, provide access to multimedia con
 
 Whether users are loyal fans or curious newcomers, this website is designed to be intuitive and accessible across all devices.
 
-![Concrete Hand Bag](insert-screenshot-url-here)
+![Concrete Hand Bag]![image](/image/device.png)
 
 **Live Website:**
 
