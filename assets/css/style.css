@@ -456,22 +456,34 @@ tr:hover {
     color: #ccc;
 }
 
+/* Container for social media icons */
 .social-links {
     display: flex;
+    /* Arrange icons in a horizontal row */
     gap: 25px;
+    /* Space between each icon */
 }
 
+/* Style for each social media icon image */
 .social-links img {
     width: 28px;
+    /* Fixed width */
     height: 28px;
+    /* Fixed height for uniformity */
     filter: brightness(0) invert(1);
+    /* Make icons white by inverting black */
     opacity: 0.85;
+    /* Slightly transparent for subtle look */
     transition: transform 0.2s ease, opacity 0.2s ease;
+    /* Smooth hover transitions */
 }
 
+/* Hover effect for social media icons */
 .social-links img:hover {
     transform: scale(1.15);
+    /* Slightly enlarge icon */
     opacity: 1;
+    /* Fully opaque on hover */
 }
 
 /* ======= MERCH SECTION ======= */
