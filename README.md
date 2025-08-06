@@ -14,13 +14,12 @@ Whether users are loyal fans or curious newcomers, this website is designed to b
 
 ## Features
 
-### The Header  
+### The Banner  
 The website features a bold and creative header that reflects the band’s unique and edgy style. The header includes:
-- 
-- 
-- 
+- Image of the band posing on a rooftop of a builing.
+- Note board with information about their new track called Side Walk Etiquette.
+- A link to their new track, which bring the users to The Music and Media section of the website.
 
-This introductory section sets the tone and aesthetic for the rest of the site.
 
 ---
 
@@ -34,6 +33,9 @@ The navigation bar is fixed to the top of the page and includes smooth-scrolling
 
 Each section is easy to locate and accessible, with hover effects for improved user feedback.
 
+![image](assets/images/navbar.png)
+
+![image](assets/images/openmenu.png)
 ---
 
 ### About the Band  
