@@ -362,77 +362,126 @@ button:hover {
 }
 
 /* ======= TABLE ======= */
+
+/* Style for the table element */
 table {
     width: 100%;
+    /* Full width of container */
     border-collapse: collapse;
+    /* Collapse borders into single line */
     margin: 30px 0;
+    /* Vertical margin above and below table */
     background-color: #1c1c1c;
+    /* Dark background for table */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    /* Subtle glow around table */
     font-size: 0.95rem;
+    /* Slightly smaller font size */
 }
 
+/* Style for both table headers and table cells */
 th,
 td {
     padding: 12px 15px;
+    /* Padding inside each cell */
     border: 1px solid #333;
+    /* Dark border around cells */
     text-align: left;
+    /* Align text to the left */
 }
 
+/* Style specifically for table headers */
 th {
     background-color: #333;
+    /* Dark gray background for headers */
     text-transform: uppercase;
+    /* Uppercase text */
     letter-spacing: 0.5px;
+    /* Slight spacing between letters */
 }
 
+/* Style for even-numbered table rows */
 tr:nth-child(even) {
     background-color: #222;
+    /* Slightly lighter background for zebra striping */
 }
 
+/* Hover effect for table rows */
 tr:hover {
     background-color: #2a2a2a;
+    /* Highlight row on hover */
 }
 
 /* ======= BAND MEMBERS ======= */
+
+/* Container for band members section */
 .band-members {
     text-align: center;
+    /* Center-align text and content */
 }
 
+/* Heading in band members section */
 .band-members h2 {
     font-size: 2em;
+    /* Large font size for heading */
     margin-bottom: 30px;
+    /* Space below heading */
 }
 
+/* Grid container for member cards */
 .member-grid {
     display: grid;
+    /* Use CSS grid layout */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* Responsive columns */
     gap: 20px;
+    /* Gap between grid items */
     justify-items: center;
+    /* Center items horizontally within grid cells */
 }
 
+/* Individual member card styling */
 .member-card {
     background-color: #1c1c1c;
+    /* Dark card background */
     border-radius: 10px;
+    /* Rounded corners */
     padding: 20px;
+    /* Inner spacing */
     max-width: 300px;
+    /* Maximum width */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    /* Subtle glow */
     text-align: center;
+    /* Center-align text */
 }
 
+/* Member card image */
 .member-card img {
     width: 100%;
+    /* Full width of card */
     border-radius: 8px;
+    /* Rounded image corners */
     margin-bottom: 15px;
+    /* Space below image */
 }
 
+/* Member card heading */
 .member-card h3 {
     margin: 10px 0 5px;
+    /* Margin above and below heading */
     font-size: 1.2em;
+    /* Slightly larger font size */
 }
 
+/* Member card paragraph */
 .member-card p {
     font-size: 0.95em;
+    /* Slightly smaller font size */
     color: #ccc;
+    /* Light gray text color */
 }
+
 
 /* ======= FOOTER ======= */
 
