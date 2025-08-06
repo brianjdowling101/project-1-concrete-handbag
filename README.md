@@ -8,7 +8,7 @@ Whether users are loyal fans or curious newcomers, this website is designed to b
 
 ![Concrete Hand Bag]![image](/image/device.png)
 
-**Live Website:**
+**Live Website: https://brianjdowling101.github.io/project-1-concrete-handbag/** 
 
 ---
 
