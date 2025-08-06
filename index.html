@@ -89,16 +89,27 @@
 
 </body>
 
-
-<!-- Banner section with image -->
+<!-- Banner section with background image or style -->
 <section class="home-banner" id="home-banner">
+
+  <!-- Container for banner text content -->
   <div class="banner-content">
+
+    <!-- Main headline: Band name -->
     <h1>Concrete Handbag</h1>
+
+    <!-- Subheadline promoting new content -->
     <p>New Music Video</p>
+
+    <!-- Name of the new release -->
     <p>Sidewalk Etiquette — Out Now</p>
+
+    <!-- Call-to-action button linking to Music & Media section -->
     <a href="#music-media" class="banner-button">Watch Now</a>
-  </div>
-</section>
+
+  </div> <!-- End of banner-content -->
+
+</section> <!-- End of home-banner section -->
 
 
 
@@ -106,40 +117,67 @@
 
 
 
-<!-- Band member section with images/content info -->
+
+<!-- Band member section with images and content information -->
 <section class="band-members" id="band-members">
+
+  <!-- Spacing (can be replaced with CSS margins for better practice) -->
   <br>
   <br>
   <br>
+
+  <!-- Section heading -->
   <h2>Meet the Members</h2>
+
+  <!-- Grid container for all band member cards -->
   <div class="member-grid">
+
+    <!-- Individual member card: Alex -->
     <div class="member-card">
+      <!-- Image of Alex with alt text -->
       <img src="assets/images/alex.jpg" alt="Alex - Vocals/Guitar">
+      <!-- Member name and role -->
       <h3>Alex (Vocals / Guitar)</h3>
-      <p>Alex’s swirling guitar lines and soft-spoken vocals are the emotional backbone of Concrete Handbag.
-        She brings melody to the noise.</p>
+      <!-- Member description -->
+      <p>
+        Alex’s swirling guitar lines and soft-spoken vocals are the emotional backbone of Concrete Handbag.
+        She brings melody to the noise.
+      </p>
     </div>
+
+    <!-- Individual member card: Jordan -->
     <div class="member-card">
       <img src="assets/images/jordan.jpg" alt="Jordan - Bass">
       <h3>Jordan (Bass)</h3>
-      <p>Jordan lays down the gritty low-end textures that anchor the band’s sonic chaos. A minimalist with a
-        noisy
-        heart.</p>
+      <p>
+        Jordan lays down the gritty low-end textures that anchor the band’s sonic chaos.
+        A minimalist with a noisy heart.
+      </p>
     </div>
+
+    <!-- Individual member card: Taylor -->
     <div class="member-card">
       <img src="assets/images/taylor.jpg" alt="Taylor - Violinist">
-      <h3>Taylor (Voilinist)</h3>
-      <p>Taylor blends melodies with improvised rhythms. A violinist who plays with silence as much as sound.</p>
+      <h3>Taylor (Violinist)</h3> <!-- Note: "Violinist" was previously misspelled as "Voilinist" -->
+      <p>
+        Taylor blends melodies with improvised rhythms.
+        A violinist who plays with silence as much as sound.
+      </p>
     </div>
+
+    <!-- Individual member card: Lee -->
     <div class="member-card">
       <img src="assets/images/lee.jpg" alt="Lee - Guitar/Samples">
       <h3>Lee (Guitar / Samples)</h3>
-      <p>Lee manipulates loops, samples, and dissonance into dense atmospheres. Responsible for the dream-pop
-        layer
-        in the noise.</p>
+      <p>
+        Lee manipulates loops, samples, and dissonance into dense atmospheres.
+        Responsible for the dream-pop layer in the noise.
+      </p>
     </div>
-  </div>
+
+  </div> <!-- End of member-grid -->
 </section>
+
 
 
 
@@ -169,19 +207,36 @@
     <p><strong>Watch the video for <em>Sidewalk Etiquette</em> below &#8595</strong></p>
   </div>
 
+  <!-- Container to style and position the video -->
   <div class="video-container">
+
+    <!-- HTML5 video player -->
     <video controls preload="metadata" muted>
+
+      <!-- Source file for the video player -->
       <source src="assets/videos/ConcreteHandisagrungeband.mp4" type="video/mp4">
+
+      <!-- If the browser doesn't support video, fallback content could be added here -->
+
     </video>
-  </div>
+
+  </div> <!-- End of video-container -->
+
 
   <script>
+    // Get the audio element by its ID
     const audio = document.getElementById('player');
+
+    // Add a click event listener to the button with ID "play"
     document.getElementById('play').addEventListener('click', async () => {
       try {
+        // Try to play the audio when the button is clicked
         await audio.play();
+
+        // Log a message to the console if playback starts successfully
         console.log('Playing');
       } catch (err) {
+        // If playback fails (e.g. user hasn't interacted with the page), log the error
         console.warn('Playback failed:', err);
       }
     });
@@ -195,26 +250,38 @@
 
 
 
-<section id="tour-dates" style="max-width: 700px; margin: 2em auto; padding: 1.5em; font-family: sans-serif; line-height: 1.6;
- text-align: center;">
+
+<!-- Section for displaying upcoming USA tour dates -->
+<section id="tour-dates" style="max-width: 700px; margin: 2em auto; padding: 1.5em; 
+         font-family: sans-serif; line-height: 1.6; text-align: center;">
+
+  <!-- Section heading for the tour -->
   <h2>Tour Dates 2025: Heavy Luggage!!!</h2>
 
 
+  <!-- Tour dates table -->
   <table>
+    <!-- Table header section -->
     <thead>
+      <!-- Header row spanning 3 columns for the tour title -->
       <tr>
         <td colspan="3" style="text-align: center; font-weight: bold;">
+          <!-- Tour title inside a heading -->
           <h3 style="margin: 0;">USA Tour</h3>
         </td>
       </tr>
+      <!-- Column headers for the tour date, city, and venue -->
       <tr>
         <th>Date</th>
         <th>City</th>
         <th>Venue</th>
       </tr>
     </thead>
+
+    <!-- Table body for individual tour entries -->
     <tbody>
       <tr>
+
         <td>Apr 4</td>
         <td>Seattle, WA</td>
         <td>Neumos</td>
@@ -429,11 +496,14 @@
   <!-- Hidden anchor for offset scroll -->
   <div id="merch-support" style="position: relative; top: -20px; height: 0; visibility: hidden,"></div>
 
+  <!-- Merch & Support Section -->
   <h2>Merch & Support</h2>
 
+  <!-- Band merchandise image with styling for responsiveness and rounded corners -->
   <img src="assets/images/band-jam-volinist-center.jpg" alt="Concrete Handbag Merch"
     style="max-width: 100%; height: auto; margin-bottom: 1.5em; border-radius: 8px;">
 
+  <!-- Paragraph promoting official band merchandise with link to Etsy shop -->
   <p>
     Want to rep Concrete Handbag? You can grab official band merch,
     including shirts, pins, tapes, and more! Head over on our
@@ -441,12 +511,14 @@
       style="color: #0070c9; text-decoration: none;">Etsy shop</a>.
   </p>
 
+  <!-- Paragraph inviting fans to join Patreon for exclusive content -->
   <p>
     Want more exclusive content and behind-the-scenes updates?
     Join us on <a href="https://www.patreon.com" target="_blank" rel="noopener noreferrer"
       style="color: #e85a3c; text-decoration: none;">Patreon</a>.
   </p>
 
+  <!-- Paragraph highlighting that 10% of proceeds support a charity with link -->
   <p>
     10% of proceeds go to <a href="https://www.focusireland.ie/" target="_blank" rel="noopener noreferrer"
       style="color: #009639; text-decoration: none;">Focus Ireland</a>.
@@ -454,37 +526,55 @@
 </section>
 
 
+
 <!-- Contact form section with buttons. -->
 <section id="contact" style="max-width: 700px; margin: 2em auto; padding: 1.5em; font-family: sans-serif; line-height: 1.6;
  text-align: center">
 
+  <!-- Contact Section Heading -->
   <h2>Contact</h2>
+
+  <!-- Introductory paragraph encouraging users to reach out, styled for readability and centered layout -->
   <p style="max-width: 600px; margin: 2em auto; font-size: 1.1rem; line-height: 1.5;">
+    <!-- Strong emphasis on inquiry or booking -->
     <strong>Have a question or want to book us for an event?</strong><br>
     Reach out about weddings, festivals, corporate events, or merchandise orders!<br>
-    Just drop us a message below! &#8595;
+    Just drop us a message below! &#8595; <!-- Down arrow symbol pointing to the form -->
   </p>
+
+  <!-- Container for the booking/contact form, left-aligned -->
   <div class="booking-form-container" style="text-align: left;">
+    <!-- Contact form with max-width and centered horizontally -->
     <form id="booking-form" class="booking-form" style="max-width: 600px; margin: 0 auto;">
+
+      <!-- Name input field with label -->
       <label for="name">Name:</label>
       <input type="text" id="name" name="Name" required
         style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;">
 
+      <!-- Email input field with label -->
       <label for="email">Email:</label>
       <input type="email" id="email" name="Email" required
         style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;">
 
+      <!-- Message textarea field with label -->
       <label for="message">Message:</label>
       <textarea id="message" name="Message" rows="5" required
         style="width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;"></textarea>
 
+      <!-- Submit button styled with red background, white text, rounded corners and pointer cursor -->
       <button type="submit"
-        style="background-color: hsl(0, 100%, 50%); color: white; padding: 0.7em 1.5em; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
+        style="background-color: hsl(0, 100%, 50%); color: white; padding: 0.7em 1.5em; border: none; border-radius: 4px; cursor: pointer;">
+        Submit
+      </button>
     </form>
   </div>
+
+  <!-- Decorative rock-on emoji centered below the form -->
   <div style="text-align: center; font-size: 2rem; margin-top: 1em;">
     🤘
   </div>
+
 
   <script>
     const form = document.getElementById('booking-form');
