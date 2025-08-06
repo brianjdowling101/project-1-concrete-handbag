@@ -6,7 +6,7 @@ Its purpose is to showcase the band's identity, provide access to multimedia con
 
 Whether users are loyal fans or curious newcomers, this website is designed to be intuitive and accessible across all devices.
 
-![Concrete HandBag]![image](assets/image/devices.png)
+![image](assets/images/devices.png)
 
 **Live Website: https://brianjdowling101.github.io/project-1-concrete-handbag/** 
 
