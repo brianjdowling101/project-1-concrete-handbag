@@ -435,26 +435,43 @@ tr:hover {
 }
 
 /* ======= FOOTER ======= */
+
+/* Main footer container */
 .site-footer {
     background-color: #333;
+    /* Dark gray background for footer */
     padding: 30px 20px;
+    /* Padding inside the footer */
     margin-top: 60px;
+    /* Space above the footer */
     border-top: 1px solid #333;
+    /* Top border to separate footer from content */
     text-align: center;
+    /* Center-align all text inside footer */
 }
 
+/* Container for footer content elements */
 .footer-content {
     display: flex;
+    /* Use flexbox for layout */
     flex-direction: column;
+    /* Stack items vertically */
     align-items: center;
+    /* Center items horizontally */
     gap: 15px;
+    /* Space between each footer element */
 }
 
+/* Paragraphs inside footer content */
 .footer-content p {
     font-size: 0.9rem;
+    /* Slightly smaller font size */
     margin: 0;
+    /* Remove default margin */
     color: #ccc;
+    /* Light gray text color */
 }
+
 
 /* Container for social media icons */
 .social-links {
