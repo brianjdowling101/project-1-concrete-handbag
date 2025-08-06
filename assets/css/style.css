@@ -373,161 +373,274 @@ video {
 
 
 /* ======= VIDEO PLAYER ======= */
+
+/* Container for video player and controls */
 .video-container {
     max-width: 320px;
+    /* Limit max width */
     margin: 0 auto;
+    /* Center horizontally */
     padding: 1rem;
+    /* Inner spacing */
     background-color: #222;
+    /* Dark background */
     border: 2px solid #444;
+    /* Border around container */
     border-radius: 12px;
+    /* Rounded corners */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Soft shadow for depth */
     display: flex;
+    /* Flex layout */
     flex-direction: column;
+    /* Stack items vertically */
     align-items: center;
+    /* Center items horizontally */
 }
 
+/* Video element styling */
 video {
     width: 100%;
+    /* Full container width */
     border-radius: 12px;
+    /* Rounded corners to match container */
     background-color: #000;
+    /* Black background behind video */
 }
 
+/* Controls container below video */
 .controls {
     margin-top: 1rem;
+    /* Space above controls */
     display: flex;
+    /* Flex layout for buttons */
     gap: 1rem;
+    /* Space between buttons */
     justify-content: center;
+    /* Center controls horizontally */
 }
 
+/* Individual control buttons styling */
 .controls button {
     background-color: #333;
+    /* Dark button background */
     color: #eee;
+    /* Light text */
     border: 1px solid #555;
+    /* Border to define edges */
     padding: 0.5rem 1rem;
+    /* Padding inside buttons */
     border-radius: 5px;
+    /* Rounded corners */
     font-size: 1rem;
+    /* Readable font size */
     cursor: pointer;
+    /* Pointer cursor on hover */
     transition: background-color 0.2s ease;
+    /* Smooth background transition */
 }
 
+/* Hover effect for control buttons */
 .controls button:hover {
     background-color: #555;
+    /* Slightly lighter background on hover */
 }
+
 
 /* ======= AUDIO PLAYER ======= */
+
+/* Container for audio player section */
 .audio-player-container {
     background-color: #fff;
+    /* White background for contrast */
     padding: 30px;
+    /* Inner padding */
     border-radius: 12px;
+    /* Rounded corners */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
     text-align: center;
+    /* Center text and controls */
     width: 320px;
+    /* Fixed width matching video player */
     margin: 0 auto 2rem auto;
+    /* Center horizontally, bottom margin */
 }
 
+/* Heading inside audio player container */
 .audio-player-container h2 {
     font-size: 1.2rem;
+    /* Slightly larger font */
     margin-bottom: 20px;
+    /* Space below heading */
     color: #333;
+    /* Dark text */
 }
 
+/* Native audio element styling */
 audio {
     width: 100%;
+    /* Full container width */
     margin-bottom: 15px;
+    /* Space below audio controls */
 }
 
+/* Container for audio control buttons */
 .buttons {
     display: flex;
+    /* Flex layout */
     justify-content: space-between;
+    /* Spread buttons apart */
     margin-bottom: 15px;
+    /* Space below buttons */
 }
 
+/* Note or caption styling */
 .note {
     font-size: 0.85rem;
+    /* Smaller font size */
     color: #666;
+    /* Medium gray color */
 }
 
+/* Links inside note */
 .note a {
     color: #ffffff;
+    /* White text */
     text-decoration: none;
+    /* No underline by default */
 }
 
+/* Hover effect for links in note */
 .note a:hover {
     text-decoration: underline;
+    /* Underline on hover */
 }
+
 
 /* ======= BUTTONS SHARED ======= */
+
+/* Base style for all buttons */
 button {
     background-color: #726b6b;
+    /* Muted dark gray background */
     color: #fff;
+    /* White text */
     border: none;
+    /* No border */
     padding: 8px 12px;
+    /* Padding inside button */
     border-radius: 5px;
+    /* Rounded corners */
     font-size: 0.9rem;
+    /* Slightly smaller font size */
     cursor: pointer;
+    /* Pointer cursor on hover */
     transition: background-color 0.3s ease;
+    /* Smooth color transition */
 }
 
+/* Hover effect for buttons */
 button:hover {
     background-color: #ffffff;
+    /* White background on hover */
 }
+
 
 /* ======= BOOKING FORM ======= */
+
+/* Container centering booking form */
 .booking-form-container {
     display: flex;
+    /* Flexbox layout */
     justify-content: center;
+    /* Center horizontally */
     align-items: center;
+    /* Center vertically */
 }
 
+/* Booking form styling */
 .booking-form {
     background-color: #222;
+    /* Dark background */
     padding: 30px;
+    /* Inner padding */
     border-radius: 10px;
+    /* Rounded corners */
     max-width: 400px;
+    /* Max width */
     width: 100%;
+    /* Full width up to max */
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    /* Soft light shadow */
 }
 
+/* Booking form heading */
 .booking-form h2 {
     text-align: center;
+    /* Center heading */
     margin-bottom: 20px;
+    /* Space below heading */
     font-weight: 700;
+    /* Bold text */
     color: #f0f0f0;
+    /* Light gray text */
 }
 
+/* Labels for form fields */
 .booking-form label {
     display: block;
+    /* Block display for full width */
     margin-bottom: 5px;
+    /* Space below label */
     font-weight: bold;
+    /* Bold text */
 }
 
+/* Input fields and textarea styling */
 .booking-form input,
 .booking-form textarea {
     width: 100%;
+    /* Full width of container */
     padding: 10px;
+    /* Inner padding */
     margin-bottom: 15px;
+    /* Space below fields */
     border: none;
+    /* Remove default borders */
     border-radius: 5px;
+    /* Rounded corners */
     background-color: #333;
+    /* Dark background */
     color: #fff;
+    /* White text */
 }
 
+/* Focus styles for inputs and textarea */
 .booking-form input:focus,
 .booking-form textarea:focus {
     outline: 2px solid #666;
+    /* Highlight with outline */
 }
 
-/* Submit button style matches banner */
+/* Submit button styling to match banner button */
 .booking-form button {
     width: 100%;
+    /* Full width */
     padding: 12px;
+    /* Padding inside button */
     background-color: #e63946;
+    /* Bright red background */
     font-weight: bold;
+    /* Bold text */
 }
 
+/* Hover effect for submit button */
 .booking-form button:hover {
     background-color: #d62828;
+    /* Darker red on hover */
 }
+
 
 /* ======= TABLE ======= */
 
