@@ -48,17 +48,9 @@ This project is to create a website for a band (real or fictional). The site wil
 
 ## 4. Non-Functional Requirements
 - Responsive design for desktop, tablet, and mobile.
-- WCAG 2.1 AA accessibility compliance.
 - Load media efficiently with compression and lazy-loading.
 - Secure forms with basic validation and spam prevention.
 
-## 5. Constraints
-- All music and media must be either owned by the band or licensed for use.
-- Hosting must support media streaming for audio/video files.
-- Social media integration should not block site performance if APIs fail.
 
-## 6. Potential Future Enhancements
-- Fan club membership signup with exclusive content.
-- Integrated ticket purchasing system.
-- Newsletter signup and email marketing integration.
+
 
