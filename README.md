@@ -74,7 +74,7 @@ A two table displays upcoming tour dates with:
 
 ![image](assets/images/usa.png)
 
-![image](assets/images/europe.png.png)
+![image](assets/images/europe.png)
 
 ---
 
@@ -83,21 +83,23 @@ Users can reach out via a styled contact form that includes:
 - Name field
 - Email field
 - Message field
-- Submit and Reset buttons
+- Submit
 
-Form validation ensures only proper emails are accepted.
+![image](assets/images/contact.png)
 
-![Contact Form](insert-here)
+- Will recieve a Thank You Message!
+
+![image](assets/images/thank%20you.png)
 
 ---
 
 ### Footer  
 The footer contains:
-- Social media links (Instagram, Twitter, YouTube, etc.)
-- Band’s email address
-- Maybe a copyright?
+- Social media links (Instagram, X, Facebook and spotify)
+- Copyright symbol
 
-Designed for accessibility, it includes high-contrast color schemes and readable fonts.
+![image](assets/images/footer.png)
+
 
 ---
 
@@ -105,9 +107,16 @@ Designed for accessibility, it includes high-contrast color schemes and readable
 
 ### HTML & CSS Validation  
 - ✅ [W3C HTML Validator](https://validator.w3.org/):
+
+![image](assets/images/htmlchecker.png)
+
 - ✅ [W3C CSS Validator](https://jigsaw.w3.org/css-validator/):
 
+![image](assets/images/csschecker.png)
+
 ### Accessibility Testing  
+Designed for accessibility, it includes high-contrast color schemes and readable fonts.
+
 - ✅ Lighthouse accessibility audit:
 
 ### Browser Compatibility  
