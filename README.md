@@ -20,7 +20,7 @@ The website features a bold and creative header that reflects the band’s uniqu
 - Note board with information about their new track called Side Walk Etiquette.
 - A link to their new track, which bring the users to The Music and Media section of the website.
 
-
+![image](assets/images/banner.png)
 ---
 
 ### Navigation Bar  
@@ -43,30 +43,26 @@ This section provides background information about **Concrete Hand Bag**, includ
 - A short bio
 - Details on how the band was formed
 - Musical influences
-- Band philosophy
+- Band members/band photos
 
-A photo of the full band is included to give users a visual connection.
-
-![Band Image](insert-here)
-
----
-
-### Meet the Members  
+## Meet the Members  
 A grid layout introduces the individual band members, including:
 - Names
 - Role in the band
 - Fun facts or mini-bios
 - Individual photos
 
+![image](assets/images/meettheband.png)
 ---
 
 ### Music & Media  
 This section features:
-- Embedded YouTube video(s) or links to music demos
-- A photo gallery from concerts or behind-the-scenes moments
-- Links to external platforms such as Spotify or SoundCloud (if applicable)
+- Embedded YouTube video.
+- Links to external platforms such as Apple Music.
 
-![Media Screenshot](insert-here)
+![image](assets/images/music:media.png)
+
+![image](assets/images/video.png)
 
 ---
 
