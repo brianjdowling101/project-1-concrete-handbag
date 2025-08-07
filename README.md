@@ -67,10 +67,14 @@ This section features:
 ---
 
 ### Tour Dates  
-A table or card layout displays upcoming tour dates with:
-- Date
-- Location
-- Venue name
+A two table displays upcoming tour dates with:
+- Dates
+- Location (USA & Euro)
+- Venue names
+
+![image](assets/images/usa.png)
+
+![image](assets/images/europe.png.png)
 
 ---
 
