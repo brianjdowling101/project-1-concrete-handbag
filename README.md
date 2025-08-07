@@ -77,6 +77,16 @@ A two table displays upcoming tour dates with:
 ![image](assets/images/europe.png)
 
 ---
+### Support The Band.
+
+This section has links to the Band's:
+
+ - Patreon
+ - Etsy
+
+![image](assets/images/merch.png)
+
+---
 
 ### Booking / Contact Form  
 Users can reach out via a styled contact form that includes:
@@ -108,9 +118,12 @@ The footer contains:
 ### HTML & CSS Validation  
 - ✅ [W3C HTML Validator](https://validator.w3.org/):
 
+
 ![image](assets/images/htmlchecker.png)
 
+
 - ✅ [W3C CSS Validator](https://jigsaw.w3.org/css-validator/):
+
 
 ![image](assets/images/csschecker.png)
 
