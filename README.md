@@ -154,7 +154,7 @@ Checked across: (To do lisit!)
 ![image](assets/images/moible.png)
 
 
-Overall, the coding has been going well, but there’s been a bit of a drop in consistency lately. One thing to watch out for the future is image sizing (Example: Banner Image), but it makes a big difference in how things look and work. Keeping an eye on that and moving forward will help keep everything running smoothly and looking sharp!
+- Overall, the coding has been going well, but there’s been a bit of a drop in consistency lately. One thing to watch out for the future is image sizing (Example: Banner Image), but it makes a big difference in how things look and work. Keeping an eye on that and moving forward will help keep everything running smoothly and looking sharp!
 ---
 
 ## Deployment
