@@ -115,12 +115,14 @@ The footer contains:
 ![image](assets/images/csschecker.png)
 
 ### Accessibility Testing  
-Designed for accessibility, it includes high-contrast color schemes and readable fonts.
+Designed for accessibility, it includes high-contrast colour schemes and readable fonts.
 
 - ✅ Lighthouse accessibility audit:
 
+![image](assets/images/accessible.png)
+
 ### Browser Compatibility  
-Tested successfully in: (To do lisit!)
+Tested successfully in:
 - Google Chrome
 - Mozilla Firefox
 - Microsoft Edge
@@ -128,10 +130,18 @@ Tested successfully in: (To do lisit!)
 
 ### Responsive Testing  
 Checked across: (To do lisit!)
-- Desktop
-- Tablet (768px)
-- Mobile (375px and below)
 
+- Desktop
+
+![image](assets/images/desktop.png)
+
+
+- Mobile/Tablet
+
+![image](assets/images/moible.png)
+
+
+Overall, the coding has been going well, but there’s been a bit of a drop in consistency lately. One thing to watch out for the future is image sizing (Example: Banner Image), but it makes a big difference in how things look and work. Keeping an eye on that and moving forward will help keep everything running smoothly and looking sharp!
 ---
 
 ## Deployment
@@ -142,30 +152,31 @@ The site was deployed using GitHub Pages via these steps:
 3. Deployed using the `main` branch and `/root`
 4. Website is accessible at:  
 
-Add link here
+Add link here: https://brianjdowling101.github.io/project-1-concrete-handbag/** 
 
 ---
 
 ## Attribution
 
 ### Code
-- Navigation bar structure inspired by Code Institute’s **Love Running** project.
+- Navigation bar structure inspired by Code Institute’s **Love Running** project and The **Trinity College** Project on my Github.
 - CSS transitions and form validation ideas sourced from [W3Schools](https://www.w3schools.com/) and [MDN Web Docs](https://developer.mozilla.org/).
 
 Code snippets from external tutorials are clearly commented and attributed in the HTML/CSS files.
 
 ### Content
-- All text written by the developer, except placeholder bios.
+- All text written by the developer.
 - Band name is fictional and for educational use only.
+- Band images come from Pexel.
+- The Video is also fictional piece of work.
 
 ### Media
 - Images and videos sourced from **Pexels** and **Unsplash** under free commercial licenses.
-- Placeholder videos from YouTube’s free embed options.
 
 ---
 
 ## Known Bugs
-- Any bugs???
+- There are no bugs.
 
 ---
 
