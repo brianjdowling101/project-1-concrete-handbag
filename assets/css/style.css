@@ -224,7 +224,7 @@ h2 {
     /* Inline block for proper sizing */
     padding: 12px 25px;
     /* Padding around text */
-    background-color: #e63946;
+    background-color: #000000;
     /* Bright red background */
     color: #ffffff;
     /* White text */
@@ -240,7 +240,7 @@ h2 {
 
 /* Hover effect for banner button */
 .banner-button:hover {
-    background-color: #d62828;
+    background-color: #000000;
     /* Darker red on hover */
 }
 
