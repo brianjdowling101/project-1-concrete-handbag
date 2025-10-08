@@ -866,18 +866,21 @@ tr:hover {
 
     .nav ul li a {
         padding: 10px 15px;
-        /* Clickable padding */
-        color: #000000;
-        /* Link text color */
-        background-color: transparent;
-        /* Transparent default background */
+        color: #ffffff;
+        /* Make text white for visibility on dark backgrounds */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Semi-transparent overlay for readability */
+        text-decoration: none;
+        /* Remove underlines if desired */
+        transition: all 0.3s ease;
+        /* Smooth hover effect */
     }
 
     .nav ul li a:hover,
     .nav ul li a:focus {
-        background-color: rgb(255, 255, 255);
-        /* Subtle highlight on hover/focus */
-        color: rgb(255, 0, 0);
-        /* Accent color on interaction */
+        background-color: rgba(255, 255, 255, 0.9);
+        /* Light background */
+        color: #000000;
+        /* Dark text for contrast */
     }
 }
