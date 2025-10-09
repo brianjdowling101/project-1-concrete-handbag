@@ -225,23 +225,13 @@
 
 
   <script>
-    // Get the audio element by its ID
-    const audio = document.getElementById('player');
-
-    // Add a click event listener to the button with ID "play"
-    document.getElementById('play').addEventListener('click', async () => {
-      try {
-        // Try to play the audio when the button is clicked
-        await audio.play();
-
-        // Log a message to the console if playback starts successfully
-        console.log('Playing');
-      } catch (err) {
-        // If playback fails (e.g. user hasn't interacted with the page), log the error
-        console.warn('Playback failed:', err);
-      }
+    // 
+    const btn = document.getElementById('play');
+    btn.addEventListener('click', () => {
+      console.log('Clicked!');
     });
   </script>
+
 </section>
 
 
