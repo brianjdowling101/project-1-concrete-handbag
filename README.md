@@ -20,6 +20,18 @@ Whether users are loyal fans or curious newcomers, this website is designed to b
 
 **Live Website:  https://brianjdowling101.github.io/project-1-concrete-handbag/** 
 
+
+
+---
+### 🎨 Design Choices
+
+- Color Scheme: High-contrast colors with white highlighted text for readability.
+
+- Typography: Readable fonts with clear hierarchy for headings and body text.
+
+- Layout: Grid-based layouts for band members and tour dates; fixed navigation bar for easy access.
+
+- Accessibility: Focused on WCAG standards, including text contrast, readable fonts, and form labels.
 ---  
 ### Wireframes Summary
 
@@ -184,7 +196,7 @@ Previously, the website had 11 contrast-related accessibility errors identified 
 
 All 11 contrast issues have now been fully resolved. Text visibility and contrast have been improved across all areas to meet accessibility standards and ensure a better experience for all users.
 
-![image] (assets/images/wave..png)
+![image] (assets/images/wave.png)
 
 
 ### Browser Compatibility  
