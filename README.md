@@ -140,7 +140,7 @@ Previously, the website had 11 contrast-related accessibility errors identified 
 
 All 11 contrast issues have now been fully resolved. Text visibility and contrast have been improved across all areas to meet accessibility standards and ensure a better experience for all users.
 
-![image] (assets/images/wave.jpg)
+![image] (assets/images/wave..png)
 
 
 ### Browser Compatibility  
