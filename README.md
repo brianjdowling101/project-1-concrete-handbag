@@ -20,7 +20,26 @@ Whether users are loyal fans or curious newcomers, this website is designed to b
 
 **Live Website:  https://brianjdowling101.github.io/project-1-concrete-handbag/** 
 
----                                     
+---  
+### Wireframes Summary
+
+- Wireframes guided the site’s structure and functionality:
+
+- Banner: Band rooftop image, note board for new track, link to Music & Media section.
+
+- Navigation: Fixed top bar with smooth-scrolling links to Home, About, Music & Media, Tour Dates, and Contact.
+
+- About the Band: Bio, formation story, musical influences, band members grid.
+
+- Music & Media: Embedded YouTube video, external music links.
+
+- Tour Dates: Table of upcoming shows (USA & Europe).
+
+- Support the Band: Patreon and Etsy links for merchandise.
+
+- Booking / Contact Form: Name, Email, Message fields, submit button, thank-you message.
+
+- Footer: Social media links and copyright notice.
 
 ## Features
 
