@@ -33,7 +33,7 @@ The navigation bar is fixed to the top of the page and includes smooth-scrolling
 
 Each section is easy to locate and accessible, with hover effects for improved user feedback.
 
-![image](assets/images/navbar.png)
+![image](assets/images/navbar..png)
 
 ![image](assets/images/openmenu.png)
 ---
