@@ -10,7 +10,7 @@ Whether users are loyal fans or curious newcomers, this website is designed to b
 
 **Live Website:  https://brianjdowling101.github.io/project-1-concrete-handbag/** 
 
----
+---                                     
 
 ## Features
 
@@ -34,8 +34,6 @@ The navigation bar is fixed to the top of the page and includes smooth-scrolling
 Each section is easy to locate and accessible, with hover effects for improved user feedback.
 
 ![image](assets/images/navbar..png)
-
-![image](assets/images/openmenu.png)
 ---
 
 ### About the Band  
@@ -64,6 +62,9 @@ This section features:
 
 ![image](assets/images/video.png)
 
+The **highlighted words** have been changed to **white** to improve **readability** and **accessibility** for all readers.
+
+
 ---
 
 ### Tour Dates  
@@ -85,6 +86,9 @@ This section has links to the Band's:
  - Etsy
 
 ![image](assets/images/merch.png)
+
+The **highlighted links** have been changed to **white** to improve **readability** and **accessibility** for all readers.
+
 
 ---
 
@@ -115,19 +119,24 @@ The footer contains:
 
 ## Testing
 
-### HTML & CSS Validation  
+### HTML & CSS Validation 
+
 - **W3C HTML Validator:** All pages now pass validation.  
-Previously, two stray code errors were detected and have since been corrected. The site now validates with **zero errors**. [W3C HTML Validator](https://validator.w3.org/):
+Previously, two stray code errors were detected and have since been corrected. The site now validates with **zero errors**. 
+
+[W3C HTML Validator](https://validator.w3.org/):
 
 ![image](assets/images/htmlchecker.png)
 
 
-- The stylesheet was checked using the **W3C CSS Validator**.  
+
+- **W3C CSS Validator** All pages now pass validation.  
 No errors or warnings were found. The CSS fully conforms to W3C standards.
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/):
 
 
 ![image](assets/images/csschecker.png)
+
 
 ### Accessibility Testing  
 Designed for accessibility, it includes high-contrast colour schemes and readable fonts.
