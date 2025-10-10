@@ -162,6 +162,20 @@ These provide fans with easy access to the band’s online presence. Social medi
 
 ---
 
+### Future Features
+
+- Interactive music player on-site.
+
+- Dynamic tour calendar with ticket purchase links.
+
+- Newsletter subscription for fans.
+
+- Dark/light mode toggle for improved accessibility.
+
+- Enhanced animations and transitions for multimedia sections.
+
+---
+
 ## Testing
 
 ### HTML & CSS Validation 
