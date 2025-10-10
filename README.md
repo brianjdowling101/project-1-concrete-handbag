@@ -118,8 +118,13 @@ The footer contains:
 ### HTML & CSS Validation  
 - ✅ [W3C HTML Validator](https://validator.w3.org/):
 
+**W3C HTML Validator:** All pages now pass validation.  
+Previously, two stray code errors were detected and have since been corrected. The site now validates with **zero errors**.
 
 ![image](assets/images/htmlchecker.png)
+
+The stylesheet was checked using the **W3C CSS Validator**.  
+No errors or warnings were found. The CSS fully conforms to W3C standards.
 
 
 - ✅ [W3C CSS Validator](https://jigsaw.w3.org/css-validator/):
