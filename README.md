@@ -197,6 +197,8 @@ Code snippets from external tutorials are clearly commented and attributed in th
 ### Media
 - Images and videos sourced from **Pexels** and **Unsplash** under free commercial licenses.
 
+- Screenshots were taken from my work on the project using Visual Studio and some were captured via Google Developer Tools.
+
 ---
 
 ## Debugging
