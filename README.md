@@ -8,7 +8,7 @@ Whether users are loyal fans or curious newcomers, this website is designed to b
 
 ![image](assets/images/devices.png)
 
-**Live Website: https://brianjdowling101.github.io/project-1-concrete-handbag/** 
+**Live Website:  https://brianjdowling101.github.io/project-1-concrete-handbag/** 
 
 ---
 
@@ -184,6 +184,7 @@ Add link here: https://brianjdowling101.github.io/project-1-concrete-handbag/**
 
 ### Code
 - Navigation bar structure inspired by Code Institute’s **Love Running** project and The **Trinity College** Project on my Github.
+
 - CSS transitions and form validation ideas sourced from [W3Schools](https://www.w3schools.com/) and [MDN Web Docs](https://developer.mozilla.org/).
 
 Code snippets from external tutorials are clearly commented and attributed in the HTML/CSS files.
