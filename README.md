@@ -134,6 +134,13 @@ Designed for accessibility, it includes high-contrast colour schemes and readabl
 
 ![image](assets/images/accessible.png)
 
+## Accessibility Improvements
+
+Previously, the website had 11 contrast-related accessibility errors identified by the WAVE accessibility checker. These issues affected text readability, particularly in the dropdown menu and the merch/support sections. 
+
+All 11 contrast issues have now been fully resolved. Text visibility and contrast have been improved across all areas to meet accessibility standards and ensure a better experience for all users.
+
+
 ### Browser Compatibility  
 Tested successfully in:
 - Google Chrome
