@@ -116,18 +116,15 @@ The footer contains:
 ## Testing
 
 ### HTML & CSS Validation  
-- ✅ [W3C HTML Validator](https://validator.w3.org/):
-
-**W3C HTML Validator:** All pages now pass validation.  
-Previously, two stray code errors were detected and have since been corrected. The site now validates with **zero errors**.
+- **W3C HTML Validator:** All pages now pass validation.  
+Previously, two stray code errors were detected and have since been corrected. The site now validates with **zero errors**. [W3C HTML Validator](https://validator.w3.org/):
 
 ![image](assets/images/htmlchecker.png)
 
-The stylesheet was checked using the **W3C CSS Validator**.  
+
+- The stylesheet was checked using the **W3C CSS Validator**.  
 No errors or warnings were found. The CSS fully conforms to W3C standards.
-
-
-- ✅ [W3C CSS Validator](https://jigsaw.w3.org/css-validator/):
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/):
 
 
 ![image](assets/images/csschecker.png)
@@ -202,8 +199,8 @@ Code snippets from external tutorials are clearly commented and attributed in th
 
 ---
 
-## Known Bugs
-- There are no bugs.
+## Debugging
+- The project has been successfully set up and verified. Debugging workflows using Firefox Developer Tools and Visual Studio have been tested, and the application runs as intended without errors. All core functionalities are operational, and the environment is stable, making it ready for further development or deployment.
 
 ---
 
