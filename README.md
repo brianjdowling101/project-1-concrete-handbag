@@ -6,6 +6,16 @@ Its purpose is to showcase the band's identity, provide access to multimedia con
 
 Whether users are loyal fans or curious newcomers, this website is designed to be intuitive and accessible across all devices.
 
+### User Stories
+
+-As a fan, I want to view information about the band, so I can learn about their background and members.
+
+-As a visitor, I want to listen to music and watch videos, so I can enjoy the band's content.
+
+-As a supporter, I want to purchase merchandise, so I can support the band financially.
+
+-As an event organizer, I want to contact the band via a form, so I can book them for events.
+
 ![image](assets/images/devices.png)
 
 **Live Website:  https://brianjdowling101.github.io/project-1-concrete-handbag/** 
