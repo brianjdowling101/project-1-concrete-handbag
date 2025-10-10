@@ -114,6 +114,8 @@ The footer contains:
 
 ![image](assets/images/footer.png)
 
+These provide fans with easy access to the band’s online presence. Social media keeps fans engaged, helps the band grow its audience, and allows direct communication about releases, tours, or news. Spotify links let fans listen to music immediately, boosting streams and visibility. Copyright Symbol, Legally indicates ownership of the content (music, images, text, website). It protects the band’s intellectual property and signals professionalism.
+
 
 ---
 
