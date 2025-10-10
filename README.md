@@ -85,6 +85,8 @@ This section has links to the Band's:
  - Patreon
  - Etsy
 
+ To encourage the fans to support the band by purchasing merchandise, such as shirts, posters, or music. This helps generate revenue while strengthening fan loyalty.
+
 ![image](assets/images/merch.png)
 
 The **highlighted links** have been changed to **white** to improve **readability** and **accessibility** for all readers.
@@ -101,7 +103,7 @@ Users can reach out via a styled contact form that includes:
 
 ![image](assets/images/contact.png)
 
-- Will recieve a Thank You Message!
+- Will recieve a Thank You Message! Encourages fans to stay connected, increasing loyalty and interaction.
 
 ![image](assets/images/thank%20you.png)
 
