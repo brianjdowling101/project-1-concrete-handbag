@@ -105,9 +105,10 @@ This section features:
 
 ![image](assets/images/music:media.png)
 
+he **highlighted words** have been changed to **white** to improve **readability** and **accessibility** for all readers.
+
 ![image](assets/images/video.png)
 
-The **highlighted words** have been changed to **white** to improve **readability** and **accessibility** for all readers.
 
 
 ---
