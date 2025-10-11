@@ -292,6 +292,8 @@ Code snippets from external tutorials are clearly commented and attributed in th
 
 - Firefox Developer Tools: Used for testing, debugging, and performance optimization.
 
+- Screenfly to test website on different size devices.
+
 - GitHub: For version control and project hosting.
 ---
 
