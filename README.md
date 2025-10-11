@@ -280,6 +280,20 @@ Code snippets from external tutorials are clearly commented and attributed in th
 - The project has been successfully set up and verified. Debugging workflows using Firefox Developer Tools and Visual Studio have been tested, and the application runs as intended without errors. All core functionalities are operational, and the environment is stable, making it ready for further development or deployment.
 
 ---
+## Technologies Used
+
+- HTML5: For structuring and organizing the website’s content.
+
+- CSS3: For styling and creating a responsive layout that works on all device sizes.
+
+- JavaScript: For adding interactivity and dynamic functionality to the website.
+
+- WAVE Accessibility Tool: Used to check and improve website accessibility.
+
+- Firefox Developer Tools: Used for testing, debugging, and performance optimization.
+
+- GitHub: For version control and project hosting.
+---
 
 ## Credits
 
