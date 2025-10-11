@@ -20,7 +20,9 @@ Whether users are loyal fans or curious newcomers, this website is designed to b
 
 **Live Website:  https://brianjdowling101.github.io/project-1-concrete-handbag/** 
 
+### Developer-Focused
 
+Designed for desktop and mobiles, responsive layout to deliver a consistent user experience across all screen sizes and modern browsers.
 
 ---
 ### Design Choices
