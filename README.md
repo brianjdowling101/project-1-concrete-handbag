@@ -77,6 +77,8 @@ The navigation bar is fixed to the top of the page and includes smooth-scrolling
 Each section is easy to locate and accessible, with hover effects for improved user feedback.
 
 ![image](assets/images/navbar..png)
+
+- Changed the navbar colour to improve contrast and make the website more accessible. The navbar colour is now better visibility and accessibility across all devices.
 ---
 
 ### About the Band  
